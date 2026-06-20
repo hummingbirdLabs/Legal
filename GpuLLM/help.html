@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Third-Party Notices – GpuLLM</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 900px; margin: 0 auto; padding: 40px 24px; color: #1a1a1a; line-height: 1.7; }
+    h1 { font-size: 2rem; margin-bottom: 4px; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 36px; }
+    h2 { font-size: 1.3rem; margin-top: 44px; border-bottom: 2px solid #e5e5e5; padding-bottom: 6px; }
+    h3 { font-size: 1.05rem; margin-top: 28px; color: #333; }
+    pre { background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px; overflow-x: auto; font-size: 0.82rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
+    .badge { display: inline-block; background: #e8f4fd; color: #0066cc; border-radius: 4px; padding: 2px 8px; font-size: 0.8rem; font-weight: 600; margin-left: 8px; vertical-align: middle; }
+    .intro { background: #f9f9f9; border-left: 4px solid #ccc; padding: 12px 16px; border-radius: 4px; margin: 24px 0; color: #555; }
+    a { color: #0066cc; }
+  </style>
+</head>
+<body>
+
+<h1>Third-Party Notices</h1>
+<p class="meta">Application: <strong>GpuLLM</strong> &nbsp;·&nbsp; Last updated: June 19, 2026</p>
+
+<div class="intro">
+  GpuLLM incorporates components from third-party open-source projects. The licenses for those components are reproduced below, as required by their respective terms. These notices apply to portions of the application's software libraries. The application source code authored by HummingbirdLabs is separate and not covered by these notices.
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Software Libraries</h2>
+
+<!-- ── LLamaSharp ── -->
+<h3>LLamaSharp 0.26.0 <span class="badge">MIT</span></h3>
+<p>Copyright © SciSharp STACK<br/>
+Repository: <a href="https://github.com/SciSharp/LLamaSharp" target="_blank" rel="noopener">https://github.com/SciSharp/LLamaSharp</a></p>
+<p>LLamaSharp provides .NET bindings for llama.cpp, enabling high-performance local LLM inference on Windows.</p>
+<pre>
+MIT License
+
+Copyright (c) 2023 SciSharp STACK
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</pre>
+<p>LLamaSharp includes native llama.cpp binaries.
+llama.cpp is licensed under the MIT License.<br/>
+Copyright © 2023–2024 llama.cpp contributors.<br/>
+Repository: <a href="https://github.com/ggerganov/llama.cpp" target="_blank" rel="noopener">https://github.com/ggerganov/llama.cpp</a></p>
+
+<!-- ── LLamaSharp Backends ── -->
+<h3>LLamaSharp.Backend.Cuda12 0.26.0 <span class="badge">MIT</span></h3>
+<p>Copyright © SciSharp STACK<br/>
+NVIDIA CUDA 12.x backend for GPU-accelerated inference on NVIDIA hardware.<br/>
+Includes cuBLAS and other NVIDIA CUDA libraries, subject to the <a href="https://docs.nvidia.com/cuda/eula/index.html" target="_blank" rel="noopener">NVIDIA CUDA EULA</a>.</p>
+
+<h3>LLamaSharp.Backend.Vulkan 0.26.0 <span class="badge">MIT</span></h3>
+<p>Copyright © SciSharp STACK<br/>
+Vulkan backend for cross-vendor GPU inference (NVIDIA, AMD, Intel).</p>
+
+<h3>LLamaSharp.Backend.Cpu 0.26.0 <span class="badge">MIT</span></h3>
+<p>Copyright © SciSharp STACK<br/>
+CPU-only backend for universal compatibility.</p>
+
+<!-- ── Microsoft.Extensions.* ── -->
+<h3>Microsoft.Extensions.* 9.0.x <span class="badge">MIT</span></h3>
+<p>Includes: Microsoft.Extensions.Hosting, Microsoft.Extensions.Http<br/>
+Copyright © Microsoft Corporation<br/>
+Repository: <a href="https://github.com/dotnet/runtime" target="_blank" rel="noopener">https://github.com/dotnet/runtime</a></p>
+<pre>
+MIT License
+
+Copyright (c) .NET Foundation and Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</pre>
+
+<!-- ── System.Management ── -->
+<h3>System.Management 9.0.10 <span class="badge">MIT</span></h3>
+<p>Copyright © .NET Foundation and Contributors<br/>
+Repository: <a href="https://github.com/dotnet/runtime" target="_blank" rel="noopener">https://github.com/dotnet/runtime</a></p>
+<p>Provides WMI-based hardware monitoring capabilities for GPU and system metrics collection.</p>
+<pre>
+MIT License
+
+Copyright (c) .NET Foundation and Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</pre>
+
+<!-- ── WPF-UI ── -->
+<h3>WPF-UI 3.0.5 <span class="badge">MIT</span></h3>
+<p>Copyright © 2021–2024 Lepo.Co<br/>
+Repository: <a href="https://github.com/lepoco/wpfui" target="_blank" rel="noopener">https://github.com/lepoco/wpfui</a></p>
+<pre>
+MIT License
+
+Copyright (c) 2021-2024 Lepo.Co
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</pre>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>External API Services</h2>
+
+<!-- ── HuggingFace Hub ── -->
+<h3>HuggingFace Hub API</h3>
+<p>GpuLLM optionally communicates with the HuggingFace Hub public API (<a href="https://huggingface.co" target="_blank" rel="noopener">https://huggingface.co</a>) to search and download AI model files at your explicit request. No data is sent to HuggingFace unless you initiate a model search or download. HuggingFace's own privacy practices are governed by their <a href="https://huggingface.co/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</p>
+
+<!-- ── ModelScope ── -->
+<h3>ModelScope API</h3>
+<p>As an alternative model source, GpuLLM can connect to the ModelScope public API (<a href="https://modelscope.cn" target="_blank" rel="noopener">https://modelscope.cn</a>) to search and download AI model files at your explicit request. ModelScope's own privacy practices are governed by their policies available at <a href="https://modelscope.cn" target="_blank" rel="noopener">https://modelscope.cn</a>.</p>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>NVIDIA System Management Interface</h2>
+
+<!-- ── nvidia-smi ── -->
+<h3>NVIDIA SMI</h3>
+<p>GpuLLM uses the <code>nvidia-smi</code> command-line tool (installed with NVIDIA GPU drivers) to collect GPU metrics such as utilization, temperature, power draw, and VRAM usage. nvidia-smi is proprietary software provided by NVIDIA Corporation and is subject to the <a href="https://www.nvidia.com/en-us/drivers/nvidia-license/" target="_blank" rel="noopener">NVIDIA Software License Agreement</a>. GpuLLM does not redistribute nvidia-smi; it invokes the tool only if already present on your system as part of your NVIDIA driver installation.</p>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2>Curated Model License Notices</h2>
+
+<div class="intro">
+  <strong>Important:</strong> GpuLLM provides a built-in library of curated model entries to help you discover and download AI models. <strong>GpuLLM does not redistribute these model files.</strong> Models are downloaded directly from their respective public repositories (HuggingFace Hub or ModelScope) at your explicit request. Each model is governed by its own license terms set by the model provider. You are responsible for reviewing and complying with the applicable license terms before downloading or using any model.
+</div>
+
+<h3>Apache 2.0</h3>
+<p>Applies to: Qwen3 family (Qwen3-0.6B through Qwen3-235B-A22B), Gemma 4 family (Gemma-4-E2B through Gemma-4-31B), Mistral Small 3.1 24B, Phi-4-mini, Bonsai 1.7B<br/>
+License text: <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener">https://www.apache.org/licenses/LICENSE-2.0</a></p>
+
+<h3>MIT License</h3>
+<p>Applies to: community-repacked GGUF variants distributed by <code>bartowski/*</code>, <code>MaziyarPanahi/*</code>, and similar community publishers on HuggingFace<br/>
+License text: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">https://opensource.org/licenses/MIT</a></p>
+
+<h3>Llama Community License</h3>
+<p>Applies to: Llama 4 Maverick 17B (Meta), DeepSeek-R1-Distill series (based on Llama architecture)<br/>
+The Llama Community License imposes additional restrictions, including a monthly active user threshold (700 million MAU). Review the full terms before use.<br/>
+License text: <a href="https://www.llama.com/llama4/license/" target="_blank" rel="noopener">https://www.llama.com/llama4/license/</a></p>
+
+<h3>Gemma Terms of Use</h3>
+<p>Applies to: Gemma 4 family (Google) — in addition to Apache 2.0, Google's Gemma Terms of Use include prohibited-use policies<br/>
+Terms: <a href="https://ai.google.dev/gemma/terms" target="_blank" rel="noopener">https://ai.google.dev/gemma/terms</a></p>
+
+<p style="margin-top:20px;color:#666;">This list may not be exhaustive. Model licenses are subject to change by their respective providers. Always check the original repository for the most current license information before downloading.</p>
+
+</body>
+</html>
