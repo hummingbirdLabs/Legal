@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AstroSky — FITS Astronomy Image Visualizer</title>
+  <title>AstroSky — عارض الصور الفلكية FITS</title>
   <style>
     :root {
       --brand:        #6c8cff;
@@ -23,7 +23,7 @@
       --shadow-md:    0 4px 16px rgba(0,0,0,.10), 0 2px 6px rgba(0,0,0,.06);
       --shadow-lg:    0 12px 40px rgba(0,0,0,.14), 0 4px 12px rgba(0,0,0,.08);
       --max-w:        960px;
-      --ff-body:      "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      --ff-body:      "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Noto Naskh Arabic", "Traditional Arabic", sans-serif;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -48,7 +48,7 @@
     body {
       font-family: var(--ff-body);
       font-size: 16px;
-      line-height: 1.65;
+      line-height: 1.75;
       color: var(--fg);
       background: var(--bg);
       -webkit-font-smoothing: antialiased;
@@ -63,7 +63,7 @@
     section { padding: 80px 0; }
 
     header {
-      background: linear-gradient(145deg, #f0f4ff 0%, #e0e8ff 50%, #e0fff4 100%);
+      background: linear-gradient(215deg, #f0f4ff 0%, #e0e8ff 50%, #e0fff4 100%);
       border-bottom: 1px solid var(--border);
       overflow: hidden;
       position: relative;
@@ -71,7 +71,7 @@
 
     @media (prefers-color-scheme: dark) {
       header {
-        background: linear-gradient(145deg, #10142a 0%, #161e3a 50%, #0e2a24 100%);
+        background: linear-gradient(215deg, #10142a 0%, #161e3a 50%, #0e2a24 100%);
       }
     }
 
@@ -87,12 +87,12 @@
     header::before {
       width: 420px; height: 420px;
       background: radial-gradient(circle, #6c8cff, transparent 70%);
-      top: -120px; left: -80px;
+      top: -120px; right: -80px;
     }
     header::after {
       width: 320px; height: 320px;
       background: radial-gradient(circle, #00d4aa, transparent 70%);
-      bottom: -100px; right: -60px;
+      bottom: -100px; left: -60px;
     }
 
     .hero {
@@ -123,7 +123,7 @@
       font-size: clamp(2.2rem, 5vw, 3.4rem);
       font-weight: 800;
       letter-spacing: -.03em;
-      line-height: 1.15;
+      line-height: 1.35;
       color: var(--fg);
       margin-bottom: 20px;
     }
@@ -288,7 +288,7 @@
     .feature-card p {
       font-size: 14px;
       color: var(--fg-muted);
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     .icon-blue   { background: #e0e8ff; color: #3a5ae0; }
@@ -348,7 +348,7 @@
     .privacy-card p {
       font-size: 13px;
       color: var(--fg-muted);
-      line-height: 1.55;
+      line-height: 1.65;
     }
 
     .lang-list {
@@ -415,10 +415,10 @@
       AstroSky
     </div>
 
-    <h1>Turn FITS Data Into<br><span>Stunning Astronomy Images</span></h1>
+    <h1>حوّل بيانات FITS إلى<br><span>صور فلكية مذهلة</span></h1>
 
     <p class="hero-sub">
-      A professional FITS image visualization tool for Windows. Import astronomical survey data, apply intelligent stretch algorithms and color maps, and export wallpaper-quality images — all in seconds, fully offline.
+      عارض صور FITS احترافي لنظام ويندوز. استورد بيانات المسوح الفلكية، وطبّق خوارزميات تمدد ذكية وخرائط لونية، وصَدّر صورًا بجودة خلفية الشاشة — كل ذلك في ثوانٍ، وبدون اتصال بالإنترنت تمامًا.
     </p>
 
     <div class="hero-meta">
@@ -429,12 +429,12 @@
       <span>·</span>
       <span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        100% Offline
+        دون اتصال 100%
       </span>
       <span>·</span>
       <span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        10 Languages
+        10 لغات
       </span>
       <span>·</span>
       <span>
@@ -446,7 +446,7 @@
     <div class="download-btn-container">
       <a href="https://apps.microsoft.com/detail/9N8QSCSNLT7H" class="download-btn" target="_blank" rel="noopener noreferrer">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
-        Download from Microsoft Store
+        تحميل من متجر مايكروسوفت
       </a>
     </div>
   </div>
@@ -455,36 +455,36 @@
 <section class="screenshots-section">
   <div class="container">
     <div class="section-label">
-      <span class="overline">In Action</span>
-      <h2>See It for Yourself</h2>
-      <p>A clean, intuitive interface that makes FITS data exploration effortless — from import to export in seconds.</p>
+      <span class="overline">قيد التشغيل</span>
+      <h2>شاهد بنفسك</h2>
+      <p>واجهة نظيفة وبديهية تجعل استكشاف بيانات FITS سهلاً — من الاستيراد إلى التصدير في ثوانٍ.</p>
     </div>
 
     <div class="screenshots-grid">
 
       <div class="screenshot-card">
-        <img src="1.png" alt="AstroSky — Multi-wavelength narrowband imaging showing 656nm, 502nm, 673nm channels with RGB composite synthesis and rendered nebula visualization" style="width:100%;display:block;" />
-        <div class="screenshot-caption">Multi-Wavelength Imaging — Narrowband Channels and RGB Synthesis</div>
+        <img src="1.png" alt="AstroSky — تصوير ضيق النطاق متعدد الأطوال الموجية: قنوات 656nm و502nm و673nm مع تركيب RGB وسديم معروض" style="width:100%;display:block;" />
+        <div class="screenshot-caption">تصوير متعدد الأطوال الموجية — قنوات ضيقة النطاق وتركيب RGB</div>
       </div>
 
       <div class="screenshot-card">
-        <img src="2.png" alt="AstroSky — Molecular line observations showing 13CO, C18O, 12CO intensity maps with RGB composite and wide-field survey visualization" style="width:100%;display:block;" />
-        <div class="screenshot-caption">Molecular Line Mapping — CO Isotopologue Composites and Survey Views</div>
+        <img src="2.png" alt="AstroSky — رصد الخطوط الجزيئية: خرائط شدة 13CO وC18O و12CO مع تركيب RGB وعرض مسح واسع المجال" style="width:100%;display:block;" />
+        <div class="screenshot-caption">رسم خرائط الخطوط الجزيئية — تركيبات نظائر CO ومشاهدات المسح</div>
       </div>
 
       <div class="screenshot-card">
-        <img src="3.png" alt="AstroSky — Pillars of Creation nebula rendered in purple-blue tones with star field, demonstrating high-quality FITS image processing and visualization" style="width:100%;display:block;" />
-        <div class="screenshot-caption">Deep Sky Rendering — Pillars of Creation in Purple-Blue Tones</div>
+        <img src="3.png" alt="AstroSky — أعمدة الخلق بألوان بنفسجية-زرقاء مع حقل نجمي، معالجة FITS عالية الجودة" style="width:100%;display:block;" />
+        <div class="screenshot-caption">عرض أعماق السماء — أعمدة الخلق بألوان بنفسجية-زرقاء</div>
       </div>
 
       <div class="screenshot-card">
-        <img src="4.png" alt="AstroSky — Nebula visualization in warm pink and orange hues with bright star highlights, showcasing color map flexibility and stretch algorithm quality" style="width:100%;display:block;" />
-        <div class="screenshot-caption">Color Map Flexibility — Warm Tones and Star Highlight Rendering</div>
+        <img src="4.png" alt="AstroSky — سديم بألوان وردية وبرتقالية دافئة مع إبراز النجوم الساطعة، مرونة الخرائط اللونية" style="width:100%;display:block;" />
+        <div class="screenshot-caption">مرونة الخرائط اللونية — ألوان دافئة وإبراز النجوم</div>
       </div>
 
       <div class="screenshot-card">
-        <img src="5.png" alt="AstroSky — Wide-field Milky Way survey map in purple and yellow tones, demonstrating large-scale astronomical data visualization capabilities" style="width:100%;display:block;" />
-        <div class="screenshot-caption">Wide-Field Survey — Milky Way Molecular Gas Distribution Map</div>
+        <img src="5.png" alt="AstroSky — خريطة مسح واسع المجال لمجرة درب التبانة بألوان بنفسجية وصفراء، تصور بيانات فلكية واسعة النطاق" style="width:100%;display:block;" />
+        <div class="screenshot-caption">مسح واسع المجال — خريطة توزيع الغاز الجزيئي في درب التبانة</div>
       </div>
 
     </div>
@@ -494,84 +494,84 @@
 <section>
   <div class="container">
     <div class="section-label" style="text-align:center;">
-      <span class="overline">Features</span>
+      <span class="overline">الميزات</span>
       <div class="divider"></div>
-      <h2>From FITS Files to Beautiful Images</h2>
-      <p>Astronomy's Snapseed — simple, instant feedback, visually driven. Complex parameters hidden in advanced options, zero-barrier default experience.</p>
+      <h2>من ملفات FITS إلى صور رائعة</h2>
+      <p>سنابسيد علم الفلك — بسيط، استجابة فورية، مدفوع بصريًا. المعلمات المعقدة مخفية في الخيارات المتقدمة، تجربة افتراضية بدون حواجز.</p>
     </div>
 
     <div class="features-grid">
 
       <div class="feature-card">
         <div class="feature-icon icon-blue">📂</div>
-        <h3>Batch FITS Import</h3>
-        <p>Drag and drop multiple FITS files or entire folders. Parallel loading with real-time progress. Supports .fits, .fit, .fts extensions and multi-extension FITS files.</p>
+        <h3>استيراد FITS دفعة واحدة</h3>
+        <p>اسحب وأفلت ملفات FITS متعددة أو مجلدات كاملة. تحميل متوازي مع تقدم في الوقت الفعلي. يدعم الامتدادات .fits و.fit و.fts وملفات FITS متعددة الامتدادات.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-teal">✨</div>
-        <h3>Auto Smart Enhance</h3>
-        <p>One-click Auto button analyzes histogram shape (unimodal/bimodal/long-tail) and automatically selects the optimal stretch algorithm, color map, and black/white point combination.</p>
+        <h3>تحسين تلقائي ذكي</h3>
+        <p>زر Auto بنقرة واحدة يحلل شكل المدرج التكراري (أحادي/ثنائي القمة/ذيل طويل) ويختار تلقائيًا خوارزمية التمدد والخريطة اللونية ونقاط الأسود/الأبيض المثلى.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-purple">🎨</div>
-        <h3>Rich Color Maps</h3>
-        <p>Choose from Viridis, Plasma, Inferno, Magma, Hubble Palette, and more. Each color map includes a gradient preview swatch. All maps are perceptually uniform and colorblind-friendly.</p>
+        <h3>خرائط لونية غنية</h3>
+        <p>اختر من Viridis وPlasma وInferno وMagma ولوحة هابل والمزيد. كل خريطة تتضمن معاينة متدرجة. جميعها موحدة إدراكيًا وملائمة لعمى الألوان.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-amber">📊</div>
-        <h3>Live Histogram</h3>
-        <p>Real-time 256-bin histogram visualization with black/white point markers. Drag sliders and see instant 200ms preview refresh — no waiting.</p>
+        <h3>مدرج تكراري مباشر</h3>
+        <p>تصور مباشر للمدرج التكراري بـ 256 خانة مع علامات نقاط الأسود/الأبيض. حرّك المنزلقات وشاهد المعاينة تتحدث في 200 ملي ثانية — بدون انتظار.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-green">🔭</div>
-        <h3>Beauty / Science Dual Mode</h3>
-        <p>Beauty Mode hides scientific noise for a clean creative experience. Science Mode expands full analysis tools — beam overlay, pixel readout, PV diagrams, channel maps — toggle in ≤100ms without reloading.</p>
+        <h3>وضع مزدوج: جمالي / علمي</h3>
+        <p>الوضع الجمالي يخفي الضوضاء العلمية لتجربة إبداعية نظيفة. الوضع العلمي يوسع أدوات التحليل الكاملة — تراكب الحزمة، قراءة البكسل، مخططات PV، خرائط القنوات — التبديل في ≤100 ملي ثانية بدون إعادة تحميل.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-indigo">🌌</div>
-        <h3>RGB Channel Synthesis</h3>
-        <p>Assign R/G/B channels to different FITS images via hover buttons on thumbnails. Synthesize multi-band composite images with per-channel stretch and weight controls.</p>
+        <h3>تركيب قنوات RGB</h3>
+        <p>عيّن قنوات R/G/B لصور FITS مختلفة عبر أزرار التمرير على المصغرات. أنشئ صورًا مركبة متعددة النطاقات مع تحكم في التمدد والوزن لكل قناة.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-rose">🖼️</div>
-        <h3>Wallpaper Export</h3>
-        <p>Export to PNG/JPEG/FITS with preset resolutions from 1080p to 8K. Optional watermark with telescope model, observation band, and integration time. Author signature support.</p>
+        <h3>تصدير بجودة خلفية الشاشة</h3>
+        <p>صدّر إلى PNG/JPEG/FITS بدقات محددة مسبقًا من 1080p إلى 8K. علامة مائية اختيارية مع طراز التلسكوب ونطاق الرصد وزمن التكامل. دعم توقيع المؤلف.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-orange">🗺️</div>
-        <h3>Sky Info &amp; Celestial Database</h3>
-        <p>Auto-recognizes coordinates (Galactic/Equatorial) from WCS headers. Built-in offline database of 800+ celestial objects (Messier, NGC, IC) with plain-language descriptions. Aitoff projection sky minimap.</p>
+        <h3>معلومات سماوية وقاعدة بيانات فلكية</h3>
+        <p>تعرف تلقائي على الإحداثيات (مجرية/استوائية) من ترويسات WCS. قاعدة بيانات مدمجة بدون اتصال لأكثر من 800 جرم سماوي (Messier, NGC, IC) مع أوصاف بلغة واضحة. خريطة سماوية مصغرة بإسقاط Aitoff.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-blue">📋</div>
-        <h3>FITS Header Viewer</h3>
-        <p>Searchable three-column table (keyword/value/comment) for all FITS header entries. One-click value copy. Multi-extension support with extension switcher.</p>
+        <h3>عارض ترويسات FITS</h3>
+        <p>جدول قابل للبحث بثلاثة أعمدة (كلمة مفتاحية/قيمة/تعليق) لجميع مدخلات ترويسة FITS. نسخ القيمة بنقرة واحدة. دعم متعدد الامتدادات مع مبدل امتداد.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-teal">📐</div>
-        <h3>Science Tools</h3>
-        <p>Moment maps, image algebra, position-velocity diagrams, channel maps for data cubes (NAXIS=3). Beam ellipse overlay from BMAJ/BMIN header keywords. Pixel value readout on hover.</p>
+        <h3>أدوات علمية</h3>
+        <p>خرائط العزوم، جبر الصور، مخططات الموقع-السرعة، خرائط القنوات لمكعبات البيانات (NAXIS=3). تراكب قطع ناقص للحزمة من كلمات BMAJ/BMIN. قراءة قيمة البكسل عند التمرير.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-purple">↩️</div>
-        <h3>Undo / Redo</h3>
-        <p>Full parameter undo/redo stack via Ctrl+Z / Ctrl+Y. Every adjustment is tracked and reversible. Non-destructive processing — original FITS data is never modified.</p>
+        <h3>تراجع / إعادة</h3>
+        <p>مكدس كامل للتراجع/الإعادة للمعلمات عبر Ctrl+Z / Ctrl+Y. كل تعديل متتبع وقابل للعكس. معالجة غير مدمرة — بيانات FITS الأصلية لا تُعدل أبدًا.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-amber">🌐</div>
-        <h3>10-Language Localization</h3>
-        <p>Full UI localization for English, Japanese, German, French, Spanish, Portuguese, Russian, Korean, Italian, and Arabic. Switch languages at any time from Settings without restart.</p>
+        <h3>تعريب 10 لغات</h3>
+        <p>واجهة مستخدم مترجمة بالكامل للإنجليزية واليابانية والألمانية والفرنسية والإسبانية والبرتغالية والروسية والكورية والإيطالية والعربية. بدّل اللغة في أي وقت من الإعدادات بدون إعادة تشغيل.</p>
       </div>
 
     </div>
@@ -581,32 +581,32 @@
 <section class="privacy-section">
   <div class="container">
     <div class="section-label" style="text-align:center;">
-      <span class="overline">Privacy First</span>
+      <span class="overline">الخصوصية أولاً</span>
       <div class="divider"></div>
-      <h2>Your Data Never Leaves Your Device</h2>
-      <p>All image processing runs entirely on your local machine. No account required. No internet connection needed after installation.</p>
+      <h2>بياناتك لا تغادر جهازك أبدًا</h2>
+      <p>جميع معالجة الصور تتم بالكامل على جهازك المحلي. لا حاجة لحساب. لا حاجة لاتصال إنترنت بعد التثبيت.</p>
     </div>
 
     <div class="privacy-grid">
       <div class="privacy-card">
         <div class="privacy-icon">🔒</div>
-        <h4>100% Offline</h4>
-        <p>All FITS loading, stretch processing, and rendering runs locally. The app works fully offline after installation from the Microsoft Store.</p>
+        <h4>بدون اتصال 100%</h4>
+        <p>جميع عمليات تحميل FITS ومعالجة التمدد والعرض تتم محليًا. يعمل التطبيق بدون اتصال بالكامل بعد التثبيت من متجر مايكروسوفت.</p>
       </div>
       <div class="privacy-card">
         <div class="privacy-icon">🚫</div>
-        <h4>Zero Data Upload</h4>
-        <p>Your FITS files and rendered images are processed in memory on your own machine. No telemetry, no analytics, no data transmission of any kind.</p>
+        <h4>صفر تحميل بيانات</h4>
+        <p>ملفات FITS والصور المعروضة تُعالج في ذاكرة جهازك الخاص. لا مراقبة عن بعد، لا تحليلات، لا نقل بيانات من أي نوع.</p>
       </div>
       <div class="privacy-card">
         <div class="privacy-icon">👤</div>
-        <h4>No Account Needed</h4>
-        <p>No sign-up, no login, no subscription. Download from the Microsoft Store and start exploring astronomical data immediately.</p>
+        <h4>لا حاجة لحساب</h4>
+        <p>لا تسجيل، لا دخول، لا اشتراك. حمّل من متجر مايكروسوفت وابدأ استكشاف البيانات الفلكية فورًا.</p>
       </div>
       <div class="privacy-card">
         <div class="privacy-icon">⚡</div>
-        <h4>GPU Accelerated</h4>
-        <p>Image rendering powered by SkiaSharp for fast, high-quality output. Optimized for large FITS files from modern astronomical surveys.</p>
+        <h4>تسريع GPU</h4>
+        <p>عرض الصور مدعوم بـ SkiaSharp لإخراج سريع وعالي الجودة. محسّن لملفات FITS الكبيرة من المسوح الفلكية الحديثة.</p>
       </div>
     </div>
   </div>
@@ -614,10 +614,10 @@
 
 <section>
   <div class="container" style="text-align:center;">
-    <span class="overline">Multilingual</span>
+    <span class="overline">متعدد اللغات</span>
     <div class="divider"></div>
-    <h2 style="font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:800;letter-spacing:-.025em;margin-bottom:12px;">Available in Your Language</h2>
-    <p style="color:var(--fg-muted);max-width:480px;margin:0 auto;">AstroSky ships with full UI localization for ten languages, switchable at any time from Settings.</p>
+    <h2 style="font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:800;letter-spacing:-.025em;margin-bottom:12px;">متوفر بلغتك</h2>
+    <p style="color:var(--fg-muted);max-width:480px;margin:0 auto;">يأتي AstroSky مع واجهة مستخدم مترجمة بالكامل لعشر لغات، قابلة للتبديل في أي وقت من الإعدادات.</p>
     <div class="lang-list">
       <span class="lang-tag">🇺🇸 English</span>
       <span class="lang-tag">🇯🇵 日本語</span>
@@ -636,10 +636,9 @@
 <footer>
   <p>
     &copy; 2026 Hummingbird Labs &nbsp;·&nbsp;
-    <a href="privacy_en.html">Privacy Policy</a> &nbsp;·&nbsp;
-    <a href="ThirdPartyNotices.html">Third-Party Notices</a>
+    <a href="privacy_ar.html">سياسة الخصوصية</a> &nbsp;·&nbsp;
+    <a href="ThirdPartyNotices.html">إشعارات الطرف الثالث</a>
   </p>
 </footer>
-
 </body>
 </html>
