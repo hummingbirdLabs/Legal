@@ -1,209 +1,587 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Third-Party Notices – GpuLLM</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Help — GpuLLM User Guide</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 900px; margin: 0 auto; padding: 40px 24px; color: #1a1a1a; line-height: 1.7; }
-    h1 { font-size: 2rem; margin-bottom: 4px; }
-    .meta { color: #666; font-size: 0.9rem; margin-bottom: 36px; }
-    h2 { font-size: 1.3rem; margin-top: 44px; border-bottom: 2px solid #e5e5e5; padding-bottom: 6px; }
-    h3 { font-size: 1.05rem; margin-top: 28px; color: #333; }
-    pre { background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px; overflow-x: auto; font-size: 0.82rem; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
-    .badge { display: inline-block; background: #e8f4fd; color: #0066cc; border-radius: 4px; padding: 2px 8px; font-size: 0.8rem; font-weight: 600; margin-left: 8px; vertical-align: middle; }
-    .intro { background: #f9f9f9; border-left: 4px solid #ccc; padding: 12px 16px; border-radius: 4px; margin: 24px 0; color: #555; }
-    a { color: #0066cc; }
+    /* ── Design tokens ─────────────────────────────────────────── */
+    :root {
+      --brand:        #e05c3a;
+      --brand-light:  #f5866a;
+      --brand-dim:    #fde8e2;
+      --accent:       #7c5cbf;
+      --bg:           #ffffff;
+      --surface:      #f8f5f2;
+      --border:       #ece7e2;
+      --fg:           #1e1a17;
+      --fg-muted:     #6b6360;
+      --fg-subtle:    #a09896;
+      --radius-sm:    8px;
+      --radius-md:    16px;
+      --radius-lg:    24px;
+      --shadow-sm:    0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.05);
+      --shadow-md:    0 4px 16px rgba(0,0,0,.10), 0 2px 6px rgba(0,0,0,.06);
+      --max-w:        860px;
+      --ff-body:      "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --brand:       #f5866a;
+        --brand-light: #f9aa94;
+        --brand-dim:   #3a2318;
+        --accent:      #a585e0;
+        --bg:          #131110;
+        --surface:     #1e1b18;
+        --border:      #302c28;
+        --fg:          #ede8e3;
+        --fg-muted:    #a09896;
+        --fg-subtle:   #5c5552;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--ff-body);
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--fg);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+    /* ── Header ────────────────────────────────────────────────── */
+    header {
+      background: linear-gradient(145deg, #fff7f4 0%, #fde8e2 50%, #f0eaff 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      header {
+        background: linear-gradient(145deg, #1e1510 0%, #2a1a13 50%, #1a1428 100%);
+      }
+    }
+
+    header h1 {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      color: var(--fg);
+      margin-bottom: 8px;
+    }
+
+    header h1 span {
+      background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      font-size: 1.05rem;
+      color: var(--fg-muted);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 16px;
+      font-size: 13.5px;
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .back-link:hover { text-decoration: underline; }
+
+    /* ── Sections ──────────────────────────────────────────────── */
+    section { padding: 64px 0; }
+
+    section.alt { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+    h2 {
+      font-size: clamp(1.3rem, 3vw, 1.7rem);
+      font-weight: 700;
+      letter-spacing: -.02em;
+      color: var(--fg);
+      margin-bottom: 8px;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--fg);
+      margin: 28px 0 8px;
+    }
+
+    p, li { color: var(--fg-muted); }
+
+    ul, ol { margin: 12px 0 12px 24px; line-height: 1.8; }
+
+    /* ── Step list ─────────────────────────────────────────────── */
+    .step-list {
+      list-style: none;
+      counter-reset: step;
+      margin-top: 24px;
+    }
+
+    .step-list li {
+      counter-increment: step;
+      position: relative;
+      padding-left: 48px;
+      margin-bottom: 24px;
+    }
+
+    .step-list li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step-list li strong {
+      color: var(--fg);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .step-list li p { margin: 0; }
+
+    /* ── Callout boxes ─────────────────────────────────────────── */
+    .callout {
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 14.5px;
+      line-height: 1.6;
+    }
+
+    .callout.tip {
+      background: #e8f5e9;
+      border-left: 4px solid #2e7d32;
+      color: #1b5e20;
+    }
+
+    .callout.warn {
+      background: #fff3e0;
+      border-left: 4px solid #e65100;
+      color: #4e2a00;
+    }
+
+    .callout.info {
+      background: #e3f2fd;
+      border-left: 4px solid #1565c0;
+      color: #0d3c61;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .callout.tip  { background: #0c2d12; border-left-color: #4caf50; color: #a5d6a7; }
+      .callout.warn { background: #2c1600; border-left-color: #ff9800; color: #ffe0b2; }
+      .callout.info { background: #0a1f33; border-left-color: #42a5f5; color: #bbdefb; }
+    }
+
+    /* ── Code-like tokens ──────────────────────────────────────── */
+    code {
+      font-family: "Cascadia Code", "Fira Code", Consolas, monospace;
+      font-size: 13.5px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1px 6px;
+      color: var(--brand);
+    }
+
+    /* ── Feature cards ─────────────────────────────────────────── */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .feature-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px 20px;
+    }
+
+    .feature-card h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 6px;
+    }
+
+    .feature-card p {
+      font-size: 13.5px;
+      color: var(--fg-muted);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .feature-icon {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    /* ── Page reference pills ──────────────────────────────────── */
+    .page-ref {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--brand-dim);
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+    /* ── Key binding ───────────────────────────────────────────── */
+    .kbd {
+      display: inline-block;
+      font-family: var(--ff-body);
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 2px 8px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--fg-muted);
+    }
+
+    /* ── Footer ────────────────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--fg-subtle);
+    }
+
+    footer a {
+      color: var(--fg-muted);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    /* ── Responsive ────────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      section { padding: 40px 0; }
+      header { padding: 36px 20px 28px; }
+    }
   </style>
 </head>
 <body>
 
-<h1>Third-Party Notices</h1>
-<p class="meta">Application: <strong>GpuLLM</strong> &nbsp;·&nbsp; Last updated: June 19, 2026</p>
+<!-- ══════════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════════ -->
+<header>
+  <h1>GpuLLM <span>Help Guide</span></h1>
+  <p>Everything you need to know to get started with local LLM inference, GPU monitoring, and model benchmarking.</p>
+  <a href="introduction_en.html" class="back-link">&larr; Back to GpuLLM Home</a>
+</header>
 
-<div class="intro">
-  GpuLLM incorporates components from third-party open-source projects. The licenses for those components are reproduced below, as required by their respective terms. These notices apply to portions of the application's software libraries. The application source code authored by HummingbirdLabs is separate and not covered by these notices.
-</div>
+<!-- ══════════════════════════════════════════════
+     WHAT GPULLM CAN DO
+══════════════════════════════════════════════ -->
+<section>
+  <div class="container">
+    <h2>What GpuLLM Can Do</h2>
+    <p>
+      GpuLLM is a Windows desktop application that turns your PC into a complete local AI workstation. All computation runs on your hardware — nothing leaves your device.
+    </p>
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<h2>Software Libraries</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🧠</div>
+        <h4>Run LLMs Locally</h4>
+        <p>Load GGUF-format models and chat with them directly on your GPU. Supports CUDA, Vulkan, and CPU backends with automatic fallback.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h4>Monitor Hardware</h4>
+        <p>Real-time GPU utilization, VRAM, temperature, power draw, CPU usage, and memory — all in one dashboard with 60-second sparkline charts.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔬</div>
+        <h4>Benchmark Models</h4>
+        <p>Measure inference speed (TTFT, tokens/sec, latency) and evaluate model accuracy with built-in MMLU and C-Eval question sets.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📦</div>
+        <h4>Download &amp; Manage Models</h4>
+        <p>Browse curated models from HuggingFace, download with resume support and SHA-256 verification, and import your own GGUF files.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <h4>Dual-Model Chat</h4>
+        <p>Compare two models side-by-side in a single conversation. LLM1 answers, LLM2 reviews — both see the full context.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">😺</div>
+        <h4>Prism Cat Mascot</h4>
+        <p>A live animated GPU spirit that changes color and emotion based on your GPU workload.</p>
+      </div>
+    </div>
 
-<!-- ── LLamaSharp ── -->
-<h3>LLamaSharp 0.26.0 <span class="badge">MIT</span></h3>
-<p>Copyright © SciSharp STACK<br/>
-Repository: <a href="https://github.com/SciSharp/LLamaSharp" target="_blank" rel="noopener">https://github.com/SciSharp/LLamaSharp</a></p>
-<p>LLamaSharp provides .NET bindings for llama.cpp, enabling high-performance local LLM inference on Windows.</p>
-<pre>
-MIT License
+    <div class="callout info">
+      <strong>100% Local &amp; Private:</strong> Once models are downloaded, no internet connection is required for inference. No telemetry, no cloud dependency, no data upload.
+    </div>
+  </div>
+</section>
 
-Copyright (c) 2023 SciSharp STACK
+<!-- ══════════════════════════════════════════════
+     QUICK START
+══════════════════════════════════════════════ -->
+<section class="alt">
+  <div class="container">
+    <h2>Quick Start — First-Time Setup</h2>
+    <p>Follow these steps to go from zero to running your first local LLM inference.</p>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+    <ol class="step-list">
+      <li>
+        <strong>Download &amp; install GpuLLM</strong>
+        <p>Get GpuLLM from the Microsoft Store (coming soon). The app is self-contained — no additional runtimes or CUDA toolkit required.</p>
+      </li>
+      <li>
+        <strong>Configure your HuggingFace Access Token (optional)</strong>
+        <p>Open <span class="page-ref">Settings</span> and enter a HuggingFace Read token. This is only needed for gated models (e.g., Qwen, Meta-Llama, Microsoft Phi). Community models from <code>bartowski/*</code> work without a token.</p>
+        <p style="margin-top:6px;">See the <a href="hfGuide.html">Setup Guide</a> for step-by-step token creation instructions.</p>
+      </li>
+      <li>
+        <strong>Download a model</strong>
+        <p>Navigate to <span class="page-ref">Model Library</span>, browse the curated collection, and click <strong>Download</strong> on any model card. Use the <strong>My Hardware</strong> button to filter models compatible with your GPU's VRAM.</p>
+      </li>
+      <li>
+        <strong>Load the model</strong>
+        <p>Once downloaded, click <strong>Load</strong> on the model card. The model weights are loaded into GPU memory and stay resident for fast inference.</p>
+      </li>
+      <li>
+        <strong>Start chatting</strong>
+        <p>Switch to <span class="page-ref">Chat Benchmark</span>, type your prompt, and press <span class="kbd">Enter</span>. The model streams its response in real time while GPU metrics update live in the sidebar.</p>
+      </li>
+    </ol>
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+    <div class="callout tip">
+      <strong>Pro tip:</strong> Start with a smaller model (e.g., Qwen3-1.7B) to verify everything works before moving to larger models.
+    </div>
+  </div>
+</section>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-</pre>
-<p>LLamaSharp includes native llama.cpp binaries.
-llama.cpp is licensed under the MIT License.<br/>
-Copyright © 2023–2024 llama.cpp contributors.<br/>
-Repository: <a href="https://github.com/ggerganov/llama.cpp" target="_blank" rel="noopener">https://github.com/ggerganov/llama.cpp</a></p>
+<!-- ══════════════════════════════════════════════
+     APP NAVIGATION
+══════════════════════════════════════════════ -->
+<section>
+  <div class="container">
+    <h2>App Navigation</h2>
+    <p>GpuLLM has five main pages accessible from the left sidebar. Click any icon to switch pages.</p>
 
-<!-- ── LLamaSharp Backends ── -->
-<h3>LLamaSharp.Backend.Cuda12 0.26.0 <span class="badge">MIT</span></h3>
-<p>Copyright © SciSharp STACK<br/>
-NVIDIA CUDA 12.x backend for GPU-accelerated inference on NVIDIA hardware.<br/>
-Includes cuBLAS and other NVIDIA CUDA libraries, subject to the <a href="https://docs.nvidia.com/cuda/eula/index.html" target="_blank" rel="noopener">NVIDIA CUDA EULA</a>.</p>
+    <h3>Chat Benchmark</h3>
+    <p>
+      The main inference and benchmarking page. Here you can:
+    </p>
+    <ul>
+      <li><strong>Chat with a model:</strong> Type in the <strong>Task Input</strong> box and press <span class="kbd">Enter</span> (or <span class="kbd">Ctrl+Enter</span>) to send. The model streams its response token-by-token.</li>
+      <li><strong>Monitor GPU metrics:</strong> The right panel shows real-time GPU utilization, VRAM usage, temperature, power draw, CPU usage, and system memory — all with 60-second sparkline trends.</li>
+      <li><strong>Adjust inference parameters:</strong> Use the sliders at the top to set <code>Max Tokens</code> and <code>Temperature</code> for each request.</li>
+      <li><strong>View benchmark results:</strong> After each inference, KPI cards show TTFT (Time-To-First-Token), tokens per second, latency, backend chain, and GPU peak metrics.</li>
+      <li><strong>Export chat:</strong> Click <strong>Export PDF</strong> to save the conversation and benchmark report as an A4 PDF document.</li>
+      <li><strong>Copy messages:</strong> Each message bubble has a copy button and timestamp (HH:mm:ss).</li>
+    </ul>
 
-<h3>LLamaSharp.Backend.Vulkan 0.26.0 <span class="badge">MIT</span></h3>
-<p>Copyright © SciSharp STACK<br/>
-Vulkan backend for cross-vendor GPU inference (NVIDIA, AMD, Intel).</p>
+    <h3>Dual-Model Conversation</h3>
+    <p>
+      Toggle <strong>Dual Mode</strong> in Chat Benchmark to enable two-model relay inference:
+    </p>
+    <ul>
+      <li>Select a primary model (LLM1) and a secondary model (LLM2) from the dropdowns.</li>
+      <li>LLM1 receives your prompt and generates an answer.</li>
+      <li>LLM2 automatically receives the full conversation context and provides a review or second opinion.</li>
+      <li>Messages are labeled by role: <strong>LLM1 · Answerer</strong> and <strong>LLM2 · Reviewer</strong>.</li>
+    </ul>
 
-<h3>LLamaSharp.Backend.Cpu 0.26.0 <span class="badge">MIT</span></h3>
-<p>Copyright © SciSharp STACK<br/>
-CPU-only backend for universal compatibility.</p>
+    <h3>Evaluation</h3>
+    <p>
+      Run structured benchmarks against loaded models using standardized question sets:
+    </p>
+    <ul>
+      <li><strong>MMLU:</strong> 100 sampled questions across 57 subjects (STEM, humanities, social sciences).</li>
+      <li><strong>C-Eval:</strong> 100 sampled questions from Chinese academic evaluation benchmarks.</li>
+      <li>The page has three phases: <strong>Configure</strong> (choose model + benchmark) → <strong>Running</strong> (real-time progress) → <strong>Results</strong> (accuracy by category and difficulty).</li>
+      <li>A warm-up inference runs first to ensure the model is fully loaded before scoring begins.</li>
+    </ul>
 
-<!-- ── Microsoft.Extensions.* ── -->
-<h3>Microsoft.Extensions.* 9.0.x <span class="badge">MIT</span></h3>
-<p>Includes: Microsoft.Extensions.Hosting, Microsoft.Extensions.Http<br/>
-Copyright © Microsoft Corporation<br/>
-Repository: <a href="https://github.com/dotnet/runtime" target="_blank" rel="noopener">https://github.com/dotnet/runtime</a></p>
-<pre>
-MIT License
+    <h3>Model Library</h3>
+    <p>
+      Browse, download, and manage your GGUF model collection:
+    </p>
+    <ul>
+      <li><strong>Filter pills:</strong> Narrow by category (Coding, NLP, Vision, Audio, Science) and VRAM requirement.</li>
+      <li><strong>My Hardware:</strong> One-click filter to show only models your GPU can run. Compatible models show a green checkmark.</li>
+      <li><strong>Download:</strong> Click a card's Download button. GpuLLM handles license consent, file listing, download with resume, and SHA-256 verification automatically.</li>
+      <li><strong>Import:</strong> Drag-and-drop or click "Import Model" to add any GGUF file you already have.</li>
+      <li><strong>Manage:</strong> Open folder, copy path, or load/unload models from their cards.</li>
+    </ul>
 
-Copyright (c) .NET Foundation and Contributors
+    <h3>Settings</h3>
+    <p>
+      Configure the application to your preferences:
+    </p>
+    <ul>
+      <li><strong>Language:</strong> Switch between 7 UI languages instantly (English, Japanese, German, French, Spanish, Portuguese, Russian).</li>
+      <li><strong>Theme:</strong> Toggle between Light and Dark mode.</li>
+      <li><strong>Download Directory:</strong> Choose where model files are stored.</li>
+      <li><strong>HuggingFace Token:</strong> Enter or clear your HuggingFace Access Token (stored securely in Windows Credential Manager).</li>
+      <li><strong>Legal links:</strong> Access the Privacy Policy and Third-Party Notices.</li>
+    </ul>
+  </div>
+</section>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+<!-- ══════════════════════════════════════════════
+     MODEL DOWNLOAD DETAILS
+══════════════════════════════════════════════ -->
+<section class="alt">
+  <div class="container">
+    <h2>Understanding Model Downloads</h2>
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+    <h3>Gated vs. Open Models</h3>
+    <p>
+      Model cards show a badge indicating whether authentication is required:
+    </p>
+    <ul>
+      <li><strong style="color:var(--fg);">🔒 Gated</strong> (orange lock icon) — Requires a HuggingFace Access Token. Common for official repos from <code>Qwen</code>, <code>microsoft</code>, <code>meta-llama</code>.</li>
+      <li><strong style="color:var(--fg);">Open</strong> (no badge) — No authentication needed. Community repacks from <code>bartowski/*</code>, <code>MaziyarPanahi/*</code>, etc.</li>
+    </ul>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-</pre>
+    <h3>Download Process</h3>
+    <p>When you click Download, GpuLLM automatically:</p>
+    <ol>
+      <li>Checks license consent (silent for permissive licenses; shows dialog for restricted licenses).</li>
+      <li>Queries HuggingFace API to locate the correct GGUF file.</li>
+      <li>Downloads with HTTP resume support (<code>.part</code> temporary file).</li>
+      <li>Verifies SHA-256 hash against HuggingFace LFS metadata.</li>
+    </ol>
 
-<!-- ── System.Management ── -->
-<h3>System.Management 9.0.10 <span class="badge">MIT</span></h3>
-<p>Copyright © .NET Foundation and Contributors<br/>
-Repository: <a href="https://github.com/dotnet/runtime" target="_blank" rel="noopener">https://github.com/dotnet/runtime</a></p>
-<p>Provides WMI-based hardware monitoring capabilities for GPU and system metrics collection.</p>
-<pre>
-MIT License
+    <div class="callout warn">
+      <strong>Token required?</strong> If a download fails with "Access Token Required," see the <a href="hfGuide.html">Setup Guide</a> for token creation steps. Your token is stored in Windows Credential Manager (DPAPI-encrypted) and never logged or written to disk.
+    </div>
 
-Copyright (c) .NET Foundation and Contributors
+    <h3>Managing Downloads</h3>
+    <ul>
+      <li><strong>Cancel:</strong> Click cancel on a downloading card. The partial <code>.part</code> file is kept for later resume.</li>
+      <li><strong>Change location:</strong> Go to Settings → Download Directory to pick a new folder.</li>
+      <li><strong>Open folder:</strong> On a downloaded card, click the folder icon to open Explorer at the file location.</li>
+      <li><strong>Import GGUF:</strong> Use "Import Model" button or drag-and-drop to add existing GGUF files.</li>
+    </ul>
+  </div>
+</section>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+<!-- ══════════════════════════════════════════════
+     INFERENCE & BENCHMARKING
+══════════════════════════════════════════════ -->
+<section>
+  <div class="container">
+    <h2>Inference &amp; Benchmarking Explained</h2>
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+    <h3>Backend Selection</h3>
+    <p>
+      GpuLLM automatically detects your hardware and selects the fastest available backend in this order:
+      <strong>CUDA 12</strong> → <strong>Vulkan</strong> → <strong>CPU</strong>.
+      No manual configuration needed — the backend chain is shown in the benchmark results after each inference.
+    </p>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-</pre>
+    <h3>Model Loading Strategy</h3>
+    <p>
+      When you click <strong>Load</strong> on a model card, the model weights are pre-loaded into GPU/CPU memory and stay resident. All subsequent inference calls reuse the pre-loaded weights, skipping disk I/O entirely for fast response times. Only one model can be loaded at a time (two in Dual Mode).
+    </p>
 
-<!-- ── WPF-UI ── -->
-<h3>WPF-UI 3.0.5 <span class="badge">MIT</span></h3>
-<p>Copyright © 2021–2024 Lepo.Co<br/>
-Repository: <a href="https://github.com/lepoco/wpfui" target="_blank" rel="noopener">https://github.com/lepoco/wpfui</a></p>
-<pre>
-MIT License
+    <h3>Benchmark Metrics</h3>
+    <p>After each inference, GpuLLM reports:</p>
+    <ul>
+      <li><strong>TTFT</strong> — Time-To-First-Token: How long before the first response token appears.</li>
+      <li><strong>Tokens/s</strong> — Generation throughput after the first token.</li>
+      <li><strong>Latency</strong> — Total end-to-end response time.</li>
+      <li><strong>GPU Peak</strong> — Maximum GPU utilization, VRAM usage, and temperature during inference.</li>
+      <li><strong>Backend Chain</strong> — Which backend was used (e.g., "CUDA 12 → Vulkan → CPU fallback").</li>
+    </ul>
+    <p>The session report aggregates metrics across all inferences since app launch (cumulative tokens, average latency, peak GPU values).</p>
 
-Copyright (c) 2021-2024 Lepo.Co
+    <h3>Export Options</h3>
+    <ul>
+      <li><strong>Export PDF:</strong> Saves the full chat conversation plus the session benchmark report as an A4 PDF.</li>
+      <li><strong>Copy messages:</strong> Each message has a copy button for clipboard export.</li>
+    </ul>
+  </div>
+</section>
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+<!-- ══════════════════════════════════════════════
+     KEYBOARD SHORTCUTS & TIPS
+══════════════════════════════════════════════ -->
+<section class="alt">
+  <div class="container">
+    <h2>Tips &amp; Shortcuts</h2>
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+    <h3>Keyboard Shortcuts</h3>
+    <ul>
+      <li><span class="kbd">Enter</span> or <span class="kbd">Ctrl+Enter</span> — Send prompt in Chat Benchmark.</li>
+    </ul>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-</pre>
+    <h3>Best Practices</h3>
+    <ul>
+      <li><strong>Start small:</strong> Test with a 1–3B parameter model to verify your setup before loading larger models that require more VRAM.</li>
+      <li><strong>Check VRAM:</strong> Use the <strong>My Hardware</strong> filter in Model Library to see only models that fit your GPU's VRAM. The green checkmark confirms compatibility.</li>
+      <li><strong>Temperature tuning:</strong> Lower temperature (0.1–0.5) for factual/coding tasks; higher (0.7–1.0) for creative writing. Adjust per-task in the Chat Benchmark sliders.</li>
+      <li><strong>Max Tokens:</strong> Set appropriately — too low cuts off responses; too high wastes time. Most tasks work well with 512–2048 tokens.</li>
+      <li><strong>Dual Model comparison:</strong> Use Dual Mode with two different models (e.g., a coding model + a general model) to compare answers on the same prompt.</li>
+      <li><strong>Evaluation accuracy:</strong> Run evaluations with lower temperature (0.1–0.3) for more deterministic and fair scoring.</li>
+      <li><strong>Token security:</strong> Your HF token is encrypted via Windows DPAPI and stored in Credential Manager — it's never logged to files. Revoke it anytime from <a href="https://huggingface.co/settings/tokens" target="_blank" rel="noopener">huggingface.co/settings/tokens</a>.</li>
+    </ul>
 
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<h2>External API Services</h2>
+    <h3>Troubleshooting</h3>
+    <ul>
+      <li><strong>Model download fails with 401/403:</strong> The model is gated. Configure a HuggingFace token in Settings, then retry. See the <a href="hfGuide.html">Setup Guide</a>.</li>
+      <li><strong>Download starts but fails with "Integrity check failed":</strong> The file was corrupted during transfer. Click Download again — GpuLLM starts fresh.</li>
+      <li><strong>Rate limit / HTTP 429:</strong> HuggingFace limits anonymous API access. Configure a token for higher rate limits.</li>
+      <li><strong>Model doesn't show as "Downloaded" after restart:</strong> Your download directory may have changed. Check Settings → Download Directory or use the Import button.</li>
+      <li><strong>Inference is slow:</strong> Verify the CUDA backend is active (shown in benchmark results). If falling back to CPU, ensure your NVIDIA driver is up to date.</li>
+    </ul>
+  </div>
+</section>
 
-<!-- ── HuggingFace Hub ── -->
-<h3>HuggingFace Hub API</h3>
-<p>GpuLLM optionally communicates with the HuggingFace Hub public API (<a href="https://huggingface.co" target="_blank" rel="noopener">https://huggingface.co</a>) to search and download AI model files at your explicit request. No data is sent to HuggingFace unless you initiate a model search or download. HuggingFace's own privacy practices are governed by their <a href="https://huggingface.co/privacy" target="_blank" rel="noopener">Privacy Policy</a>.</p>
-
-<!-- ── ModelScope ── -->
-<h3>ModelScope API</h3>
-<p>As an alternative model source, GpuLLM can connect to the ModelScope public API (<a href="https://modelscope.cn" target="_blank" rel="noopener">https://modelscope.cn</a>) to search and download AI model files at your explicit request. ModelScope's own privacy practices are governed by their policies available at <a href="https://modelscope.cn" target="_blank" rel="noopener">https://modelscope.cn</a>.</p>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<h2>NVIDIA System Management Interface</h2>
-
-<!-- ── nvidia-smi ── -->
-<h3>NVIDIA SMI</h3>
-<p>GpuLLM uses the <code>nvidia-smi</code> command-line tool (installed with NVIDIA GPU drivers) to collect GPU metrics such as utilization, temperature, power draw, and VRAM usage. nvidia-smi is proprietary software provided by NVIDIA Corporation and is subject to the <a href="https://www.nvidia.com/en-us/drivers/nvidia-license/" target="_blank" rel="noopener">NVIDIA Software License Agreement</a>. GpuLLM does not redistribute nvidia-smi; it invokes the tool only if already present on your system as part of your NVIDIA driver installation.</p>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-<h2>Curated Model License Notices</h2>
-
-<div class="intro">
-  <strong>Important:</strong> GpuLLM provides a built-in library of curated model entries to help you discover and download AI models. <strong>GpuLLM does not redistribute these model files.</strong> Models are downloaded directly from their respective public repositories (HuggingFace Hub or ModelScope) at your explicit request. Each model is governed by its own license terms set by the model provider. You are responsible for reviewing and complying with the applicable license terms before downloading or using any model.
-</div>
-
-<h3>Apache 2.0</h3>
-<p>Applies to: Qwen3 family (Qwen3-0.6B through Qwen3-235B-A22B), Gemma 4 family (Gemma-4-E2B through Gemma-4-31B), Mistral Small 3.1 24B, Phi-4-mini, Bonsai 1.7B<br/>
-License text: <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener">https://www.apache.org/licenses/LICENSE-2.0</a></p>
-
-<h3>MIT License</h3>
-<p>Applies to: community-repacked GGUF variants distributed by <code>bartowski/*</code>, <code>MaziyarPanahi/*</code>, and similar community publishers on HuggingFace<br/>
-License text: <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">https://opensource.org/licenses/MIT</a></p>
-
-<h3>Llama Community License</h3>
-<p>Applies to: Llama 4 Maverick 17B (Meta), DeepSeek-R1-Distill series (based on Llama architecture)<br/>
-The Llama Community License imposes additional restrictions, including a monthly active user threshold (700 million MAU). Review the full terms before use.<br/>
-License text: <a href="https://www.llama.com/llama4/license/" target="_blank" rel="noopener">https://www.llama.com/llama4/license/</a></p>
-
-<h3>Gemma Terms of Use</h3>
-<p>Applies to: Gemma 4 family (Google) — in addition to Apache 2.0, Google's Gemma Terms of Use include prohibited-use policies<br/>
-Terms: <a href="https://ai.google.dev/gemma/terms" target="_blank" rel="noopener">https://ai.google.dev/gemma/terms</a></p>
-
-<p style="margin-top:20px;color:#666;">This list may not be exhaustive. Model licenses are subject to change by their respective providers. Always check the original repository for the most current license information before downloading.</p>
+<!-- ══════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+<footer>
+  <p>
+    &copy; 2026 GpuLLM &nbsp;·&nbsp;
+    <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="ThirdPartyNotices.html">Third-Party Notices</a> &nbsp;·&nbsp;
+    <a href="introduction_en.html">Home</a>
+  </p>
+</footer>
 
 </body>
 </html>
