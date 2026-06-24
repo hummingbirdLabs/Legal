@@ -270,6 +270,30 @@
       color: var(--fg-muted);
     }
 
+    /* ── Table ─────────────────────────────────────────────────── */
+    .model-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13.5px; }
+    .model-table th { text-align: left; padding: 8px 12px; font-weight: 700; color: var(--fg); border-bottom: 2px solid var(--border); }
+    .model-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--fg-muted); vertical-align: top; }
+    .model-table tr:hover td { background: var(--surface); }
+    .model-table .cat-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .cat-coding    { background: #e0f0ff; color: #1a65c0; }
+    .cat-chat      { background: #efe8ff; color: #6b44b8; }
+    .cat-reasoning { background: #fde8e2; color: #c94f30; }
+
+    @media (prefers-color-scheme: dark) {
+      .cat-coding    { background: #0a2040; color: #80bfff; }
+      .cat-chat      { background: #200e40; color: #c09fff; }
+      .cat-reasoning { background: #3a1a0e; color: #f5866a; }
+    }
+
     /* ── Footer ────────────────────────────────────────────────── */
     footer {
       border-top: 1px solid var(--border);
@@ -290,6 +314,7 @@
     @media (max-width: 600px) {
       section { padding: 40px 0; }
       header { padding: 36px 20px 28px; }
+      .model-table { font-size: 12px; }
     }
   </style>
 </head>
@@ -333,7 +358,7 @@
       <div class="feature-card">
         <div class="feature-icon">📦</div>
         <h4>Download &amp; Manage Models</h4>
-        <p>Browse curated models from HuggingFace, download with resume support and SHA-256 verification, and import your own GGUF files.</p>
+        <p>Browse a curated catalog of 13 models from HuggingFace, download with resume support and SHA-256 verification, or import your own GGUF files.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">💬</div>
@@ -368,12 +393,14 @@
       </li>
       <li>
         <strong>Configure your HuggingFace Access Token (optional)</strong>
-        <p>Open <span class="page-ref">Settings</span> and enter a HuggingFace Read token. This is only needed for gated models (e.g., Qwen, Meta-Llama, Microsoft Phi). Community models from <code>bartowski/*</code> work without a token.</p>
-        <p style="margin-top:6px;">See the <a href="hfGuide.html">Setup Guide</a> for step-by-step token creation instructions.</p>
+        <p>Open <span class="page-ref">Settings</span> and enter a HuggingFace Read token. This is only needed for gated models (e.g., Qwen, Meta-Llama). Community models from <code>bartowski/*</code> work without a token.</p>
+        <div class="callout tip" style="margin-top:10px;">
+          <strong>How to create a token:</strong> Go to <a href="https://huggingface.co/settings/tokens" target="_blank" rel="noopener">huggingface.co/settings/tokens</a>, click <strong>New token</strong>, select type <strong>Read</strong>, give it a name (e.g. "GpuLLM"), and copy the generated token. Paste it into GpuLLM Settings. The token is stored encrypted in Windows Credential Manager (DPAPI) and never logged or written to disk.
+        </div>
       </li>
       <li>
         <strong>Download a model</strong>
-        <p>Navigate to <span class="page-ref">Model Library</span>, browse the curated collection, and click <strong>Download</strong> on any model card. Use the <strong>My Hardware</strong> button to filter models compatible with your GPU's VRAM.</p>
+        <p>Navigate to <span class="page-ref">Model Library</span>, browse the curated catalog, and click <strong>Download</strong> on any model card. Use the <strong>My Hardware</strong> button to filter models compatible with your GPU's VRAM.</p>
       </li>
       <li>
         <strong>Load the model</strong>
@@ -386,7 +413,7 @@
     </ol>
 
     <div class="callout tip">
-      <strong>Pro tip:</strong> Start with a smaller model (e.g., Qwen3-1.7B) to verify everything works before moving to larger models.
+      <strong>Pro tip:</strong> Start with a smaller model (e.g., Llama 3.2 1B or DeepSeek-R1-Distill 1.5B) to verify everything works before moving to larger models.
     </div>
   </div>
 </section>
@@ -439,7 +466,7 @@
       Browse, download, and manage your GGUF model collection:
     </p>
     <ul>
-      <li><strong>Filter pills:</strong> Narrow by category (Coding, NLP, Vision, Audio, Science) and VRAM requirement.</li>
+      <li><strong>Filter pills:</strong> Narrow by category — <strong>Coding</strong>, <strong>Chat</strong>, or <strong>Reasoning</strong>.</li>
       <li><strong>My Hardware:</strong> One-click filter to show only models your GPU can run. Compatible models show a green checkmark.</li>
       <li><strong>Download:</strong> Click a card's Download button. GpuLLM handles license consent, file listing, download with resume, and SHA-256 verification automatically.</li>
       <li><strong>Import:</strong> Drag-and-drop or click "Import Model" to add any GGUF file you already have.</li>
@@ -451,7 +478,6 @@
       Configure the application to your preferences:
     </p>
     <ul>
-      <li><strong>Language:</strong> Switch between 7 UI languages instantly (English, Japanese, German, French, Spanish, Portuguese, Russian).</li>
       <li><strong>Theme:</strong> Toggle between Light and Dark mode.</li>
       <li><strong>Download Directory:</strong> Choose where model files are stored.</li>
       <li><strong>HuggingFace Token:</strong> Enter or clear your HuggingFace Access Token (stored securely in Windows Credential Manager).</li>
@@ -461,9 +487,40 @@
 </section>
 
 <!-- ══════════════════════════════════════════════
-     MODEL DOWNLOAD DETAILS
+     CURATED MODEL CATALOG
 ══════════════════════════════════════════════ -->
 <section class="alt">
+  <div class="container">
+    <h2>Curated Model Catalog</h2>
+    <p>GpuLLM ships with 13 pre-configured model entries across three categories — <strong>Coding</strong>, <strong>Chat</strong>, and <strong>Reasoning</strong>. Each entry includes the correct HuggingFace repo, quantization, and file size so you can download with one click.</p>
+
+    <table class="model-table">
+      <thead>
+        <tr><th>Display Name</th><th>Creator</th><th>Category</th><th>Size</th><th>RAM</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Qwen2.5-Coder 3B</td><td>Alibaba</td><td><span class="cat-tag cat-coding">Coding</span></td><td>1.9 GB</td><td>8 GB</td></tr>
+        <tr><td>Qwen2.5-Coder 7B</td><td>Alibaba</td><td><span class="cat-tag cat-coding">Coding</span></td><td>4.2 GB</td><td>16 GB</td></tr>
+        <tr><td>DeepSeek-Coder V2 Lite</td><td>DeepSeek</td><td><span class="cat-tag cat-coding">Coding</span></td><td>9.0 GB</td><td>24 GB</td></tr>
+        <tr><td>Llama 3.2 1B Instruct</td><td>Meta</td><td><span class="cat-tag cat-chat">Chat</span></td><td>0.7 GB</td><td>4 GB</td></tr>
+        <tr><td>Llama 3.2 3B Instruct</td><td>Meta</td><td><span class="cat-tag cat-chat">Chat</span></td><td>2.0 GB</td><td>8 GB</td></tr>
+        <tr><td>Gemma 3 4B Instruct</td><td>Google</td><td><span class="cat-tag cat-chat">Chat</span></td><td>2.5 GB</td><td>8 GB</td></tr>
+        <tr><td>Mistral 7B Instruct</td><td>Mistral AI</td><td><span class="cat-tag cat-chat">Chat</span></td><td>4.1 GB</td><td>16 GB</td></tr>
+        <tr><td>Qwen2.5 7B Instruct</td><td>Alibaba</td><td><span class="cat-tag cat-chat">Chat</span></td><td>4.7 GB</td><td>8 GB</td></tr>
+        <tr><td>Qwen2.5 14B Instruct</td><td>Alibaba</td><td><span class="cat-tag cat-chat">Chat</span></td><td>8.9 GB</td><td>24 GB</td></tr>
+        <tr><td>DeepSeek-R1-Distill 1.5B</td><td>DeepSeek</td><td><span class="cat-tag cat-reasoning">Reasoning</span></td><td>1.0 GB</td><td>4 GB</td></tr>
+        <tr><td>DeepSeek-R1-Distill 7B</td><td>DeepSeek</td><td><span class="cat-tag cat-reasoning">Reasoning</span></td><td>4.2 GB</td><td>16 GB</td></tr>
+        <tr><td>DeepSeek-R1-Distill 14B</td><td>DeepSeek</td><td><span class="cat-tag cat-reasoning">Reasoning</span></td><td>8.5 GB</td><td>16 GB</td></tr>
+        <tr><td>DeepSeek-R1-Distill 32B</td><td>DeepSeek</td><td><span class="cat-tag cat-reasoning">Reasoning</span></td><td>20 GB</td><td>32 GB</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
+     MODEL DOWNLOAD DETAILS
+══════════════════════════════════════════════ -->
+<section>
   <div class="container">
     <h2>Understanding Model Downloads</h2>
 
@@ -472,8 +529,8 @@
       Model cards show a badge indicating whether authentication is required:
     </p>
     <ul>
-      <li><strong style="color:var(--fg);">🔒 Gated</strong> (orange lock icon) — Requires a HuggingFace Access Token. Common for official repos from <code>Qwen</code>, <code>microsoft</code>, <code>meta-llama</code>.</li>
-      <li><strong style="color:var(--fg);">Open</strong> (no badge) — No authentication needed. Community repacks from <code>bartowski/*</code>, <code>MaziyarPanahi/*</code>, etc.</li>
+      <li><strong style="color:var(--fg);">🔒 Gated</strong> — Requires a HuggingFace Access Token. Common for official repos from <code>Qwen</code>, <code>meta-llama</code>.</li>
+      <li><strong style="color:var(--fg);">Open</strong> (no badge) — No authentication needed. Community repacks from <code>bartowski/*</code>, <code>lmstudio-community/*</code>, <code>TheBloke/*</code>.</li>
     </ul>
 
     <h3>Download Process</h3>
@@ -486,7 +543,7 @@
     </ol>
 
     <div class="callout warn">
-      <strong>Token required?</strong> If a download fails with "Access Token Required," see the <a href="hfGuide.html">Setup Guide</a> for token creation steps. Your token is stored in Windows Credential Manager (DPAPI-encrypted) and never logged or written to disk.
+      <strong>Token required?</strong> If a download fails with "Access Token Required," create a HuggingFace Read token at <a href="https://huggingface.co/settings/tokens" target="_blank" rel="noopener">huggingface.co/settings/tokens</a> and enter it in Settings. Your token is stored in Windows Credential Manager (DPAPI-encrypted) and never logged or written to disk.
     </div>
 
     <h3>Managing Downloads</h3>
@@ -502,7 +559,7 @@
 <!-- ══════════════════════════════════════════════
      INFERENCE & BENCHMARKING
 ══════════════════════════════════════════════ -->
-<section>
+<section class="alt">
   <div class="container">
     <h2>Inference &amp; Benchmarking Explained</h2>
 
@@ -538,9 +595,9 @@
 </section>
 
 <!-- ══════════════════════════════════════════════
-     KEYBOARD SHORTCUTS & TIPS
+     TIPS & TROUBLESHOOTING
 ══════════════════════════════════════════════ -->
-<section class="alt">
+<section>
   <div class="container">
     <h2>Tips &amp; Shortcuts</h2>
 
@@ -562,7 +619,7 @@
 
     <h3>Troubleshooting</h3>
     <ul>
-      <li><strong>Model download fails with 401/403:</strong> The model is gated. Configure a HuggingFace token in Settings, then retry. See the <a href="hfGuide.html">Setup Guide</a>.</li>
+      <li><strong>Model download fails with 401/403:</strong> The model is gated. Create a HuggingFace Read token at <a href="https://huggingface.co/settings/tokens" target="_blank" rel="noopener">huggingface.co/settings/tokens</a> and enter it in Settings, then retry.</li>
       <li><strong>Download starts but fails with "Integrity check failed":</strong> The file was corrupted during transfer. Click Download again — GpuLLM starts fresh.</li>
       <li><strong>Rate limit / HTTP 429:</strong> HuggingFace limits anonymous API access. Configure a token for higher rate limits.</li>
       <li><strong>Model doesn't show as "Downloaded" after restart:</strong> Your download directory may have changed. Check Settings → Download Directory or use the Import button.</li>
