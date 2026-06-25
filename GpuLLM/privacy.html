@@ -26,7 +26,7 @@
 <p class="meta">Application: <strong>GpuLLM</strong> &nbsp;·&nbsp; Effective date: June 24, 2026 &nbsp;·&nbsp; Controller: HummingbirdLabs</p>
 
 <div class="highlight">
-  <strong>Short summary:</strong> GpuLLM processes all LLM inference and GPU monitoring data locally on your device. No personal data, chat messages, benchmark results, or any other information is ever transmitted to us or any third party. We do not have access to your data.
+  <strong>Short summary:</strong> GpuLLM processes all LLM inference and GPU monitoring data locally on your device. No personal data, chat messages, benchmark results, or any other information is transmitted to us. We do not have access to your data. When you use generative AI features, your prompts are processed locally by the AI model running on your device.
 </div>
 
 <h2>1. Data Controller</h2>
@@ -34,12 +34,22 @@
 <p><strong>HummingbirdLabs</strong><br/>
 Country: China<br/>
 Contact: <a href="mailto:HummingbirdLabs@outlook.com">HummingbirdLabs@outlook.com</a></p>
+<p class="meta" style="margin-top:8px; font-size:0.85rem;">Note: As GpuLLM does not collect or process any personal data from users, the appointment of an EU Representative under GDPR Art. 27 is not required.</p>
 
 <h2>2. Data We Collect</h2>
-<p>We do not collect, process, store, or transmit any personal data. GpuLLM is a fully offline desktop application. All LLM inference, GPU monitoring, model downloading, and benchmarking are performed exclusively on your local device. No data leaves your device.</p>
+<p>We do not collect, process, store, or transmit any personal data. GpuLLM is a fully offline desktop application. All LLM inference, GPU monitoring, model downloading, and benchmarking are performed exclusively on your local device. No data leaves your device to us.</p>
+<p><strong>User prompts and AI-generated content:</strong> When you use GpuLLM's generative AI features, the text prompts you enter and the AI-generated responses are processed entirely by the AI model running locally on your device. These prompts and responses are never transmitted to HummingbirdLabs or any third party by our application. If you include personal information in your prompts, that information remains on your device.</p>
+<p><strong>Local data storage:</strong> GpuLLM stores the following data locally on your device:</p>
+<ul>
+  <li>Downloaded AI model files</li>
+  <li>Chat history and conversation logs (if enabled)</li>
+  <li>Diagnostic log files</li>
+  <li>Application settings and preferences</li>
+</ul>
+<p>All locally stored data remains under your control and can be deleted at any time through your operating system.</p>
 <p>Specifically, we do not collect:</p>
 <ul>
-  <li>Chat messages or conversation history</li>
+  <li>Chat messages or conversation history (stored locally only)</li>
   <li>Benchmark results or evaluation data</li>
   <li>GPU hardware metrics or system information</li>
   <li>Uploaded or imported model files</li>
@@ -52,17 +62,31 @@ Contact: <a href="mailto:HummingbirdLabs@outlook.com">HummingbirdLabs@outlook.co
 
 <h2>3. HuggingFace and ModelScope Access</h2>
 <p>GpuLLM can connect to HuggingFace Hub and ModelScope to search and download AI model files at your explicit request. When you search for models or initiate downloads, your queries are sent directly from your device to the respective service's public API. HummingbirdLabs does not intermediate, proxy, or observe these requests. Your HuggingFace access token (if configured) is stored exclusively in your Windows Credential Manager and is never transmitted to us.</p>
+<p>Please note that HuggingFace and ModelScope are independent third-party services with their own privacy policies. We encourage you to review their policies before using these services:</p>
+<ul>
+  <li><a href="https://huggingface.co/privacy" target="_blank" rel="noopener">HuggingFace Privacy Policy</a></li>
+  <li><a href="https://www.modelscope.cn/privacy" target="_blank" rel="noopener">ModelScope Privacy Policy</a></li>
+</ul>
 
 <h2>4. Microsoft Store</h2>
 <p>GpuLLM is distributed through the Microsoft Store. When you purchase or download the application through the Microsoft Store, Microsoft may collect data in accordance with their own <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">Privacy Statement</a>. We do not receive personal data from Microsoft beyond what is necessary to verify your license (anonymous license state only).</p>
 
-<h2>5. Crash and Diagnostic Logs (Local Only)</h2>
+<h2>5. AI-Generated Content Disclaimer</h2>
+<p>GpuLLM incorporates generative AI features that utilize artificial intelligence models to generate text, code, and other content. Please be aware of the following:</p>
+<ul>
+  <li><strong>Accuracy:</strong> AI-generated content may contain inaccuracies, errors, or misleading information. Always verify important information from reliable sources.</li>
+  <li><strong>No professional advice:</strong> AI-generated content does not constitute professional, legal, medical, financial, or other expert advice. Do not rely on it as a substitute for professional consultation.</li>
+  <li><strong>User responsibility:</strong> You are responsible for how you use AI-generated content. HummingbirdLabs is not liable for any decisions made or actions taken based on AI-generated output.</li>
+  <li><strong>Content safety:</strong> While we strive to use responsible AI models, generated content may occasionally include inappropriate, biased, or harmful material. Use discretion when interacting with AI-generated content.</li>
+</ul>
+
+<h2>6. Crash and Diagnostic Logs (Local Only)</h2>
 <p>The application may write diagnostic log files to your local disk (in the application data folder) to assist in troubleshooting. These files contain inference backend chain information, error messages, and performance data. They remain on your device and are never automatically uploaded. You may delete them at any time.</p>
 
-<h2>6. Children's Privacy</h2>
+<h2>7. Children's Privacy</h2>
 <p>GpuLLM does not knowingly collect personal information from children under the age of 13 (or the applicable minimum age in your jurisdiction). As we collect no data from any user, this policy applies equally to all users regardless of age.</p>
 
-<h2>7. Your Rights Under GDPR (EEA and UK Residents)</h2>
+<h2>8. Your Rights Under GDPR (EEA and UK Residents)</h2>
 <p>If you are located in the European Economic Area or the United Kingdom, you have the following rights under the General Data Protection Regulation (GDPR) or UK GDPR:</p>
 <ul>
   <li><strong>Right of access</strong> – You may request a copy of any personal data we hold about you.</li>
@@ -72,22 +96,22 @@ Contact: <a href="mailto:HummingbirdLabs@outlook.com">HummingbirdLabs@outlook.co
   <li><strong>Right to data portability</strong> – You may request a machine-readable copy of your personal data.</li>
   <li><strong>Right to object</strong> – You may object to the processing of your personal data.</li>
 </ul>
-<p>Because we do not collect or process any personal data, there is no personal data for us to provide, correct, delete, or transfer. As HummingbirdLabs does not collect or process any personal data from users of GpuLLM, the appointment of an EU Representative under GDPR Art. 27 is not required. Should our data practices change, we will update this policy accordingly.</p>
+<p>Because we do not collect or process any personal data, there is no personal data for us to provide, correct, delete, or transfer. Should our data practices change, we will update this policy accordingly.</p>
 <p>To exercise any of your rights, please contact us at <a href="mailto:HummingbirdLabs@outlook.com">HummingbirdLabs@outlook.com</a>.</p>
 
-<h2>8. Your Rights Under CCPA (California Residents)</h2>
+<h2>9. Your Rights Under CCPA (California Residents)</h2>
 <p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information we collect, the right to delete personal information, and the right to opt-out of the sale of personal information. We do not sell personal information and we do not collect personal information from users of GpuLLM. There is nothing to disclose or delete.</p>
 
-<h2>9. International Data Transfers</h2>
+<h2>10. International Data Transfers</h2>
 <p>We do not transfer personal data internationally, as we do not collect or hold any personal data.</p>
 
-<h2>10. Data Retention</h2>
+<h2>11. Data Retention</h2>
 <p>We do not retain personal data. Diagnostic log files stored locally on your device can be deleted by you at any time through your operating system.</p>
 
-<h2>11. Changes to This Privacy Policy</h2>
+<h2>12. Changes to This Privacy Policy</h2>
 <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the effective date at the top of this page and, where required by applicable law, by providing in-app notice or requesting your explicit consent. We encourage you to review this policy periodically.</p>
 
-<h2>12. Contact Us</h2>
+<h2>13. Contact Us</h2>
 <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:<br/>
 <a href="mailto:HummingbirdLabs@outlook.com">HummingbirdLabs@outlook.com</a></p>
 
