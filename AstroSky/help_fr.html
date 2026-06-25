@@ -1,0 +1,1096 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AstroSky Aide &amp; Guide d'Utilisation — Comment Ouvrir des Fichiers FITS, Appliquer des Palettes de Couleurs &amp; Exporter des Images Astronomiques</title>
+  <meta name="description" content="Guide d'utilisation complet étape par étape pour AstroSky — le meilleur visualiseur d'images FITS pour Windows. Apprenez à importer des fichiers FITS, utiliser l'Amélioration Automatique, appliquer des algorithmes d'étirement et des palettes de couleurs, et exporter des images astronomiques de qualité fond d'écran 8K. FAQ, raccourcis clavier et dépannage inclus." />
+  <meta name="keywords" content="AstroSky aide, comment ouvrir fichiers FITS, guide visualiseur FITS, tutoriel traitement images astronomiques, visualiseur FITS mode d'emploi, logiciel astrophotographie aide, guide conversion FITS PNG, tutoriel visualisation radioastronomie, guide algorithme d'étirement" />
+  <meta name="author" content="Hummingbird Labs" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="theme-color" content="#6c8cff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0e1020" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/svg+xml" href="/astrosky/favicon.svg" />
+  <link rel="apple-touch-icon" href="/astrosky/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://hummingbirdlabs.github.io/Legal" />
+  <link rel="canonical" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AstroSky Aide &amp; Guide — Comment Ouvrir des Fichiers FITS &amp; Créer des Fonds d'Écran Astronomiques" />
+  <meta property="og:description" content="Guide étape par étape pour transformer vos données FITS astronomiques en superbes fonds d'écran 8K. Découvrez chaque fonctionnalité, de l'import par lot à l'export — avec FAQ et raccourcis clavier." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help" />
+  <meta property="og:site_name" content="AstroSky" />
+  <meta property="og:image" content="https://hummingbirdlabs.github.io/Legal/AstroSky/1.jpg" />
+  <meta property="og:image:width" content="1920" />
+  <meta property="og:image:height" content="1080" />
+  <meta property="og:image:alt" content="Guide d'utilisation AstroSky — tutoriel étape par étape pour la visualisation d'images FITS" />
+
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help" />
+  <link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help" />
+  <link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help" />
+  <link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help" />
+  <link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help" />
+  <link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help" />
+  <link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help" />
+  <link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help" />
+  <link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help" />
+  <link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help" />
+  <link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help" />
+  <link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help" />
+  <link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AstroSky Aide — Guide &amp; Tutoriel du Visualiseur FITS" />
+  <meta name="twitter:description" content="Maîtrisez AstroSky en quelques minutes — de votre premier import FITS à l'export de fonds d'écran 8K. Essai gratuit de 30 jours depuis le Microsoft Store." />
+
+  <!-- Structured Data: HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help#howto",
+    "name": "Comment Utiliser AstroSky pour Ouvrir des Fichiers FITS et Créer des Images Astronomiques",
+    "description": "Guide étape par étape pour importer, améliorer et exporter des données astronomiques FITS avec AstroSky — le meilleur visualiseur d'images FITS pour Windows.",
+    "datePublished": "2025-06-01",
+    "dateModified": "2026-06-25",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Installer AstroSky",
+        "text": "Téléchargez AstroSky depuis le Microsoft Store et lancez l'application."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Importer des fichiers FITS",
+        "text": "Cliquez sur Importer des fichiers dans la barre d'outils de la galerie, ou faites glisser-déposer des fichiers FITS ou des dossiers entiers directement dans la fenêtre de l'application."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Appliquer l'Amélioration Automatique",
+        "text": "Cliquez sur le bouton Auto dans le panneau des paramètres à droite. AstroSky analyse l'histogramme et sélectionne automatiquement le meilleur algorithme d'étirement, la palette de couleurs et les points noir/blanc optimaux."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Ajuster l'image",
+        "text": "Ajustez l'algorithme d'étirement, les curseurs de point noir/blanc et la palette de couleurs à l'aide de l'aperçu en temps réel de l'histogramme. Toutes les modifications sont rendues en moins de 200ms."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Exporter votre image",
+        "text": "Cliquez sur Exporter l'image dans le panneau des paramètres. Choisissez le format PNG, JPEG ou FITS, sélectionnez une résolution prédéfinie de 1080p à 8K, ajoutez éventuellement un filigrane, puis cliquez sur Exporter."
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help#faqpage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Comment ouvrir des fichiers FITS sous Windows ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Installez AstroSky depuis le Microsoft Store, lancez l'application, puis faites glisser-déposer vos fichiers .fits, .fit ou .fts dans la zone de la galerie — ou cliquez sur Importer des fichiers. En quelques secondes, vos images FITS seront visibles et prêtes à être améliorées."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quels formats de fichiers AstroSky prend-il en charge ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AstroSky prend en charge les fichiers .fits, .fit et .fts, y compris les fichiers FITS multi-extensions (MEF) et les cubes de données (NAXIS=3)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Puis-je utiliser AstroSky hors ligne ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. Après l'installation depuis le Microsoft Store, AstroSky fonctionne à 100 % hors ligne. Tout le traitement d'image s'exécute localement sur votre appareil — aucune connexion Internet requise."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment convertir des fichiers FITS en PNG ou JPEG ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Importez votre fichier FITS dans AstroSky, appliquez l'Amélioration Automatique ou des ajustements manuels, puis cliquez sur Exporter l'image. Choisissez le format PNG ou JPEG et la résolution souhaitée (jusqu'à 8K). Vos données FITS sont rendues et enregistrées instantanément en tant qu'image standard."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Y a-t-il un essai gratuit ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. AstroSky propose un essai gratuit de 30 jours avec toutes les fonctionnalités débloquées. Aucune carte de crédit requise. Après l'essai, un achat unique débloque un accès à vie — sans abonnement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment exporter des images pour des fonds d'écran ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sélectionnez une image, cliquez sur Exporter l'image dans le panneau des paramètres, choisissez une résolution prédéfinie (1080p, 1440p, 4K, 5K ou 8K), sélectionnez le format PNG ou JPEG, puis cliquez sur Exporter. Vous pouvez éventuellement ajouter un filigrane avec les détails du télescope."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "AstroSky fonctionne-t-il sur Mac ou Linux ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Actuellement, AstroSky est une application Windows uniquement (Windows 10 et 11). Elle est construite sur .NET 10 + WPF et distribuée via le Microsoft Store. Les versions Mac et Linux ne sont pas disponibles pour le moment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment mettre à jour AstroSky ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Les mises à jour sont livrées automatiquement via le Microsoft Store. Ouvrez le Microsoft Store, allez dans Bibliothèque, puis cliquez sur Obtenir les mises à jour pour vérifier la dernière version."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://hummingbirdlabs.github.io/Legal"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "AstroSky — Visualiseur d'Images FITS",
+        "item": "https://hummingbirdlabs.github.io/Legal/AstroSky"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Guide d'Utilisation &amp; Aide",
+        "item": "https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help#softwareapp",
+    "name": "AstroSky",
+    "softwareVersion": "1.0",
+    "url": "https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help",
+    "applicationCategory": "ScienceApplication",
+    "operatingSystem": "Windows 10, Windows 11",
+    "description": "Le meilleur visualiseur d'images FITS pour Windows. Importez des données de relevés astronomiques, appliquez des algorithmes d'étirement intelligents et des cartes de couleurs, et exportez des images de qualité fond d'écran en quelques secondes — 100% hors ligne.",
+    "datePublished": "2025-06-01",
+    "dateModified": "2026-06-25",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Essai gratuit de 30 jours — toutes les fonctionnalités débloquées, sans carte de crédit. Achat unique pour un accès à vie après l'essai."
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Hummingbird Labs"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hummingbird Labs",
+      "url": "https://hummingbirdlabs.github.io/Legal"
+    },
+    "inLanguage": ["en", "ja", "de", "fr", "es", "pt", "it", "ru", "ar", "hi", "ko", "zh"],
+    "featureList": "Import FITS par lots, Amélioration auto intelligente, Cartes de couleurs, Histogramme en direct, Mode double Esthétique/Science, Synthèse RVB, Export fond d'écran (jusqu'à 8K), Infos célestes WCS, Base de données céleste, Visualiseur d'en-têtes FITS, Cartes de moments, Algèbre d'images, Diagrammes PV, Cartes de canaux"
+  }
+  </script>
+
+  <!-- Structured Data: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help#article",
+    "headline": "Aide et guide utilisateur AstroSky — Ouvrir des fichiers FITS, appliquer des cartes de couleurs et exporter des images astronomiques",
+    "description": "Un guide utilisateur complet étape par étape pour AstroSky, le meilleur visualiseur d'images FITS pour Windows. Apprenez à importer des fichiers FITS, utiliser l'amélioration automatique, appliquer des algorithmes d'étirement et des cartes de couleurs, et exporter des images astronomiques de qualité fond d'écran.",
+    "author": {
+      "@type": "Organization",
+      "name": "Hummingbird Labs"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hummingbird Labs",
+      "url": "https://hummingbirdlabs.github.io/Legal"
+    },
+    "url": "https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help",
+    "mainEntityOfPage": "https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help",
+    "datePublished": "2025-06-01",
+    "dateModified": "2026-06-25",
+    "inLanguage": ["en", "ja", "de", "fr", "es", "pt", "it", "ru", "ar", "hi", "ko", "zh"],
+    "wordCount": "3800"
+  }
+  </script>
+
+  <style>
+    :root {
+      --brand:        #6c8cff;
+      --brand-dark:   #5560d0;
+      --brand-dim:    #e0e8ff;
+      --accent:       #00d4aa;
+      --bg:           #ffffff;
+      --surface:      #f5f7fb;
+      --border:       #e2e6f0;
+      --fg:           #1a1e2e;
+      --fg-muted:     #5a6178;
+      --fg-subtle:    #9aa0b4;
+      --radius-sm:    8px;
+      --radius-md:    16px;
+      --radius-lg:    24px;
+      --shadow-sm:    0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.05);
+      --shadow-md:    0 4px 16px rgba(0,0,0,.10), 0 2px 6px rgba(0,0,0,.06);
+      --max-w:        860px;
+      --ff-body:      "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      --ff-mono:      "Cascadia Code", "Fira Code", "Consolas", monospace;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --brand:       #8aa4ff;
+        --brand-dark:  #6b7be0;
+        --brand-dim:   #1a2040;
+        --accent:      #33e8c0;
+        --bg:          #0e1020;
+        --surface:     #161a2e;
+        --border:      #282e44;
+        --fg:          #e8eaf4;
+        --fg-muted:    #9aa0b4;
+        --fg-subtle:   #4a5068;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--ff-body);
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--fg);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(145deg, #f0f4ff 0%, #e0e8ff 50%, #e0fff4 100%);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+      padding: 64px 24px 40px;
+    }
+    @media (prefers-color-scheme: dark) {
+      header { background: linear-gradient(145deg, #10142a 0%, #161e3a 50%, #0e2a24 100%); }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--brand-dim);
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.5vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .hero-sub {
+      font-size: 1.08rem;
+      color: var(--fg-muted);
+      max-width: 580px;
+      margin: 0 auto 32px;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 32px;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .02em;
+      background: linear-gradient(135deg, var(--brand) 0%, #5a7af0 100%);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      box-shadow: var(--shadow-md);
+      transition: all .3s ease, transform .2s ease;
+    }
+    .download-btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(108, 140, 255, 0.3);
+    }
+
+    /* ── Navigation ── */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      margin-top: 48px;
+    }
+    .toc h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--fg-muted);
+      margin-bottom: 14px;
+    }
+    .toc ol {
+      padding-left: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 24px;
+    }
+    @media (max-width: 600px) { .toc ol { grid-template-columns: 1fr; } }
+    .toc a {
+      font-size: 14.5px;
+      color: var(--brand);
+      text-decoration: none;
+      line-height: 1.8;
+    }
+    .toc a:hover { text-decoration: underline; }
+
+    /* ── Sections ── */
+    section { padding: 64px 0; }
+    section + section { border-top: 1px solid var(--border); }
+
+    h2 {
+      font-size: clamp(1.4rem, 3vw, 1.8rem);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      color: var(--fg);
+    }
+
+    p, li { color: var(--fg-muted); }
+    p { margin-bottom: 14px; }
+
+    /* ── Step Cards ── */
+    .steps { counter-reset: step; list-style: none; padding: 0; }
+
+    .step {
+      counter-increment: step;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .step:last-child { border-bottom: none; }
+
+    .step-num {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--brand-dim);
+      color: var(--brand);
+      font-weight: 800;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step h3 { margin-top: 0; font-size: 1.1rem; }
+
+    /* ── Info / Tip / Warning boxes ── */
+    .callout {
+      border-radius: var(--radius-sm);
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .callout-tip {
+      background: #e0f5ec;
+      border-left: 4px solid var(--accent);
+      color: #1a5a3a;
+    }
+    .callout-note {
+      background: var(--brand-dim);
+      border-left: 4px solid var(--brand);
+      color: #2a3a80;
+    }
+    .callout-warn {
+      background: #fef3d0;
+      border-left: 4px solid #e6a700;
+      color: #7a5800;
+    }
+    @media (prefers-color-scheme: dark) {
+      .callout-tip  { background: #082818; color: #6fdba5; }
+      .callout-note { background: #0a1040; color: #8aa4ff; }
+      .callout-warn { background: #2c1f00; color: #ffd060; }
+    }
+
+    /* ── FAQ ── */
+    details.faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      margin-bottom: 10px;
+    }
+    details.faq-item summary {
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      color: var(--fg);
+      list-style: none;
+    }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item summary::before {
+      content: "›";
+      display: inline-block;
+      width: 20px;
+      font-size: 18px;
+      color: var(--brand);
+      transition: transform .2s;
+    }
+    details.faq-item[open] summary::before { transform: rotate(90deg); }
+    details.faq-item p {
+      margin-top: 10px;
+      padding-left: 20px;
+      font-size: 14.5px;
+    }
+
+    /* ── Shortcuts Table ── */
+    .kbd-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14.5px;
+      margin: 16px 0;
+    }
+    .kbd-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .kbd-table td:first-child {
+      white-space: nowrap;
+      width: 40%;
+    }
+    kbd {
+      display: inline-block;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-family: var(--ff-mono);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--fg);
+      box-shadow: 0 1px 0 var(--border);
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 36px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--fg-subtle);
+    }
+    footer a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+    footer nav { margin-bottom: 16px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════ HEADER ═══════════ -->
+<header>
+  <div class="hero-badge">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/>
+      <line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/>
+      <line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>
+    </svg>
+    Guide d'Utilisation
+  </div>
+
+  <h1>AstroSky Aide &amp; Guide d'Utilisation</h1>
+  <p class="hero-sub">Le guide complet pour ouvrir des fichiers FITS, appliquer des algorithmes d'étirement et des palettes de couleurs, et exporter des images astronomiques de qualité fond d'écran sur Windows.</p>
+
+  <!-- ★ DOWNLOAD CTA — prominent placement as required ★ -->
+  <a href="https://apps.microsoft.com/detail/9n8qscsnlt7h?hl=fr-FR&gl=FR" class="download-btn" target="_blank" rel="noopener noreferrer">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
+    Télécharger AstroSky depuis le Microsoft Store
+  </a>
+</header>
+
+<!-- ═══════════ TABLE OF CONTENTS ═══════════ -->
+<main class="container">
+  <nav class="toc" aria-label="Table des matières">
+    <h2>Sur cette page</h2>
+    <ol>
+      <li><a href="#quickstart">Démarrage rapide</a></li>
+      <li><a href="#import">Importer des fichiers FITS</a></li>
+      <li><a href="#auto">Amélioration automatique intelligente</a></li>
+      <li><a href="#stretch">Algorithmes d'étirement et palettes de couleurs</a></li>
+      <li><a href="#modes">Mode Beauté / Mode Science</a></li>
+      <li><a href="#rgb">Synthèse de canaux RGB</a></li>
+      <li><a href="#tools">Outils scientifiques</a></li>
+      <li><a href="#export">Exporter des images</a></li>
+      <li><a href="#settings">Paramètres et langue</a></li>
+      <li><a href="#license">Licence et essai</a></li>
+      <li><a href="#shortcuts">Raccourcis clavier</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#troubleshooting">Dépannage</a></li>
+    </ol>
+  </nav>
+</main>
+
+<!-- ═══════════ QUICK START ═══════════ -->
+<section id="quickstart">
+  <div class="container">
+    <h2>1. Démarrage Rapide — Première Image en 60 Secondes</h2>
+    <p>Passez de zéro à une superbe image exportée en moins d'une minute. Voici comment :</p>
+
+    <ol class="steps">
+      <li class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Installer et lancer</h3>
+          <p>Téléchargez AstroSky depuis le Microsoft Store et lancez-le. Aucun compte ni inscription requis.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Importer vos fichiers FITS</h3>
+          <p>Cliquez sur <strong>Importer des fichiers</strong> dans la barre d'outils de la galerie, ou faites simplement glisser-déposer des fichiers FITS ou un dossier directement dans la fenêtre de l'application.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Cliquer sur une vignette</h3>
+          <p>Cliquez sur une vignette dans la grille de la galerie. L'image s'affiche instantanément sur le canevas, et le panneau des paramètres à droite s'active.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">4</div>
+        <div>
+          <h3>Appuyer sur Auto</h3>
+          <p>Cliquez sur le bouton <strong>Amélioration Auto</strong> dans le panneau des paramètres. AstroSky analyse l'histogramme et sélectionne automatiquement le meilleur algorithme d'étirement, la palette de couleurs et les points noir/blanc.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">5</div>
+        <div>
+          <h3>Exporter</h3>
+          <p>Cliquez sur <strong>Exporter l'image</strong> en bas du panneau des paramètres. Choisissez une résolution prédéfinie (1080p, 1440p, 4K, 5K ou 8K), un format (PNG ou JPEG), puis cliquez sur Exporter. Votre image prête pour fond d'écran est enregistrée.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="callout callout-tip">
+      <strong>Astuce de Pro :</strong> Vous pouvez importer un dossier entier de fichiers FITS en une seule fois. AstroSky les charge en parallèle et affiche la progression en temps réel pour chaque fichier.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ IMPORTING ═══════════ -->
+<section id="import">
+  <div class="container">
+    <h2>2. Importer des Fichiers FITS</h2>
+
+    <h3>Types de fichiers pris en charge</h3>
+    <p>AstroSky prend en charge les fichiers <strong>.fits</strong>, <strong>.fit</strong> et <strong>.fts</strong>. Il gère les FITS à extension unique et les FITS multi-extensions (MEF), ainsi que les cubes de données où NAXIS=3 (par ex., cubes de raies spectrales radio).</p>
+
+    <h3>Comment importer</h3>
+    <p>Il existe trois façons de charger des fichiers dans AstroSky :</p>
+    <ul>
+      <li><strong>Bouton Importer des fichiers</strong> — Cliquez sur le bouton Importer des fichiers dans la barre d'outils de la galerie pour ouvrir un sélecteur de fichiers.</li>
+      <li><strong>Glisser-déposer des fichiers</strong> — Glissez un ou plusieurs fichiers FITS depuis l'Explorateur directement dans la zone de la galerie.</li>
+      <li><strong>Glisser-déposer des dossiers</strong> — Glissez un dossier entier dans la zone de la galerie. AstroSky recherche récursivement tous les fichiers FITS à l'intérieur.</li>
+    </ul>
+
+    <h3>Progression de l'importation</h3>
+    <p>Chaque fichier se charge avec un indicateur de progression en temps réel. Les fichiers sont traités en parallèle en utilisant plusieurs cœurs CPU. Vous pouvez annuler toutes les importations en attente à tout moment en cliquant sur <strong>Tout annuler</strong> dans la barre d'outils.</p>
+
+    <div class="callout callout-note">
+      <strong>Remarque :</strong> Les grands cubes de données (centaines de canaux spectraux) peuvent prendre quelques secondes à charger. AstroSky reste réactif pendant l'importation — vous pouvez continuer à travailler avec les images déjà chargées.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ AUTO ENHANCE ═══════════ -->
+<section id="auto">
+  <div class="container">
+    <h2>3. Amélioration Automatique Intelligente</h2>
+    <p>Le bouton <strong>Auto</strong> est le moyen le plus rapide de rendre n'importe quelle image FITS superbe. C'est le cœur de la philosophie d'AstroSky : « un clic, un rendu magnifique ».</p>
+
+    <h3>Ce que fait Auto</h3>
+    <p>Lorsque vous cliquez sur Auto, AstroSky :</p>
+    <ol>
+      <li>Lit l'histogramme complet des valeurs de pixels de l'image actuelle.</li>
+      <li>Classifie la forme de l'histogramme — <strong>unimodal</strong> (pic unique), <strong>bimodal</strong> (deux pics), ou <strong>à longue queue</strong> (distribution étendue vers les faibles intensités).</li>
+      <li>Sélectionne l'<strong>algorithme d'étirement</strong> optimal pour cette forme d'histogramme (par ex., Asinh pour longue queue, Linéaire pour bimodal).</li>
+      <li>Choisit la <strong>palette de couleurs</strong> la plus appropriée (Viridis pour usage général, Inferno pour haut contraste, Palette Hubble pour données en raies d'émission).</li>
+      <li>Définit les valeurs de clipping du <strong>point noir</strong> et du <strong>point blanc</strong> pour maximiser les détails visibles.</li>
+      <li>Effectue le rendu du résultat en moins de 200ms.</li>
+    </ol>
+
+    <div class="callout callout-tip">
+      <strong>Conseil :</strong> Auto est un excellent point de départ. Après avoir cliqué sur Auto, vous pouvez toujours ajuster manuellement l'étirement, la palette de couleurs et les points noir/blanc pour affiner le résultat.
+    </div>
+
+    <!-- ★ Mid-Page Download CTA ★ -->
+    <div style="text-align:center; margin-top:32px; padding:28px 20px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md);">
+      <p style="font-size:1.05rem; font-weight:700; color:var(--fg); margin-bottom:8px;">Envie d'essayer l'Amélioration Auto vous-même ?</p>
+      <p style="font-size:14px; color:var(--fg-muted); margin-bottom:18px;">Téléchargez AstroSky gratuitement — essai de 30 jours, toutes les fonctionnalités débloquées, aucun compte requis.</p>
+      <a href="https://apps.microsoft.com/detail/9n8qscsnlt7h?hl=fr-FR&gl=FR" class="download-btn" target="_blank" rel="noopener noreferrer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
+        Obtenir AstroSky sur le Microsoft Store
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ STRETCH & COLOR ═══════════ -->
+<section id="stretch">
+  <div class="container">
+    <h2>4. Algorithmes d'Étirement et Palettes de Couleurs</h2>
+
+    <h3>Algorithmes d'étirement</h3>
+    <p>L'algorithme d'étirement détermine comment les valeurs brutes des pixels FITS sont mappées à la luminosité d'affichage. AstroSky propose :</p>
+    <ul>
+      <li><strong>Linéaire</strong> — Mappage proportionnel direct. Idéal pour les images avec une plage dynamique équilibrée.</li>
+      <li><strong>Asinh</strong> — Étalement en sinus hyperbolique inverse (similaire à Lupton et al. 2004). Excellent pour préserver à la fois les caractéristiques lumineuses et faibles — valeur par défaut pour la plupart des cas.</li>
+      <li><strong>Sqrt</strong> — Étalement en racine carrée. Améliore les structures faibles tout en compressant les pics lumineux.</li>
+      <li><strong>Log</strong> — Étalement logarithmique. Contraste maximal dans les régions faibles ; idéal pour les données à plage dynamique extrême.</li>
+      <li><strong>Puissance (Gamma)</strong> — Mappage en loi de puissance avec exposant gamma ajustable.</li>
+    </ul>
+
+    <h3>Histogramme en direct</h3>
+    <p>Le panneau de l'histogramme affiche un histogramme en temps réel à 256 bins de votre image. Deux marqueurs déplaçables indiquent le <strong>point noir</strong> (tout ce qui est en dessous est écrêté en noir) et le <strong>point blanc</strong> (tout ce qui est au-dessus est écrêté en blanc). Déplacez l'un ou l'autre marqueur et l'aperçu se met à jour en 200ms — sans attente.</p>
+
+    <h3>Palettes de couleurs</h3>
+    <p>Choisissez parmi un ensemble soigneusement sélectionné de palettes de couleurs perceptuellement uniformes et adaptées au daltonisme :</p>
+    <ul>
+      <li><strong>Viridis</strong> — Usage général, perceptuellement uniforme (par défaut).</li>
+      <li><strong>Plasma</strong> — Gradient chaud-froid à contraste élevé.</li>
+      <li><strong>Inferno</strong> — Similaire au corps noir ; excellent pour les données à haute plage dynamique.</li>
+      <li><strong>Magma</strong> — Variante tons terre avec fort contraste de luminance.</li>
+      <li><strong>Hubble Palette</strong> — Inspirée du schéma de couleurs emblématique du télescope spatial Hubble.</li>
+      <li><strong>Niveaux de gris</strong> — Luminance pure ; idéal pour l'analyse scientifique.</li>
+      <li><strong>Heat</strong> — Carte thermique classique.</li>
+    </ul>
+    <p>Chaque palette de couleurs affiche un aperçu en dégradé dans le menu déroulant, vous permettant de prévisualiser avant de sélectionner.</p>
+  </div>
+</section>
+
+<!-- ═══════════ DUAL MODE ═══════════ -->
+<section id="modes">
+  <div class="container">
+    <h2>5. Mode Beauté vs Mode Science</h2>
+    <p>AstroSky propose deux modes d'interface, basculés par le commutateur dans la barre d'outils Chrome supérieure. Le basculement prend moins de 100ms et <strong>ne recharge pas vos images</strong>.</p>
+
+    <h3>Mode Beauté (par défaut)</h3>
+    <p>Conçu pour une expérience propre et créative :</p>
+    <ul>
+      <li>Le panneau des paramètres affiche uniquement <strong>Auto</strong>, <strong>Palette de couleurs</strong> et <strong>Exporter</strong>.</li>
+      <li>Pas de superpositions scientifiques — juste l'image rendue.</li>
+      <li>Idéal pour créer des fonds d'écran et des images à partager.</li>
+    </ul>
+
+    <h3>Mode Science</h3>
+    <p>Déploie la boîte à outils d'analyse complète pour les astronomes :</p>
+    <ul>
+      <li><strong>Superposition du faisceau elliptique</strong> — Visualise le faisceau du télescope à partir des en-têtes FITS BMAJ/BMIN.</li>
+      <li><strong>Lecture de la valeur des pixels</strong> — Survolez n'importe quel pixel pour voir sa valeur dans la barre d'état.</li>
+      <li><strong>Superposition Sky Info</strong> — Affiche les coordonnées célestes sur l'image.</li>
+      <li><strong>Barre de couleur</strong> — Affiche l'échelle de correspondance intensité-couleur.</li>
+      <li><strong>Diagrammes PV</strong> — Extraction de coupes position-vitesse pour les cubes de données.</li>
+      <li><strong>Cartes de canaux</strong> — Vue en grille des cartes de canaux pour les cubes spectraux.</li>
+      <li><strong>Cartes de moments</strong> — Calcule le moment 0 (intensité intégrée) et le moment 1 (champ de vitesse).</li>
+      <li><strong>Algèbre d'images</strong> — Addition, soustraction, multiplication ou division de deux images.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════ RGB SYNTHESIS ═══════════ -->
+<section id="rgb">
+  <div class="container">
+    <h2>6. Synthèse de Canaux RGB</h2>
+    <p>Combinez trois images FITS distinctes (par ex., différentes bandes de longueur d'onde) en une seule image composite en couleurs.</p>
+
+    <h3>Comment synthétiser</h3>
+    <ol class="steps">
+      <li class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Importer les images</h3>
+          <p>Chargez au moins trois images FITS dans la galerie (par ex., données bande R, bande G, bande B).</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Attribuer les canaux</h3>
+          <p>Survolez une vignette pour faire apparaître les boutons de canal R / G / B. Cliquez pour attribuer cette image à un canal. Vous pouvez aussi faire un clic droit sur une vignette et attribuer via le menu contextuel.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Synthétiser</h3>
+          <p>Une fois les trois canaux attribués, cliquez sur le bouton <strong>Synthèse RGB (3/3)</strong> dans la barre d'outils de la galerie. La boîte de dialogue de synthèse permet d'ajuster l'étirement et le poids par canal.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="callout callout-tip">
+      <strong>Astuce :</strong> Le bouton Synthèse RGB affiche la progression de l'attribution des canaux en temps réel — par ex., (1/3), (2/3), (3/3). Il se met en surbrillance lorsque les trois canaux sont remplis.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SCIENCE TOOLS ═══════════ -->
+<section id="tools">
+  <div class="container">
+    <h2>7. Outils Scientifiques</h2>
+    <p>AstroSky inclut une suite d'outils d'analyse pour les astronomes professionnels, tous disponibles en Mode Science.</p>
+
+    <h3>Visualiseur d'en-têtes FITS</h3>
+    <p>Accessible depuis l'onglet <strong>En-tête</strong> du panneau des paramètres. Affiche toutes les entrées d'en-tête FITS dans un tableau à trois colonnes (Mot-clé / Valeur / Commentaire). Cliquez sur une valeur pour la copier. Utilisez le sélecteur d'extension pour parcourir les en-têtes des fichiers multi-extensions.</p>
+
+    <h3>Base de données d'objets célestes</h3>
+    <p>Accessible depuis l'onglet <strong>Info</strong>. Lorsqu'un fichier FITS contient des en-têtes WCS (World Coordinate System), AstroSky :</p>
+    <ul>
+      <li>Lit les coordonnées célestes (AD/Dec en équatorial, l/b en galactique).</li>
+      <li>Effectue une correspondance croisée avec une base de données hors ligne intégrée de <strong>plus de 800 objets célestes</strong> (catalogues Messier, NGC, IC).</li>
+      <li>Affiche des descriptions en langage clair des objets correspondants.</li>
+      <li>Affiche une mini-carte du ciel en projection d'Aitoff avec votre champ de vision marqué.</li>
+    </ul>
+
+    <h3>Superposition du faisceau elliptique</h3>
+    <p>Si vos en-têtes FITS contiennent les mots-clés BMAJ, BMIN et BPA (demi-grand axe, demi-petit axe, angle de position du faisceau), AstroSky superpose une ellipse de faisceau semi-transparente sur le canevas. Basculez la visibilité depuis la barre d'outils du canevas.</p>
+
+    <h3>Cartes de moments</h3>
+    <p>Pour les cubes de données (fichiers FITS NAXIS=3), AstroSky peut calculer des cartes de moments :
+    <br/><strong>Moment 0</strong> — Intensité intégrée (somme le long de l'axe spectral).
+    <br/><strong>Moment 1</strong> — Champ de vitesse moyen pondéré par l'intensité.
+    <br/>Accédez-y via le bouton <strong>Cartes de moments</strong> de la barre d'outils de la galerie.</p>
+
+    <h3>Diagrammes Position-Vitesse (PV)</h3>
+    <p>Pour les cubes de données, définissez une ligne de coupe sur le canevas et AstroSky extrait le diagramme position-vitesse le long de cette coupe. Accédez-y via la barre d'outils du canevas en Mode Science.</p>
+
+    <h3>Algèbre d'images</h3>
+    <p>Effectuez des opérations arithmétiques entre deux images : Addition, Soustraction, Multiplication, Division. Accédez-y via le bouton <strong>Algèbre d'images</strong> de la barre d'outils de la galerie.</p>
+  </div>
+</section>
+
+<!-- ═══════════ EXPORT ═══════════ -->
+<section id="export">
+  <div class="container">
+    <h2>8. Exporter des Images</h2>
+
+    <h3>Export d'une image unique</h3>
+    <ol class="steps">
+      <li class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Ouvrir la boîte de dialogue d'export</h3>
+          <p>Une image sélectionnée, cliquez sur le bouton <strong>Exporter l'image</strong> en bas du panneau des paramètres.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Choisir le format</h3>
+          <p>Sélectionnez <strong>PNG</strong> (sans perte, meilleure qualité), <strong>JPEG</strong> (taille de fichier réduite) ou <strong>FITS</strong> (préservation des données scientifiques).</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Choisir la résolution</h3>
+          <p>Choisissez un préréglage : 1920x1080, 2560x1440, 3840x2160 (4K), 5120x2880 (5K) ou 7680x4320 (8K). AstroSky effectue le rendu à la résolution cible quelle que soit la taille de l'écran.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">4</div>
+        <div>
+          <h3>Ajouter un filigrane (optionnel)</h3>
+          <p>Incrustez éventuellement un filigrane avec le modèle de télescope, la bande d'observation, le temps d'intégration et la signature de l'auteur — parfait pour partager sur AstroBin ou CloudyNights.</p>
+        </div>
+      </li>
+    </ol>
+
+    <h3>Export par lot</h3>
+    <p>Cliquez sur <strong>Tout exporter</strong> dans la barre d'outils de la galerie pour exporter toutes les images chargées en une seule opération. Sélectionnez des images individuelles avec Ctrl+Clic, puis utilisez <strong>Exporter la sélection</strong> dans le menu contextuel.</p>
+  </div>
+</section>
+
+<!-- ═══════════ SETTINGS ═══════════ -->
+<section id="settings">
+  <div class="container">
+    <h2>9. Paramètres et Langue</h2>
+
+    <h3>Ouvrir les paramètres</h3>
+    <p>Cliquez sur l'icône d'engrenage dans la barre d'outils Chrome en haut à droite pour ouvrir la fenêtre des paramètres.</p>
+
+    <h3>Thème</h3>
+    <p>Choisissez entre le thème <strong>Clair</strong> et <strong>Sombre</strong>. Le thème s'applique instantanément sans redémarrage.</p>
+
+    <h3>Langue</h3>
+    <p>AstroSky est entièrement localisé en <strong>7 langues</strong> :</p>
+    <ul>
+      <li>English (Anglais — par défaut)</li>
+      <li>日本語 (Japonais)</li>
+      <li>Deutsch (Allemand)</li>
+      <li>Français</li>
+      <li>Español (Espagnol)</li>
+      <li>Português (Portugais — Brésil)</li>
+      <li>Русский (Russe)</li>
+    </ul>
+    <p>Changez de langue depuis le sélecteur de langue dans la barre d'outils Chrome ou la fenêtre des paramètres. Aucun redémarrage requis.</p>
+
+    <h3>Autres paramètres</h3>
+    <p>La fenêtre des paramètres donne également accès à :</p>
+    <ul>
+      <li><strong>Conditions de licence</strong> — Consultez le contrat de licence logicielle complet.</li>
+      <li><strong>Politique de confidentialité</strong> — Lisez l'engagement de confidentialité d'AstroSky (<a href="privacy_fr.html">voir en ligne</a>).</li>
+      <li><strong>Mentions tierces</strong> — Attributions et avis des bibliothèques open source.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════ LICENSE ═══════════ -->
+<section id="license">
+  <div class="container">
+    <h2>10. Licence et Essai Gratuit</h2>
+
+    <h3>Essai gratuit de 30 jours</h3>
+    <p>Lorsque vous lancez AstroSky pour la première fois, un <strong>essai gratuit de 30 jours</strong> commence automatiquement. Pendant l'essai, <strong>toutes les fonctionnalités sont entièrement débloquées</strong> — aucune restriction, aucun filigrane, aucune carte de crédit requise.</p>
+
+    <h3>Licence à vie</h3>
+    <p>Après la période d'essai, un achat unique débloque un accès à vie. Il n'y a pas d'abonnement — vous achetez une fois et possédez pour toujours. L'achat est traité de manière sécurisée via le Microsoft Store.</p>
+
+    <h3>Comment acheter</h3>
+    <p>Vous pouvez acheter à tout moment — même pendant l'essai :</p>
+    <ul>
+      <li>Cliquez sur le bouton <strong>Acheter</strong> sur la bannière d'essai (visible pendant l'essai).</li>
+      <li>Ou cliquez sur <strong>Acheter</strong> sur la superposition de paiement (visible après l'expiration de l'essai).</li>
+    </ul>
+
+    <div class="callout callout-note">
+      <strong>Remarque :</strong> Le compte à rebours de l'essai commence au premier lancement, pas à l'installation. Si vous désinstallez et réinstallez, le Microsoft Store conserve l'état de votre essai.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ KEYBOARD SHORTCUTS ═══════════ -->
+<section id="shortcuts">
+  <div class="container">
+    <h2>11. Raccourcis Clavier</h2>
+    <table class="kbd-table">
+      <tbody>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>Z</kbd></td><td>Annuler le dernier changement de paramètre</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>Y</kbd></td><td>Rétablir le dernier changement annulé</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>O</kbd></td><td>Ouvrir la boîte de dialogue d'importation</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>E</kbd></td><td>Exporter l'image actuelle</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>S</kbd></td><td>Ouvrir les paramètres</td></tr>
+        <tr><td>Molette de la souris</td><td>Zoom avant/arrière sur le canevas</td></tr>
+        <tr><td>Clic gauche + Glisser</td><td>Panoramique du canevas</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + Clic (vignettes)</td><td>Sélection multiple pour l'attribution RGB ou l'export par lot</td></tr>
+        <tr><td>Clic droit (vignette)</td><td>Menu contextuel : Supprimer, Exporter, Attribution de canal</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ═══════════ FAQ ═══════════ -->
+<section id="faq">
+  <div class="container">
+    <h2>12. Foire Aux Questions</h2>
+
+    <details class="faq-item">
+      <summary>Quels formats de fichiers FITS AstroSky prend-il en charge ?</summary>
+      <p>AstroSky prend en charge les fichiers .fits, .fit et .fts — FITS à extension unique et multi-extensions (MEF). Les cubes de données avec NAXIS=3 sont entièrement pris en charge avec navigation par canal spectral.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Puis-je utiliser AstroSky complètement hors ligne ?</summary>
+      <p>Oui. Après l'installation depuis le Microsoft Store, AstroSky fonctionne à 100 % hors ligne. Tout le chargement FITS, le traitement d'image et le rendu s'exécutent localement sur votre appareil. Aucune connexion Internet requise.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Mes données sont-elles envoyées quelque part ?</summary>
+      <p>Non. AstroSky traite toutes les données en mémoire sur votre machine locale. Aucun fichier, image ou donnée n'est jamais téléchargé vers le cloud ou un tiers. Il n'y a ni télémétrie ni analyse.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>AstroSky fonctionne-t-il sur Mac ou Linux ?</summary>
+      <p>Actuellement, AstroSky est une application Windows (Windows 10 et Windows 11). Elle est construite sur .NET 10 + WPF et distribuée via le Microsoft Store. Les versions Mac et Linux ne sont pas disponibles pour le moment.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Quelle est la taille maximale d'image qu'AstroSky peut traiter ?</summary>
+      <p>AstroSky est optimisé pour les grands fichiers FITS des relevés modernes. Les images jusqu'à 16K × 16K pixels sont traitées efficacement. Les performances dépendent de la RAM et du nombre de cœurs CPU de votre système — 8 Go de RAM sont recommandés pour les images 4K+.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Puis-je exporter des images avec différents rapports d'aspect ?</summary>
+      <p>Oui. Dans la boîte de dialogue d'export, vous pouvez choisir entre <strong>Ajuster au canevas</strong> (préserve le rapport d'aspect original de l'image FITS) ou <strong>Recadrer pour remplir</strong> (remplit la résolution de fond d'écran choisie en recadrant les bords de l'image).</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>L'Amélioration Auto fonctionne-t-elle sur tous les types de données FITS ?</summary>
+      <p>L'Amélioration Auto est conçue pour les données de continuum et de raies d'émission à usage général (les images astronomiques les plus courantes). Pour les données spécialisées comme les cubes spectraux ou les cartes de polarisation, un ajustement manuel après Auto est recommandé.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Comment mettre à jour AstroSky ?</summary>
+      <p>Les mises à jour sont livrées automatiquement via le Microsoft Store. Ouvrez le Microsoft Store, allez dans Bibliothèque, puis cliquez sur Obtenir les mises à jour pour vérifier la dernière version.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Où puis-je obtenir des fichiers FITS d'exemple pour essayer ?</summary>
+      <p>Plusieurs archives publiques gratuites proposent des données FITS : <em>ESO Science Archive</em>, <em>NRAO VLA Archive</em>, <em>NASA/IPAC Infrared Science Archive</em> et <em>Herschel Science Archive</em>. Téléchargez n'importe quelle image FITS calibrée et déposez-la dans AstroSky.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Puis-je utiliser AstroSky pour la recherche professionnelle ?</summary>
+      <p>Oui. Le Mode Science d'AstroSky fournit des outils d'analyse adaptés à l'inspection professionnelle de données radioastronomiques et de relevés, y compris les superpositions de faisceau, la lecture de pixels, les diagrammes PV et le calcul de cartes de moments. Cependant, pour la photométrie avancée ou l'analyse spectrale, des outils dédiés comme DS9 ou CASA sont recommandés.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ═══════════ TROUBLESHOOTING ═══════════ -->
+<section id="troubleshooting">
+  <div class="container">
+    <h2>13. Dépannage</h2>
+
+    <h3>L'image ne s'affiche pas / canevas vide</h3>
+    <ul>
+      <li>Vérifiez que le fichier FITS contient des données image (vérifiez NAXIS ≥ 2 dans l'en-tête).</li>
+      <li>Essayez de cliquer sur <strong>Auto</strong> — cela réinitialise tous les paramètres d'étirement et recalcule la fenêtre d'affichage optimale.</li>
+      <li>Vérifiez que les curseurs de point noir/blanc ne sont pas tous les deux à des valeurs extrêmes.</li>
+    </ul>
+
+    <h3>L'importation échoue ou le fichier est rejeté</h3>
+    <ul>
+      <li>Vérifiez que l'extension du fichier est .fits, .fit ou .fts.</li>
+      <li>Assurez-vous que le fichier n'est pas corrompu — essayez de l'ouvrir dans un autre visualiseur FITS comme DS9.</li>
+      <li>Si vous importez un grand dossier, essayez d'importer des fichiers individuels pour identifier les fichiers problématiques.</li>
+    </ul>
+
+    <h3>Les performances sont lentes</h3>
+    <ul>
+      <li>Fermez les autres applications gourmandes en GPU (AstroSky utilise le rendu GPU SkiaSharp).</li>
+      <li>Pour les très grands cubes de données, envisagez d'extraire les canaux individuels avant le chargement.</li>
+      <li>Assurez-vous que vos pilotes graphiques sont à jour.</li>
+    </ul>
+
+    <h3>WCS / Coordonnées célestes non affichées</h3>
+    <ul>
+      <li>Le fichier FITS doit contenir les mots-clés d'en-tête WCS standard (CRVAL1/2, CRPIX1/2, CDELT1/2, CTYPE1/2, etc.).</li>
+      <li>Si votre fichier ne possède pas d'en-têtes WCS, les fonctionnalités Sky Info et Base de données célestes ne seront pas disponibles pour cette image.</li>
+    </ul>
+
+    <div class="callout callout-warn">
+      <strong>Vous rencontrez toujours des problèmes ?</strong> Des fichiers journaux de diagnostic sont écrits dans le répertoire de l'application et effacés à chaque démarrage. Vous pouvez envoyer ces journaux à <a href="mailto:HummingbirdLabs@outlook.com">HummingbirdLabs@outlook.com</a> pour obtenir de l'aide. Aucune donnée personnelle n'est incluse dans les fichiers journaux.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ NEXT STEPS / BOTTOM CTA ═══════════ -->
+<section style="text-align:center; background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="container" style="padding:48px 24px;">
+    <h2 style="margin-bottom:12px;">Prêt à Transformer Vos Données FITS ?</h2>
+    <p style="color:var(--fg-muted); margin-bottom:24px; max-width:500px; margin-left:auto; margin-right:auto;">
+      Téléchargez AstroSky maintenant et transformez votre premier fichier FITS en une image époustouflante en moins de 60 secondes. Essai gratuit de 30 jours — toutes les fonctionnalités débloquées, sans carte de crédit, sans compte.
+    </p>
+    <a href="https://apps.microsoft.com/detail/9n8qscsnlt7h?hl=fr-FR&gl=FR" class="download-btn" target="_blank" rel="noopener noreferrer">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
+      Télécharger AstroSky depuis le Microsoft Store
+    </a>
+    <p style="font-size:13px; color:var(--fg-subtle); margin-top:20px;">
+      <a href="introduction_fr.html" style="color:var(--brand); text-decoration:none;">&#8592; Retour à la présentation du produit</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#quickstart" style="color:var(--brand); text-decoration:none;">Retour au Démarrage Rapide &#8593;</a>
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <nav aria-label="Navigation du pied de page">
+    <a href="introduction_fr.html">Page produit</a>
+    <a href="privacy_fr.html">Politique de confidentialité</a>
+    <a href="ThirdPartyNotices.html">Mentions tierces</a>
+    <a href="LICENSING_GUIDE.md">Guide de licence</a>
+  </nav>
+  <p>AstroSky — Hummingbird Labs &copy; 2026. Distribution Microsoft Store.</p>
+  <p style="font-size:11.5px; color:var(--fg-subtle); margin-top:6px;">Dernière mise à jour : 25 juin 2026. <a href="https://apps.microsoft.com/detail/9n8qscsnlt7h?hl=fr-FR&gl=FR" style="color:var(--brand);">Obtenir la dernière version</a>.</p>
+</footer>
+
+</body>
+</html>

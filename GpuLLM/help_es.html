@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayuda — Guía de Usuario GpuLLM | Benchmark de LLMs Locales en Windows</title>
+  <meta name="description" content="Guía completa de usuario de GpuLLM — aprende a descargar modelos, ejecutar inferencia LLM local, comparar velocidad y precisión, comparar modelos y monitorizar el rendimiento de GPU en Windows." />
+  <meta name="keywords" content="GpuLLM ayuda, GpuLLM guía usuario, tutorial LLM local, guía descarga modelos GGUF, cómo hacer benchmark LLM, configuración monitorización GPU, guía Windows LLM, configuración token HuggingFace, importar GGUF, ayuda llama.cpp, solución problemas GpuLLM, guía ejecución LLM local" />
+  <meta name="author" content="HummingbirdLabs" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="theme-color" content="#e05c3a" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#1e1a17" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://hummingbirdlabs.github.io/Legal/GpuLLM" />
+  <link rel="canonical" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_es.html" />
+
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_en.html" />
+  <link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_zh.html" />
+  <link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_ja.html" />
+  <link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_ko.html" />
+  <link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_es.html" />
+  <link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_de.html" />
+  <link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_fr.html" />
+  <link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_pt.html" />
+  <link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_ru.html" />
+  <link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_ar.html" />
+  <link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_hi.html" />
+  <link rel="alternate" hreflang="id" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_id.html" /><link rel="alternate" hreflang="vi" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_vi.html" /><link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_it.html" /><link rel="alternate" hreflang="tr" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_tr.html" /><link rel="alternate" hreflang="pl" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_pl.html" /><link rel="alternate" hreflang="th" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_th.html" /><link rel="alternate" hreflang="bn" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_bn.html" /><link rel="alternate" hreflang="nl" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_nl.html" /><link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_en.html" />
+  <meta property="og:title" content="Guía de Ayuda GpuLLM — Benchmark de LLMs Locales en Windows" />
+  <meta property="og:description" content="Guía paso a paso: descarga modelos, compara rendimiento LLM, evalúa precisión y monitoriza métricas GPU — todo sin conexión en Windows." />
+  <meta property="og:image" content="https://hummingbirdlabs.github.io/Legal/GpuLLM/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Guía de Ayuda GpuLLM — Benchmark de LLMs Locales en Windows" />
+  <meta property="og:url" content="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_es.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GpuLLM" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Guía de Ayuda GpuLLM — Benchmark de LLMs Locales" />
+  <meta name="twitter:description" content="Aprende a evaluar LLMs locales en Windows. Guía paso a paso para descargar modelos, medir velocidad y evaluar precisión." />
+  <meta name="twitter:image" content="https://hummingbirdlabs.github.io/Legal/GpuLLM/og-image.jpg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Guía de Inicio Rápido GpuLLM",
+    "description": "Configura GpuLLM y ejecuta tu primera inferencia LLM local en 5 pasos.",
+    "step": [
+      { "@type": "HowToStep", "position": 1, "name": "Descarga e instala GpuLLM", "text": "Obtén GpuLLM desde Microsoft Store. La aplicación es autocontenida — no requiere runtimes adicionales ni CUDA toolkit.", "url": "https://apps.microsoft.com/detail/9pmx4d9zxng7?hl=es&gl=ES" },
+      { "@type": "HowToStep", "position": 2, "name": "Configura el Token de Acceso HuggingFace (opcional)", "text": "Crea un token Read en huggingface.co/settings/tokens y pégalo en la Configuración de GpuLLM." },
+      { "@type": "HowToStep", "position": 3, "name": "Descarga un modelo", "text": "Explora la Biblioteca de Modelos, usa Mi Hardware para filtrar por VRAM y haz clic en Descargar." },
+      { "@type": "HowToStep", "position": 4, "name": "Carga el modelo", "text": "Haz clic en Cargar en la tarjeta del modelo para precargar los pesos en la memoria GPU." },
+      { "@type": "HowToStep", "position": 5, "name": "Empieza a chatear", "text": "Cambia a Chat Benchmark, escribe tu prompt y pulsa Enter." }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "¿Por qué falla la descarga de mi modelo con error 401/403?", "acceptedAnswer": { "@type": "Answer", "text": "El modelo está restringido y requiere un Token de Acceso HuggingFace. Crea un token Read en huggingface.co/settings/tokens e ingrésalo en Configuración de GpuLLM, luego reintenta." } },
+      { "@type": "Question", "name": "¿Qué debo hacer si la inferencia es lenta?", "acceptedAnswer": { "@type": "Answer", "text": "Verifica que el backend CUDA esté activo en los resultados del benchmark. Si está usando CPU, actualiza tu controlador NVIDIA. Asegúrate de que tu GPU tenga suficiente VRAM para el modelo cargado." } },
+      { "@type": "Question", "name": "¿Cómo soluciono errores de 'Memoria Insuficiente'?", "acceptedAnswer": { "@type": "Answer", "text": "Prueba un modelo más pequeño o una cuantización más baja. Usa el filtro Mi Hardware en la Biblioteca de Modelos para encontrar modelos compatibles con la VRAM de tu GPU. Cierra otras aplicaciones que usen GPU antes de cargar un modelo." } },
+      { "@type": "Question", "name": "¿Mis datos están seguros con GpuLLM?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Toda la inferencia se ejecuta al 100% en tu máquina local. Ningún dato sale de tu dispositivo. Tu token HuggingFace se cifra mediante Windows DPAPI y se almacena en el Administrador de Credenciales." } },
+      { "@type": "Question", "name": "¿Qué hago si mi descarga falla con un error de verificación de integridad?", "acceptedAnswer": { "@type": "Answer", "text": "El archivo se corrompió durante la transferencia. Haz clic en Descargar de nuevo — GpuLLM inicia una descarga nueva. Asegúrate de tener una conexión a internet estable." } },
+      { "@type": "Question", "name": "¿Por qué recibo errores de límite de velocidad HTTP 429 al descargar modelos?", "acceptedAnswer": { "@type": "Answer", "text": "HuggingFace limita el acceso anónimo a la API. Configura un Token de Acceso HuggingFace en la Configuración de GpuLLM para obtener límites más altos y descargas fiables." } },
+      { "@type": "Question", "name": "¿Por qué mi modelo descargado anteriormente no aparece como 'Descargado' después de reiniciar?", "acceptedAnswer": { "@type": "Answer", "text": "Tu directorio de descargas puede haber cambiado. Revisa Configuración → Directorio de Descargas o usa el botón Importar para volver a añadir el archivo del modelo sin descargarlo de nuevo." } },
+      { "@type": "Question", "name": "CUDA no se detecta — ¿cómo activo la aceleración GPU?", "acceptedAnswer": { "@type": "Answer", "text": "Instala o actualiza tu controlador NVIDIA a la versión 545 o posterior. Para GPUs de portátil, asigna GpuLLM a la GPU dedicada en la Configuración de Gráficos de Windows." } },
+      { "@type": "Question", "name": "¿Por qué mi modelo cargado genera texto sin sentido o aleatorio?", "acceptedAnswer": { "@type": "Answer", "text": "El archivo GGUF puede estar dañado o en un formato incorrecto. Verifica el hash SHA-256 después de la descarga. Asegúrate de que el archivo del modelo esté en formato GGUF." } },
+      { "@type": "Question", "name": "El Modo Dual muestra el mismo modelo dos veces — ¿cómo lo soluciono?", "acceptedAnswer": { "@type": "Answer", "text": "Necesitas cargar dos modelos diferentes antes de activar el Modo Dual. Carga tu modelo principal primero, luego carga un segundo modelo desde la Biblioteca de Modelos y activa el Modo Dual." } }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".hero-sub", "h1"]
+  }</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HummingbirdLabs",
+    "url": "https://hummingbirdlabs.github.io/Legal/GpuLLM",
+    "sameAs": [
+      "https://github.com/HummingbirdLabs",
+      "https://www.microsoft.com/store/apps/9pmx4d9zxng7"
+    ], "description": "Creador de GpuLLM — la aplicación gratuita de Windows para evaluación y benchmarking de LLMs locales." }
+  </script>
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "WebSite", "name": "GpuLLM", "url": "https://hummingbirdlabs.github.io/Legal/GpuLLM" }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_es.html" },
+      { "@type": "ListItem", "position": 2, "name": "Guía de Ayuda", "item": "https://hummingbirdlabs.github.io/Legal/GpuLLM/help_es.html" }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --brand: #e05c3a; --brand-light: #f5866a; --brand-dim: #fde8e2;
+      --brand-glow: #ff9a3c; --accent: #7c5cbf; --accent-dim: #f0eaff;
+      --bg: #ffffff; --surface: #f8f5f2; --border: #ece7e2;
+      --fg: #1e1a17; --fg-muted: #6b6360; --fg-subtle: #a09896;
+      --green: #10b981; --sky: #0ea5e9;
+      --radius-sm: 8px; --radius-md: 16px; --radius-lg: 24px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.05);
+      --shadow-md: 0 4px 16px rgba(0,0,0,.10), 0 2px 6px rgba(0,0,0,.06);
+      --max-w: 860px;
+      --ff-body: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--ff-body); font-size: 16px; line-height: 1.7; color: var(--fg); background: var(--bg); -webkit-font-smoothing: antialiased; }
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+    header { background: linear-gradient(160deg, #fff5f0 0%, #fde8e2 30%, #f0eaff 70%, #e0f2fe 100%); border-bottom: 1px solid var(--border); padding: 48px 24px 36px; text-align: center; }
+    header h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 800; letter-spacing: -.03em; color: var(--fg); margin-bottom: 8px; }
+    header h1 span { background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    header p { font-size: 1.05rem; color: var(--fg-muted); max-width: 560px; margin: 0 auto; }
+    .back-link { display: inline-block; margin-top: 16px; font-size: 13.5px; color: var(--brand); text-decoration: none; font-weight: 600; }
+    .back-link:hover { text-decoration: underline; }
+    .store-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 26px; font-size: 15px; font-weight: 700; background: linear-gradient(135deg, var(--brand) 0%, #ff6b4a 100%); color: #fff; text-decoration: none; border-radius: var(--radius-sm); cursor: pointer; white-space: nowrap; transition: transform .15s, box-shadow .15s; box-shadow: 0 2px 8px rgba(224,92,58,.35); margin-top: 16px; }
+    .store-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(224,92,58,.45); }
+    .toc { background: linear-gradient(135deg, #fef0eb, #f3eeff); border: 1px solid #fcd5cc; border-radius: var(--radius-md); padding: 20px 24px; margin-top: 28px; }
+    .toc h3 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--brand); margin: 0 0 12px; }
+    .toc ol { columns: 2; column-gap: 24px; margin: 0; padding-left: 20px; font-size: 14px; line-height: 2; }
+    .toc ol li a { color: var(--fg-muted); text-decoration: none; font-weight: 500; }
+    .toc ol li a:hover { color: var(--brand); text-decoration: underline; }
+    @media (max-width: 500px) { .toc ol { columns: 1; } }
+    section { padding: 64px 0; }
+    section.alt { background: linear-gradient(180deg, #fdfbf9 0%, #f8f5f2 100%); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    h2 { font-size: clamp(1.3rem, 3vw, 1.7rem); font-weight: 700; letter-spacing: -.02em; color: var(--fg); margin-bottom: 8px; }
+    h3 { font-size: 1.1rem; font-weight: 700; color: var(--fg); margin: 28px 0 8px; }
+    p, li { color: var(--fg-muted); }
+    ul, ol { margin: 12px 0 12px 24px; line-height: 1.8; }
+    .step-list { list-style: none; counter-reset: step; margin-top: 24px; }
+    .step-list li { counter-increment: step; position: relative; padding-left: 48px; margin-bottom: 24px; }
+    .step-list li::before { content: counter(step); position: absolute; left: 0; top: 2px; width: 32px; height: 32px; background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%); color: #fff; font-size: 14px; font-weight: 700; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+    .step-list li strong { color: var(--fg); display: block; margin-bottom: 4px; }
+    .step-list li p { margin: 0; }
+    .callout { border-radius: var(--radius-sm); padding: 16px 20px; margin: 20px 0; font-size: 14.5px; line-height: 1.6; }
+    .callout.tip { background: #ecfdf5; border-left: 4px solid #10b981; color: #065f46; }
+    .callout.warn { background: #fffbeb; border-left: 4px solid #f59e0b; color: #78350f; }
+    .callout.info { background: #f0f9ff; border-left: 4px solid #0ea5e9; color: #0c4a6e; }
+    code { font-family: "Cascadia Code", "Fira Code", Consolas, monospace; font-size: 13.5px; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 1px 6px; color: var(--brand); }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; margin-top: 28px; }
+    .feature-card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px 20px; }
+    .feature-card h4 { font-size: 15px; font-weight: 700; color: var(--fg); margin-bottom: 6px; }
+    .feature-card p { font-size: 13.5px; color: var(--fg-muted); line-height: 1.55; margin: 0; }
+    .feature-icon { font-size: 22px; margin-bottom: 10px; }
+    .page-ref { display: inline-flex; align-items: center; gap: 4px; background: var(--brand-dim); color: var(--brand); font-size: 13px; font-weight: 600; padding: 3px 10px; border-radius: 999px; }
+    .kbd { display: inline-block; font-family: var(--ff-body); font-size: 12.5px; font-weight: 600; padding: 2px 8px; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; color: var(--fg-muted); }
+    .model-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13.5px; }
+    .model-table thead { background: var(--brand-dim); }
+    .model-table th { text-align: left; padding: 8px 12px; font-weight: 700; color: var(--fg); border-bottom: 2px solid var(--border); }
+    .model-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--fg-muted); vertical-align: top; }
+    .model-table tr:hover td { background: #fef0eb; }
+    .model-table .cat-tag { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; padding: 2px 8px; border-radius: 999px; }
+    .cat-coding { background: #e8f4fd; color: #0ea5e9; }
+    .cat-chat { background: #f3eeff; color: #7c5cbf; }
+    .cat-reasoning { background: #fef0eb; color: #e05c3a; }
+    .spec-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 14px; }
+    .spec-table th { text-align: left; padding: 10px 14px; font-weight: 700; color: var(--fg); background: var(--brand-dim); border-bottom: 2px solid var(--border); width: 180px; }
+    .spec-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--fg-muted); }
+    footer { border-top: 1px solid var(--border); padding: 32px 24px; text-align: center; font-size: 13px; color: var(--fg-subtle); }
+    footer a { color: var(--fg-muted); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 600px) { section { padding: 40px 0; } header { padding: 36px 20px 28px; } .model-table { font-size: 12px; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>GpuLLM <span>Guía de Ayuda</span></h1>
+  <p>Todo lo que necesitas saber para empezar con la inferencia LLM local, monitorización GPU y benchmarking de modelos.</p>
+  <a href="introduction_es.html" class="back-link">&larr; Volver al Inicio de GpuLLM</a>
+  <br/>
+  <a href="https://apps.microsoft.com/detail/9pmx4d9zxng7?hl=es&gl=ES" class="store-btn" target="_blank" rel="noopener">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8.5v8.5H3zm9.5 0H21v8.5h-8.5zM3 12.5h8.5V21H3zm9.5 0H21V21h-8.5z"/></svg>
+    Descargar de Microsoft Store
+  </a>
+</header>
+
+<section style="padding:40px 0 0;">
+  <div class="container">
+    <nav class="toc" aria-label="Índice">
+      <h3>En Esta Página</h3>
+      <ol>
+        <li><a href="#what-gpullm-can-do">Qué Puede Hacer GpuLLM</a></li>
+        <li><a href="#system-requirements">Requisitos del Sistema</a></li>
+        <li><a href="#quick-start">Inicio Rápido</a></li>
+        <li><a href="#common-scenarios">Casos de Uso Comunes</a></li>
+        <li><a href="#app-navigation">Navegación de la App</a></li>
+        <li><a href="#curated-catalog">Catálogo Curado de Modelos</a></li>
+        <li><a href="#model-downloads">Descarga de Modelos</a></li>
+        <li><a href="#inference-benchmarking">Inferencia y Benchmarking</a></li>
+        <li><a href="#tips-troubleshooting">Consejos y Solución de Problemas</a></li>
+        <li><a href="#glossary">Glosario</a></li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<section id="what-gpullm-can-do">
+  <div class="container">
+    <h2>Qué Puede Hacer GpuLLM</h2>
+    <p>GpuLLM es una aplicación de escritorio para Windows que convierte tu PC en una estación de trabajo IA local completa. Todo el cómputo se ejecuta en tu hardware — nada sale de tu dispositivo.</p>
+    <div class="feature-grid">
+      <div class="feature-card"><div class="feature-icon">🧠</div><h4>Ejecutar LLMs Localmente</h4><p>Carga modelos en formato GGUF y chatea con ellos directamente en tu GPU. Soporta backends CUDA, Vulkan y CPU con fallback automático.</p></div>
+      <div class="feature-card"><div class="feature-icon">📊</div><h4>Monitorizar Hardware</h4><p>Uso de GPU en tiempo real, VRAM, temperatura, consumo eléctrico, uso de CPU y memoria — todo en un panel con gráficos sparkline de 60 segundos.</p></div>
+      <div class="feature-card"><div class="feature-icon">🔬</div><h4>Evaluar Modelos</h4><p>Mide la velocidad de inferencia (TTFT, tokens/s, latencia) y evalúa la precisión del modelo con los conjuntos de preguntas MMLU y C-Eval integrados.</p></div>
+      <div class="feature-card"><div class="feature-icon">📦</div><h4>Descargar y Gestionar Modelos</h4><p>Explora un catálogo curado de 13 modelos de HuggingFace, descarga con soporte de reanudación y verificación SHA-256, o importa tus propios archivos GGUF.</p></div>
+      <div class="feature-card"><div class="feature-icon">💬</div><h4>Chat Dual de Modelos</h4><p>Compara dos modelos lado a lado en una sola conversación. LLM1 responde, LLM2 revisa — ambos ven el contexto completo.</p></div>
+      <div class="feature-card"><div class="feature-icon">😺</div><h4>Mascota Prism Cat</h4><p>Un espíritu GPU animado en vivo que cambia de color y emoción según la carga de trabajo de tu GPU.</p></div>
+    </div>
+    <div class="callout info"><strong>100% Local y Privado:</strong> Una vez descargados los modelos, no se requiere conexión a internet para la inferencia. Sin telemetría, sin dependencia de la nube, sin carga de datos.</div>
+  </div>
+</section>
+
+<section id="system-requirements">
+  <div class="container">
+    <h2>Requisitos del Sistema</h2>
+    <p>Antes de instalar, asegúrate de que tu PC cumple estos requisitos.</p>
+    <table class="spec-table">
+      <tr><th>Sistema Operativo</th><td>Windows 10 (21H2 o posterior) / Windows 11</td></tr>
+      <tr><th>GPU</th><td>NVIDIA GTX serie 10 o posterior (CUDA 12), o cualquier GPU compatible con Vulkan</td></tr>
+      <tr><th>VRAM</th><td>Mínimo 4 GB para modelos pequeños (1-3B); 8 GB recomendado; 16+ GB para modelos 7B+</td></tr>
+      <tr><th>RAM del Sistema</th><td>8 GB mínimo; 16 GB recomendado para modelos mayores de 7B</td></tr>
+      <tr><th>Almacenamiento</th><td>1-20 GB por archivo de modelo; SSD recomendado para carga más rápida</td></tr>
+      <tr><th>Internet</th><td>Requerido solo para descargar modelos; toda la inferencia se ejecuta sin conexión</td></tr>
+    </table>
+    <div class="callout tip" style="margin-top:20px;"><strong>¿No tienes una GPU potente?</strong> GpuLLM también funciona en sistemas solo con CPU — solo espera una inferencia más lenta. Empieza con modelos de 1-3B como Llama 3.2 1B o DeepSeek-R1-Distill 1.5B.</div>
+  </div>
+</section>
+
+<section class="alt" id="quick-start">
+  <div class="container">
+    <h2>Inicio Rápido — Configuración Inicial</h2>
+    <p>Sigue estos pasos para pasar de cero a ejecutar tu primera inferencia LLM local.</p>
+    <ol class="step-list">
+      <li><strong>Descarga e instala GpuLLM</strong><p>Obtén GpuLLM desde Microsoft Store. La aplicación es autocontenida — no necesita runtimes adicionales ni CUDA toolkit.</p></li>
+      <li>
+        <strong>Configura tu Token de Acceso HuggingFace (opcional)</strong>
+        <p>Abre <span class="page-ref">Configuración</span> e ingresa un token Read de HuggingFace. Solo es necesario para modelos restringidos (ej. Qwen, Meta-Llama). Los modelos comunitarios de <code>bartowski/*</code> funcionan sin token.</p>
+        <div class="callout tip" style="margin-top:10px;"><strong>Cómo crear un token:</strong> Ve a <a href="https://huggingface.co/settings/tokens" target="_blank" rel="noopener">huggingface.co/settings/tokens</a>, haz clic en <strong>New token</strong>, selecciona tipo <strong>Read</strong>, dale un nombre (ej. "GpuLLM") y copia el token generado. Pégalo en la Configuración de GpuLLM. El token se almacena cifrado en el Administrador de Credenciales de Windows (DPAPI) y nunca se registra en disco.</div>
+      </li>
+      <li><strong>Descarga un modelo</strong><p>Ve a <span class="page-ref">Biblioteca de Modelos</span>, explora el catálogo curado y haz clic en <strong>Descargar</strong> en cualquier tarjeta de modelo. Usa el botón <strong>Mi Hardware</strong> para filtrar modelos compatibles con la VRAM de tu GPU.</p></li>
+      <li><strong>Carga el modelo</strong><p>Una vez descargado, haz clic en <strong>Cargar</strong> en la tarjeta del modelo. Los pesos del modelo se cargan en la memoria GPU y permanecen residentes para una inferencia rápida.</p></li>
+      <li><strong>Empieza a chatear</strong><p>Cambia a <span class="page-ref">Chat Benchmark</span>, escribe tu prompt y pulsa <span class="kbd">Enter</span>. El modelo transmite su respuesta en tiempo real mientras las métricas GPU se actualizan en vivo en la barra lateral.</p></li>
+    </ol>
+    <div class="callout tip"><strong>Consejo profesional:</strong> Empieza con un modelo más pequeño (ej. Llama 3.2 1B o DeepSeek-R1-Distill 1.5B) para verificar que todo funciona antes de pasar a modelos más grandes.</div>
+  </div>
+</section>
+
+<section id="common-scenarios">
+  <div class="container">
+    <h2>Casos de Uso Comunes</h2>
+    <p>¿No sabes por dónde empezar? Aquí tienes algunos flujos de trabajo típicos para orientarte.</p>
+    <h3>&#x1F3AF; "Quiero encontrar el modelo más rápido para mi GPU"</h3>
+    <p>Ve a <span class="page-ref">Biblioteca de Modelos</span>, haz clic en <strong>Mi Hardware</strong> para filtrar modelos compatibles, descarga algunos, carga cada uno y usa <span class="page-ref">Chat Benchmark</span> para comparar sus puntuaciones de tokens/s. Revisa las tarjetas KPI de benchmark después de cada inferencia.</p>
+    <h3>&#x1F91D; "Quiero comparar dos modelos lado a lado"</h3>
+    <p>Carga dos modelos, cambia a <span class="page-ref">Chat Benchmark</span>, activa <strong>Modo Dual</strong> y asigna uno como Respondedor y el otro como Revisor. Ambos modelos responden al mismo prompt — compara las respuestas en tiempo real.</p>
+    <h3>&#x1F4CA; "Quiero saber qué tan preciso es mi modelo"</h3>
+    <p>Carga un modelo, ve a <span class="page-ref">Evaluación</span>, elige MMLU o C-Eval y haz clic en <strong>Iniciar</strong>. Obtendrás puntuaciones de precisión por categoría y un desglose por nivel de dificultad — exportable como Markdown.</p>
+    <h3>&#x1F4B0; "Quiero ver cuánto dinero ahorro frente a las APIs en la nube"</h3>
+    <p>Ejecuta cualquier inferencia en <span class="page-ref">Chat Benchmark</span>. El estimador de costos integrado compara automáticamente tu costo de inferencia local (electricidad + depreciación del hardware) con los precios de las APIs de OpenAI y Anthropic. Consulta el informe de sesión para ver el ahorro acumulado.</p>
+    <h3>&#x1F4E5; "Ya tengo archivos GGUF — ¿puedo usarlos?"</h3>
+    <p>Sí. En <span class="page-ref">Biblioteca de Modelos</span>, haz clic en <strong>Importar Modelo</strong> y selecciona tu archivo GGUF, o simplemente arrastra y suelta en la ventana. GpuLLM lo añade a tu biblioteca sin necesidad de volver a descargar.</p>
+  </div>
+</section>
+
+<section id="app-navigation">
+  <div class="container">
+    <h2>Navegación de la App</h2>
+    <p>GpuLLM tiene cinco páginas principales accesibles desde la barra lateral izquierda. Haz clic en cualquier icono para cambiar de página.</p>
+    <h3>Chat Benchmark</h3>
+    <p>La página principal de inferencia y benchmarking. Aquí puedes:</p>
+    <ul>
+      <li><strong>Chatear con un modelo:</strong> Escribe en la caja de <strong>Entrada de Tarea</strong> y pulsa <span class="kbd">Enter</span> (o <span class="kbd">Ctrl+Enter</span>) para enviar. El modelo transmite su respuesta token por token.</li>
+      <li><strong>Monitorizar métricas GPU:</strong> El panel derecho muestra uso de GPU en tiempo real, uso de VRAM, temperatura, consumo eléctrico, uso de CPU y memoria del sistema — todo con tendencias sparkline de 60 segundos.</li>
+      <li><strong>Ajustar parámetros de inferencia:</strong> Usa los deslizadores superiores para configurar <code>Tokens Máximos</code> y <code>Temperatura</code> para cada solicitud.</li>
+      <li><strong>Ver resultados del benchmark:</strong> Después de cada inferencia, las tarjetas KPI muestran TTFT (Tiempo Hasta el Primer Token), tokens por segundo, latencia, cadena de backend y métricas pico de GPU.</li>
+      <li><strong>Exportar chat:</strong> Haz clic en <strong>Exportar PDF</strong> para guardar la conversación y el informe de benchmark como documento PDF A4.</li>
+      <li><strong>Copiar mensajes:</strong> Cada burbuja de mensaje tiene un botón de copia y marca de tiempo (HH:mm:ss).</li>
+    </ul>
+    <h3>Conversación Dual de Modelos</h3>
+    <p>Activa el <strong>Modo Dual</strong> en Chat Benchmark para habilitar la inferencia en relevo de dos modelos:</p>
+    <ul>
+      <li>Selecciona un modelo principal (LLM1) y uno secundario (LLM2) de los menús desplegables.</li>
+      <li>LLM1 recibe tu prompt y genera una respuesta.</li>
+      <li>LLM2 recibe automáticamente el contexto completo de la conversación y proporciona una revisión o segunda opinión.</li>
+      <li>Los mensajes se etiquetan por rol: <strong>LLM1 · Respondedor</strong> y <strong>LLM2 · Revisor</strong>.</li>
+    </ul>
+    <h3>Evaluación</h3>
+    <p>Ejecuta benchmarks estructurados contra modelos cargados usando conjuntos de preguntas estandarizados:</p>
+    <ul>
+      <li><strong>MMLU:</strong> 100 preguntas muestreadas de 57 materias (STEM, humanidades, ciencias sociales).</li>
+      <li><strong>C-Eval:</strong> 100 preguntas muestreadas de benchmarks de evaluación académica en chino.</li>
+      <li>La página tiene tres fases: <strong>Configurar</strong> (elegir modelo + benchmark) → <strong>Ejecutando</strong> (progreso en tiempo real) → <strong>Resultados</strong> (precisión por categoría y dificultad).</li>
+      <li>Se ejecuta una inferencia de calentamiento primero para asegurar que el modelo está completamente cargado antes de comenzar la puntuación.</li>
+    </ul>
+    <h3>Biblioteca de Modelos</h3>
+    <p>Explora, descarga y gestiona tu colección de modelos GGUF:</p>
+    <ul>
+      <li><strong>Filtros:</strong> Filtra por categoría — <strong>Codificación</strong>, <strong>Chat</strong> o <strong>Razonamiento</strong>.</li>
+      <li><strong>Mi Hardware:</strong> Filtro de un clic para mostrar solo los modelos que tu GPU puede ejecutar. Los modelos compatibles muestran una marca verde.</li>
+      <li><strong>Descargar:</strong> Haz clic en el botón Descargar de una tarjeta. GpuLLM gestiona automáticamente el consentimiento de licencia, listado de archivos, descarga con reanudación y verificación SHA-256.</li>
+      <li><strong>Importar:</strong> Arrastra y suelta o haz clic en "Importar Modelo" para añadir cualquier archivo GGUF que ya tengas.</li>
+      <li><strong>Gestionar:</strong> Abrir carpeta, copiar ruta, o cargar/descargar modelos desde sus tarjetas.</li>
+    </ul>
+    <h3>Configuración</h3>
+    <p>Configura la aplicación según tus preferencias:</p>
+    <ul>
+      <li><strong>Tema:</strong> Elige tu tema visual preferido.</li>
+      <li><strong>Directorio de Descargas:</strong> Elige dónde se almacenan los archivos de modelo.</li>
+      <li><strong>Token HuggingFace:</strong> Ingresa o borra tu Token de Acceso HuggingFace (almacenado de forma segura en el Administrador de Credenciales de Windows).</li>
+      <li><strong>Enlaces legales:</strong> Accede a la Política de Privacidad y Avisos de Terceros.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt" id="curated-catalog">
+  <div class="container">
+    <h2>Catálogo Curado de Modelos</h2>
+    <p>GpuLLM incluye 13 entradas de modelo preconfiguradas en tres categorías — <strong>Codificación</strong>, <strong>Chat</strong> y <strong>Razonamiento</strong>. Cada entrada incluye el repositorio HuggingFace correcto, cuantización y tamaño de archivo para que puedas descargar con un clic.</p>
+    <table class="model-table">
+      <thead><tr><th>Nombre</th><th>Creador</th><th>Categoría</th><th>Tamaño</th><th>VRAM</th></tr></thead>
+      <tbody>
+        <tr><td>Qwen2.5-Coder 3B</td><td>Alibaba</td><td><span class="cat-tag cat-coding">Código</span></td><td>1.9 GB</td><td>8 GB</td></tr>
+        <tr><td>Qwen2.5-Coder 7B</td><td>Alibaba</td><td><span class="cat-tag cat-coding">Código</span></td><td>4.2 GB</td><td>16 GB</td></tr>
+        <tr><td>DeepSeek-Coder V2 Lite</td><td>DeepSeek</td><td><span class="cat-tag cat-coding">Código</span></td><td>9.0 GB</td><td>24 GB</td></tr>
+        <tr><td>Llama 3.2 1B Instruct</td><td>Meta</td><td><span class="cat-tag cat-chat">Chat</span></td><td>0.7 GB</td><td>4 GB</td></tr>
+        <tr><td>Llama 3.2 3B Instruct</td><td>Meta</td><td><span class="cat-tag cat-chat">Chat</span></td><td>2.0 GB</td><td>8 GB</td></tr>
+        <tr><td>Gemma 3 4B Instruct</td><td>Google</td><td><span class="cat-tag cat-chat">Chat</span></td><td>2.5 GB</td><td>8 GB</td></tr>
+        <tr><td>Mistral 7B Instruct</td><td>Mistral AI</td><td><span class="cat-tag cat-chat">Chat</span></td><td>4.1 GB</td><td>16 GB</td></tr>
+        <tr><td>Qwen2.5 7B Instruct</td><td>Alibaba</td><td><span class="cat-tag cat-chat">Chat</span></td><td>4.7 GB</td><td>8 GB</td></tr>
+        <tr><td>Qwen2.5 14B Instruct</td><td>Alibaba</td><td><span class="cat-tag cat-chat">Chat</span></td><td>8.9 GB</td><td>24 GB</td></tr>
+        <tr><td>DeepSeek-R1-Distill 1.5B</td><td>DeepSeek</td><td><span class="cat-tag cat-reasoning">Razon.</span></td><td>1.0 GB</td><td>4 GB</td></tr>
+        <tr><td>DeepSeek-R1-Distill 7B</td><td>DeepSeek</td><td><span class="cat-tag cat-reasoning">Razon.</span></td><td>4.2 GB</td><td>16 GB</td></tr>
+        <tr><td>DeepSeek-R1-Distill 14B</td><td>DeepSeek</td><td><span class="cat-tag cat-reasoning">Razon.</span></td><td>8.5 GB</td><td>16 GB</td></tr>
+        <tr><td>DeepSeek-R1-Distill 32B</td><td>DeepSeek</td><td><span class="cat-tag cat-reasoning">Razon.</span></td><td>20 GB</td><td>32 GB</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="model-downloads">
+  <div class="container">
+    <h2>Entendiendo las Descargas de Modelos</h2>
+    <h3>Modelos Restringidos vs. Abiertos</h3>
+    <p>Las tarjetas de modelo muestran insignias que indican si se requiere autenticación:</p>
+    <ul>
+      <li><strong style="color:var(--fg);">🔒 Restringido</strong> — Requiere Token de Acceso HuggingFace. Común en repositorios oficiales como <code>Qwen</code>, <code>meta-llama</code>.</li>
+      <li><strong style="color:var(--fg);">Abierto</strong> (sin insignia) — Sin autenticación requerida. Reempaquetados comunitarios de <code>bartowski/*</code>, <code>lmstudio-community/*</code>, <code>TheBloke/*</code>.</li>
+    </ul>
+    <h3>Proceso de Descarga</h3>
+    <p>Cuando haces clic en descargar, GpuLLM realiza automáticamente:</p>
+    <ol>
+      <li>Verificación de consentimiento de licencia (las licencias permisivas pasan automáticamente; las restrictivas muestran un diálogo).</li>
+      <li>Consulta a la API de HuggingFace para localizar el archivo GGUF correcto.</li>
+      <li>Descarga con soporte de reanudación HTTP (archivo temporal <code>.part</code>).</li>
+      <li>Verificación del hash SHA-256 contra los metadatos LFS de HuggingFace.</li>
+    </ol>
+    <div class="callout warn"><strong>¿Necesitas un token?</strong> Si la descarga falla con "Se requiere token de acceso", crea un token Read de HuggingFace en <a href="https://huggingface.co/settings/tokens" target="_blank" rel="noopener">huggingface.co/settings/tokens</a> e ingrésalo en Configuración. El token se almacena en el Administrador de Credenciales de Windows (cifrado DPAPI) y nunca se registra en disco.</div>
+    <h3>Gestionar Descargas</h3>
+    <ul>
+      <li><strong>Cancelar:</strong> Haz clic en cancelar en la tarjeta de descarga. El archivo <code>.part</code> parcial se conserva para reanudar después.</li>
+      <li><strong>Cambiar ubicación:</strong> Ve a Configuración → Directorio de Descargas y elige una nueva carpeta.</li>
+      <li><strong>Abrir carpeta:</strong> Haz clic en el icono de carpeta en una tarjeta descargada para abrir la ubicación del archivo en el Explorador.</li>
+      <li><strong>Importar GGUF:</strong> Usa el botón "Importar Modelo" o arrastra y suelta para añadir archivos GGUF existentes.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt" id="inference-benchmarking">
+  <div class="container">
+    <h2>Inferencia y Benchmarking en Detalle</h2>
+    <h3>Selección de Backend</h3>
+    <p>GpuLLM detecta automáticamente el hardware y selecciona el backend más rápido disponible en este orden: <strong>CUDA 12</strong> → <strong>Vulkan</strong> → <strong>CPU</strong>. Sin configuración manual — la cadena de backend se muestra en los resultados del benchmark después de cada inferencia.</p>
+    <h3>Estrategia de Carga de Modelos</h3>
+    <p>Al hacer clic en <strong>Cargar</strong> en una tarjeta de modelo, los pesos del modelo se precargan en la memoria GPU/CPU y permanecen residentes. Todas las llamadas de inferencia posteriores reutilizan los pesos precargados, omitiendo completamente la E/S de disco para tiempos de respuesta rápidos. Solo se puede cargar un modelo a la vez (dos en Modo Dual).</p>
+    <h3>Métricas de Benchmark</h3>
+    <p>Después de cada inferencia, GpuLLM informa:</p>
+    <ul>
+      <li><strong>TTFT</strong> — Tiempo Hasta el Primer Token: el tiempo de espera antes de que aparezca el primer token de respuesta.</li>
+      <li><strong>Tokens/s</strong> — Rendimiento de generación después del primer token.</li>
+      <li><strong>Latencia</strong> — Tiempo total de respuesta de extremo a extremo.</li>
+      <li><strong>Pico GPU</strong> — Uso máximo de GPU, uso de VRAM y temperatura durante la inferencia.</li>
+      <li><strong>Cadena de Backend</strong> — Qué backend se utilizó (ej. "CUDA 12 → Vulkan → Fallback CPU").</li>
+    </ul>
+    <p>El informe de sesión agrega todas las métricas de inferencia desde el inicio de la aplicación (tokens acumulados, latencia media, valores pico de GPU).</p>
+    <h3>Opciones de Exportación</h3>
+    <ul>
+      <li><strong>Exportar PDF:</strong> Guarda la conversación completa y el informe de benchmark de sesión como PDF A4.</li>
+      <li><strong>Copiar mensajes:</strong> Cada mensaje tiene un botón de copia para exportar al portapapeles.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="tips-troubleshooting">
+  <div class="container">
+    <h2>Consejos y Solución de Problemas</h2>
+    <h3>Atajos de Teclado</h3>
+    <ul><li><span class="kbd">Enter</span> o <span class="kbd">Ctrl+Enter</span> — Enviar prompt en Chat Benchmark.</li></ul>
+    <h3>Mejores Prácticas</h3>
+    <ul>
+      <li><strong>Empieza pequeño:</strong> Prueba con modelos de 1-3B parámetros antes de cargar modelos más grandes que requieren más VRAM.</li>
+      <li><strong>Verifica VRAM:</strong> Usa el filtro <strong>Mi Hardware</strong> en la Biblioteca de Modelos para ver solo los modelos que caben en la VRAM de tu GPU. Una marca verde confirma la compatibilidad.</li>
+      <li><strong>Ajusta la temperatura:</strong> Usa temperatura baja (0.1–0.5) para tareas factuales/código; temperatura más alta (0.7–1.0) para escritura creativa. Ajusta por tarea en los deslizadores de Chat Benchmark.</li>
+      <li><strong>Tokens máximos:</strong> Configúralo razonablemente — muy bajo trunca las respuestas; muy alto desperdicia tiempo. 512–2048 tokens son suficientes para la mayoría de las tareas.</li>
+      <li><strong>Comparación dual:</strong> Usa el Modo Dual con dos modelos diferentes (ej. modelo de código + modelo general) para comparar respuestas en el mismo prompt.</li>
+      <li><strong>Precisión de evaluación:</strong> Ejecuta las evaluaciones con temperatura más baja (0.1–0.3) para una puntuación más determinista y justa.</li>
+      <li><strong>Seguridad del token:</strong> El token HF se almacena cifrado en el Administrador de Credenciales mediante DPAPI de Windows — nunca se registra en archivos. Revócalo en cualquier momento desde <a href="https://huggingface.co/settings/tokens" target="_blank" rel="noopener">huggingface.co/settings/tokens</a>.</li>
+    </ul>
+    <h3>Solución de Problemas</h3>
+    <ul>
+      <li><strong>Descarga falla con 401/403:</strong> El modelo está restringido. Crea un token Read de HuggingFace en <a href="https://huggingface.co/settings/tokens" target="_blank" rel="noopener">huggingface.co/settings/tokens</a>, ingrésalo en Configuración y reintenta.</li>
+      <li><strong>La descarga empieza pero falla con "Verificación de integridad fallida":</strong> El archivo se corrompió durante la transferencia. Haz clic en Descargar de nuevo — GpuLLM inicia una descarga nueva.</li>
+      <li><strong>Límite de velocidad / HTTP 429:</strong> HuggingFace limita el acceso anónimo a la API. Configura un token para límites más altos.</li>
+      <li><strong>El modelo no aparece como "Descargado" después de reiniciar:</strong> El directorio de descargas puede haber cambiado. Revisa Configuración → Directorio de Descargas o usa el botón Importar.</li>
+      <li><strong>Inferencia lenta:</strong> Confirma que el backend CUDA está activo (se muestra en los resultados del benchmark). Si está usando CPU, asegúrate de que los controladores NVIDIA estén actualizados.</li>
+      <li><strong>CUDA no detectado / backend cae a CPU:</strong> Instala o actualiza los <a href="https://www.nvidia.com/en-us/drivers/" target="_blank" rel="noopener">controladores NVIDIA</a> a la versión 545 o superior. Para GPUs de portátil, asegúrate de que GpuLLM se ejecute en la GPU dedicada.</li>
+      <li><strong>"Memoria insuficiente" o fallo al cargar modelo:</strong> VRAM de GPU insuficiente. Prueba un modelo más pequeño o una cuantización con mayor compresión. Usa <strong>Mi Hardware</strong> para filtrar modelos compatibles. Cierra otras aplicaciones que usen GPU.</li>
+      <li><strong>El modelo carga pero genera texto sin sentido:</strong> El archivo GGUF puede estar dañado o en formato incorrecto. Verifica el hash SHA-256 después de la descarga. Asegúrate de que el modelo está en formato GGUF.</li>
+      <li><strong>Modo Dual muestra el mismo modelo dos veces:</strong> Necesitas cargar dos modelos diferentes antes de activar el Modo Dual. Carga primero LLM1, luego LLM2 desde la Biblioteca de Modelos.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt" id="glossary">
+  <div class="container">
+    <h2>Glosario</h2>
+    <table class="spec-table">
+      <tr><th>GGUF</th><td>Formato de archivo de modelo de lenguaje grande cuantizado diseñado por el proyecto llama.cpp. GpuLLM utiliza exclusivamente el formato GGUF.</td></tr>
+      <tr><th>Cuantización</th><td>Técnica que reduce el uso de memoria del modelo disminuyendo la precisión numérica (ej. de 16 bits a 4 bits). Una cuantización más baja usa menos VRAM pero puede reducir ligeramente la calidad. Formatos comunes: Q8_0, Q4_K_M, Q2_K.</td></tr>
+      <tr><th>Tokens/s</th><td>Número de tokens generados por segundo — la métrica principal para medir el rendimiento de la GPU. Valores más altos significan inferencia más rápida.</td></tr>
+      <tr><th>TTFT</th><td>Tiempo Hasta el Primer Token — cuánto tarda el modelo en generar su primer token de respuesta. Mide la latencia percibida por el usuario.</td></tr>
+      <tr><th>MMLU</th><td>Comprensión Masiva de Lenguaje Multitarea — un benchmark estandarizado de capacidad LLM que abarca 57 materias.</td></tr>
+      <tr><th>C-Eval</th><td>Benchmark de Evaluación Académica en Chino — el equivalente chino de MMLU para medir la capacidad de LLMs en chino.</td></tr>
+      <tr><th>VRAM</th><td>RAM de Video — memoria dedicada de la GPU. Tanto la carga como la inferencia del modelo consumen VRAM. Los modelos más grandes necesitan más VRAM.</td></tr>
+      <tr><th>Backend</th><td>El motor de cómputo que ejecuta la inferencia del modelo. GpuLLM soporta CUDA (GPU NVIDIA), Vulkan (GPU de múltiples fabricantes) y CPU (fallback).</td></tr>
+    </table>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 GpuLLM &middot; Última actualización: <time datetime="2026-06">Junio 2026</time> &middot; <a href="mailto:HummingbirdLabs@outlook.com">HummingbirdLabs@outlook.com</a> &middot; <a href="privacy.html">Política de Privacidad</a> &middot; <a href="ThirdPartyNotices.html">Avisos de Terceros</a> &middot; <a href="introduction_es.html">Inicio</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /GpuLLM/
+Allow: /AstroSky/
+Disallow: /*/ThirdPartyNotices.html
+
+Sitemap: https://hummingbirdlabs.github.io/Legal/sitemap.xml

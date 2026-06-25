@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /ThirdPartyNotices.html
+
+Sitemap: https://hummingbirdlabs.github.io/Legal/sitemap.xml

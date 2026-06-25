@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Introduction pages (12 languages) -->
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/ja</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/de</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/fr</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/es</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/pt</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/it</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/ru</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/ar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/ko</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/hi</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Help pages (12 languages) -->
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/help</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/de/help</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/es/help</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/it/help</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Privacy pages (4 languages) -->
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/privacy"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/ar/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/privacy"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/it/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/privacy"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/ko/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/privacy"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/privacy"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/privacy"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- ThirdPartyNotices -->
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/AstroSky/ThirdPartyNotices</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+
+  <!-- ===== GpuLLM PAGES ===== -->
+
+  <!-- ===== INTRODUCTION PAGES ===== -->
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_en.html</loc>
+    <lastmod>2026-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_es.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_de.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_id.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_it.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_th.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_en.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_zh.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_ja.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_ko.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_es.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_de.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_fr.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_pt.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_ru.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_ar.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_hi.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_id.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_vi.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_it.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_tr.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_pl.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_th.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_bn.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/introduction_nl.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>weekly</changefreq><priority>0.8</priority>
+  </url>
+
+  <!-- ===== HELP PAGES ===== -->
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_en.html</loc>
+    <lastmod>2026-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_zh.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_ja.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_ko.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_es.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_de.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_fr.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_pt.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_ru.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_ar.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_hi.html"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_id.html"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_vi.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_it.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_tr.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_pl.html"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_th.html"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_bn.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_nl.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/GpuLLM/help_en.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_zh.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_ja.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_ko.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_es.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_de.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_fr.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_pt.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_ru.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_ar.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_hi.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_id.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_vi.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_it.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_tr.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_pl.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_th.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_bn.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/help_nl.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq><priority>0.7</priority>
+  </url>
+
+  <!-- ===== PRIVACY PAGE (English only, no multilingual) ===== -->
+  <url>
+    <loc>https://hummingbirdlabs.github.io/Legal/GpuLLM/privacy.html</loc>
+    <lastmod>2026-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+
+</urlset>

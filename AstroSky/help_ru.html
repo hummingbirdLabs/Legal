@@ -1,0 +1,1096 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Справка и Руководство Пользователя AstroSky — Как Открывать FITS-Файлы, Применять Цветовые Карты и Экспортировать Астрономические Изображения</title>
+  <meta name="description" content="Полное пошаговое руководство пользователя AstroSky — лучшего просмотрщика FITS-изображений для Windows. Научитесь импортировать FITS-файлы, использовать Auto Enhance, применять алгоритмы растяжения и цветовые карты, а также экспортировать астрономические изображения качества 8K для обоев. Включает FAQ, сочетания клавиш и устранение неполадок." />
+  <meta name="keywords" content="справка AstroSky, как открыть FITS-файлы, руководство просмотрщика FITS, учебник по обработке астрономических изображений, как использовать просмотрщик FITS, помощь по программе для астрофотографии, руководство FITS в PNG, учебник по визуализации радиоастрономии, руководство по алгоритмам растяжения" />
+  <meta name="author" content="Hummingbird Labs" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="theme-color" content="#6c8cff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0e1020" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/svg+xml" href="/astrosky/favicon.svg" />
+  <link rel="apple-touch-icon" href="/astrosky/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://hummingbirdlabs.github.io/Legal" />
+  <link rel="canonical" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Справка и Руководство Пользователя AstroSky — Как Открывать FITS-Файлы и Создавать Астрономические Обои" />
+  <meta property="og:description" content="Пошаговое руководство по преобразованию астрономических данных FITS в потрясающие обои 8K. Изучите все функции от пакетного импорта до экспорта — полное руководство с FAQ и сочетаниями клавиш." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help" />
+  <meta property="og:site_name" content="AstroSky" />
+  <meta property="og:image" content="https://hummingbirdlabs.github.io/Legal/AstroSky/1.jpg" />
+  <meta property="og:image:width" content="1920" />
+  <meta property="og:image:height" content="1080" />
+  <meta property="og:image:alt" content="Руководство пользователя AstroSky — пошаговый учебник по визуализации FITS-изображений" />
+
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help" />
+  <link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help" />
+  <link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help" />
+  <link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help" />
+  <link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help" />
+  <link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help" />
+  <link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help" />
+  <link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help" />
+  <link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help" />
+  <link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help" />
+  <link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help" />
+  <link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help" />
+  <link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Справка AstroSky — Руководство и Учебник по Просмотрщику FITS" />
+  <meta name="twitter:description" content="Освойте AstroSky за минуты — от первого импорта FITS до экспорта обоев 8K. Бесплатная 30-дневная пробная версия из Microsoft Store." />
+
+  <!-- Structured Data: HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help#howto",
+    "name": "Как Использовать AstroSky для Открытия FITS-Файлов и Создания Астрономических Изображений",
+    "description": "Пошаговое руководство по импорту, улучшению и экспорту астрономических данных FITS с помощью AstroSky — лучшего просмотрщика FITS-изображений для Windows.",
+    "datePublished": "2025-06-01",
+    "dateModified": "2026-06-25",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Установите AstroSky",
+        "text": "Загрузите AstroSky из Microsoft Store и запустите приложение."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Импортируйте FITS-Файлы",
+        "text": "Нажмите Импорт Файлов на панели инструментов Галереи или перетащите FITS-файлы или целые папки прямо в окно приложения."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Примените Автоулучшение",
+        "text": "Нажмите кнопку Авто на Панели Параметров справа. AstroSky анализирует гистограмму и автоматически выбирает лучший алгоритм растяжения, цветовую карту и чёрную/белую точки."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Точная Настройка Изображения",
+        "text": "Настройте алгоритм растяжения, ползунки чёрной/белой точки и цветовую карту, используя предпросмотр гистограммы в реальном времени. Все изменения отображаются в течение 200 мс."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Экспортируйте Изображение",
+        "text": "Нажмите Экспорт Изображения на Панели Параметров. Выберите формат PNG, JPEG или FITS, выберите предустановку разрешения от 1080p до 8K, при желании добавьте водяной знак, затем нажмите Экспорт."
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help#faqpage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Как открыть FITS-файлы в Windows?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Установите AstroSky из Microsoft Store, запустите приложение, затем перетащите ваши файлы .fits, .fit или .fts в область Галереи — или нажмите Импорт Файлов. Через несколько секунд ваши FITS-изображения будут видны и готовы к улучшению."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Какие форматы файлов поддерживает AstroSky?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AstroSky поддерживает файлы .fits, .fit и .fts, включая многорасширенные FITS (MEF) и кубы данных (NAXIS=3)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Можно ли использовать AstroSky офлайн?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да. После установки из Microsoft Store AstroSky работает на 100% офлайн. Вся обработка изображений выполняется локально на вашем устройстве — подключение к интернету не требуется."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как конвертировать FITS-файлы в PNG или JPEG?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Импортируйте ваш FITS-файл в AstroSky, примените Автоулучшение или ручные настройки, затем нажмите Экспорт Изображения. Выберите формат PNG или JPEG и желаемое разрешение (до 8K). Ваши FITS-данные мгновенно отрисовываются и сохраняются как стандартный файл изображения."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Есть ли бесплатная пробная версия?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да. AstroSky предлагает бесплатную 30-дневную пробную версию со всеми разблокированными функциями. Кредитная карта не требуется. После пробного периода одноразовая покупка открывает пожизненный доступ — без подписки."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как экспортировать изображения для обоев?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Выберите изображение, нажмите Экспорт Изображения на Панели Параметров, выберите предустановку разрешения (1080p, 1440p, 4K, 5K или 8K), выберите формат PNG или JPEG и нажмите Экспорт. При желании можно добавить водяной знак с деталями телескопа."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Работает ли AstroSky на Mac или Linux?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "В настоящее время AstroSky — это приложение только для Windows (Windows 10 и 11). Оно построено на .NET 10 + WPF и распространяется через Microsoft Store. Версии для Mac и Linux в настоящее время недоступны."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как обновить AstroSky?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Обновления доставляются автоматически через Microsoft Store. Откройте Microsoft Store, перейдите в Библиотеку и нажмите Получить Обновления, чтобы проверить последнюю версию."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Главная",
+        "item": "https://hummingbirdlabs.github.io/Legal"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "AstroSky — Просмотрщик FITS-Изображений",
+        "item": "https://hummingbirdlabs.github.io/Legal/AstroSky"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Руководство Пользователя и Справка",
+        "item": "https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help#softwareapp",
+    "name": "AstroSky",
+    "softwareVersion": "1.0",
+    "url": "https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help",
+    "applicationCategory": "ScienceApplication",
+    "operatingSystem": "Windows 10, Windows 11",
+    "description": "Лучший просмотрщик FITS-изображений для Windows. Импортируйте данные астрономических обзоров, применяйте интеллектуальные алгоритмы растяжения и цветовые карты, и экспортируйте изображения качества обоев за секунды — 100% офлайн.",
+    "datePublished": "2025-06-01",
+    "dateModified": "2026-06-25",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Бесплатный 30-дневный пробный период — все функции разблокированы, без кредитной карты. Единоразовая покупка для пожизненного доступа после пробного периода."
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Hummingbird Labs"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hummingbird Labs",
+      "url": "https://hummingbirdlabs.github.io/Legal"
+    },
+    "inLanguage": ["en", "ja", "de", "fr", "es", "pt", "it", "ru", "ar", "hi", "ko", "zh"],
+    "featureList": "Пакетный импорт FITS, Интеллектуальное автоулучшение, Цветовые карты, Живая гистограмма, Двойной режим Красота/Наука, Синтез RGB, Экспорт обоев (до 8K), Небесная информация WCS, Небесная база данных, Просмотрщик заголовков FITS, Карты моментов, Алгебра изображений, PV-диаграммы, Карты каналов"
+  }
+  </script>
+
+  <!-- Structured Data: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help#article",
+    "headline": "Справка и руководство пользователя AstroSky — как открывать FITS-файлы, применять цветовые карты и экспортировать астрономические изображения",
+    "description": "Полное пошаговое руководство пользователя для AstroSky, лучшего просмотрщика FITS-изображений для Windows. Узнайте, как импортировать FITS-файлы, использовать автоулучшение, применять алгоритмы растяжения и цветовые карты, а также экспортировать астрономические изображения качества обоев.",
+    "author": {
+      "@type": "Organization",
+      "name": "Hummingbird Labs"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hummingbird Labs",
+      "url": "https://hummingbirdlabs.github.io/Legal"
+    },
+    "url": "https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help",
+    "mainEntityOfPage": "https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help",
+    "datePublished": "2025-06-01",
+    "dateModified": "2026-06-25",
+    "inLanguage": ["en", "ja", "de", "fr", "es", "pt", "it", "ru", "ar", "hi", "ko", "zh"],
+    "wordCount": "3800"
+  }
+  </script>
+
+  <style>
+    :root {
+      --brand:        #6c8cff;
+      --brand-dark:   #5560d0;
+      --brand-dim:    #e0e8ff;
+      --accent:       #00d4aa;
+      --bg:           #ffffff;
+      --surface:      #f5f7fb;
+      --border:       #e2e6f0;
+      --fg:           #1a1e2e;
+      --fg-muted:     #5a6178;
+      --fg-subtle:    #9aa0b4;
+      --radius-sm:    8px;
+      --radius-md:    16px;
+      --radius-lg:    24px;
+      --shadow-sm:    0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.05);
+      --shadow-md:    0 4px 16px rgba(0,0,0,.10), 0 2px 6px rgba(0,0,0,.06);
+      --max-w:        860px;
+      --ff-body:      "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      --ff-mono:      "Cascadia Code", "Fira Code", "Consolas", monospace;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --brand:       #8aa4ff;
+        --brand-dark:  #6b7be0;
+        --brand-dim:   #1a2040;
+        --accent:      #33e8c0;
+        --bg:          #0e1020;
+        --surface:     #161a2e;
+        --border:      #282e44;
+        --fg:          #e8eaf4;
+        --fg-muted:    #9aa0b4;
+        --fg-subtle:   #4a5068;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--ff-body);
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--fg);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(145deg, #f0f4ff 0%, #e0e8ff 50%, #e0fff4 100%);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+      padding: 64px 24px 40px;
+    }
+    @media (prefers-color-scheme: dark) {
+      header { background: linear-gradient(145deg, #10142a 0%, #161e3a 50%, #0e2a24 100%); }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--brand-dim);
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.5vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .hero-sub {
+      font-size: 1.08rem;
+      color: var(--fg-muted);
+      max-width: 580px;
+      margin: 0 auto 32px;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 32px;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .02em;
+      background: linear-gradient(135deg, var(--brand) 0%, #5a7af0 100%);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      box-shadow: var(--shadow-md);
+      transition: all .3s ease, transform .2s ease;
+    }
+    .download-btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(108, 140, 255, 0.3);
+    }
+
+    /* ── Navigation ── */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      margin-top: 48px;
+    }
+    .toc h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--fg-muted);
+      margin-bottom: 14px;
+    }
+    .toc ol {
+      padding-left: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 24px;
+    }
+    @media (max-width: 600px) { .toc ol { grid-template-columns: 1fr; } }
+    .toc a {
+      font-size: 14.5px;
+      color: var(--brand);
+      text-decoration: none;
+      line-height: 1.8;
+    }
+    .toc a:hover { text-decoration: underline; }
+
+    /* ── Sections ── */
+    section { padding: 64px 0; }
+    section + section { border-top: 1px solid var(--border); }
+
+    h2 {
+      font-size: clamp(1.4rem, 3vw, 1.8rem);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      color: var(--fg);
+    }
+
+    p, li { color: var(--fg-muted); }
+    p { margin-bottom: 14px; }
+
+    /* ── Step Cards ── */
+    .steps { counter-reset: step; list-style: none; padding: 0; }
+
+    .step {
+      counter-increment: step;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .step:last-child { border-bottom: none; }
+
+    .step-num {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--brand-dim);
+      color: var(--brand);
+      font-weight: 800;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step h3 { margin-top: 0; font-size: 1.1rem; }
+
+    /* ── Info / Tip / Warning boxes ── */
+    .callout {
+      border-radius: var(--radius-sm);
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .callout-tip {
+      background: #e0f5ec;
+      border-left: 4px solid var(--accent);
+      color: #1a5a3a;
+    }
+    .callout-note {
+      background: var(--brand-dim);
+      border-left: 4px solid var(--brand);
+      color: #2a3a80;
+    }
+    .callout-warn {
+      background: #fef3d0;
+      border-left: 4px solid #e6a700;
+      color: #7a5800;
+    }
+    @media (prefers-color-scheme: dark) {
+      .callout-tip  { background: #082818; color: #6fdba5; }
+      .callout-note { background: #0a1040; color: #8aa4ff; }
+      .callout-warn { background: #2c1f00; color: #ffd060; }
+    }
+
+    /* ── FAQ ── */
+    details.faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      margin-bottom: 10px;
+    }
+    details.faq-item summary {
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      color: var(--fg);
+      list-style: none;
+    }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item summary::before {
+      content: "›";
+      display: inline-block;
+      width: 20px;
+      font-size: 18px;
+      color: var(--brand);
+      transition: transform .2s;
+    }
+    details.faq-item[open] summary::before { transform: rotate(90deg); }
+    details.faq-item p {
+      margin-top: 10px;
+      padding-left: 20px;
+      font-size: 14.5px;
+    }
+
+    /* ── Shortcuts Table ── */
+    .kbd-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14.5px;
+      margin: 16px 0;
+    }
+    .kbd-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .kbd-table td:first-child {
+      white-space: nowrap;
+      width: 40%;
+    }
+    kbd {
+      display: inline-block;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-family: var(--ff-mono);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--fg);
+      box-shadow: 0 1px 0 var(--border);
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 36px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--fg-subtle);
+    }
+    footer a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+    footer nav { margin-bottom: 16px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════ HEADER ═══════════ -->
+<header>
+  <div class="hero-badge">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/>
+      <line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/>
+      <line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>
+    </svg>
+    Руководство Пользователя
+  </div>
+
+  <h1>Справка и Руководство Пользователя AstroSky</h1>
+  <p class="hero-sub">Полное руководство по открытию FITS-файлов, применению алгоритмов растяжения и цветовых карт, а также экспорту астрономических изображений качества обоев в Windows.</p>
+
+  <!-- ★ DOWNLOAD CTA — prominent placement as required ★ -->
+  <a href="https://apps.microsoft.com/detail/9n8qscsnlt7h?hl=ru-RU&gl=RU" class="download-btn" target="_blank" rel="noopener noreferrer">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
+    Скачать AstroSky из Microsoft Store
+  </a>
+</header>
+
+<!-- ═══════════ TABLE OF CONTENTS ═══════════ -->
+<main class="container">
+  <nav class="toc" aria-label="Содержание">
+    <h2>На Этой Странице</h2>
+    <ol>
+      <li><a href="#quickstart">Быстрый Старт</a></li>
+      <li><a href="#import">Импорт FITS-Файлов</a></li>
+      <li><a href="#auto">Интеллектуальное Автоулучшение</a></li>
+      <li><a href="#stretch">Растяжение и Цветовые Карты</a></li>
+      <li><a href="#modes">Режимы Красота / Наука</a></li>
+      <li><a href="#rgb">Синтез Каналов RGB</a></li>
+      <li><a href="#tools">Научные Инструменты</a></li>
+      <li><a href="#export">Экспорт Изображений</a></li>
+      <li><a href="#settings">Настройки и Язык</a></li>
+      <li><a href="#license">Лицензия и Пробная Версия</a></li>
+      <li><a href="#shortcuts">Сочетания Клавиш</a></li>
+      <li><a href="#faq">Часто Задаваемые Вопросы</a></li>
+      <li><a href="#troubleshooting">Устранение Неполадок</a></li>
+    </ol>
+  </nav>
+</main>
+
+<!-- ═══════════ QUICK START ═══════════ -->
+<section id="quickstart">
+  <div class="container">
+    <h2>1. Быстрый Старт — Первое Изображение за 60 Секунд</h2>
+    <p>Вы можете пройти путь от нуля до красивого экспортированного изображения менее чем за минуту. Вот как:</p>
+
+    <ol class="steps">
+      <li class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Установите и Запустите</h3>
+          <p>Загрузите AstroSky из Microsoft Store и запустите его. Учётная запись или регистрация не требуются.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Импортируйте Ваши FITS-Файлы</h3>
+          <p>Нажмите <strong>Импорт Файлов</strong> на панели инструментов Галереи или просто перетащите FITS-файлы или папку прямо в окно приложения.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Нажмите на Миниатюру</h3>
+          <p>Нажмите на любую миниатюру в сетке Галереи. Изображение мгновенно отобразится на холсте ниже, а Панель Параметров справа активируется.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">4</div>
+        <div>
+          <h3>Нажмите Авто</h3>
+          <p>Нажмите кнопку <strong>Автоулучшение</strong> на Панели Параметров. AstroSky анализирует гистограмму и автоматически выбирает лучший алгоритм растяжения, цветовую карту и чёрную/белую точки.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">5</div>
+        <div>
+          <h3>Экспорт</h3>
+          <p>Нажмите <strong>Экспорт Изображения</strong> внизу Панели Параметров. Выберите предустановку разрешения (1080p, 1440p, 4K, 5K или 8K), выберите формат (PNG или JPEG) и нажмите Экспорт. Ваше изображение, готовое для обоев, сохранено.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="callout callout-tip">
+      <strong>Совет Профессионала:</strong> Вы можете пакетно импортировать целую папку FITS-файлов за один раз. AstroSky загружает их параллельно и показывает прогресс в реальном времени для каждого файла.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ IMPORTING ═══════════ -->
+<section id="import">
+  <div class="container">
+    <h2>2. Импорт FITS-Файлов</h2>
+
+    <h3>Поддерживаемые Типы Файлов</h3>
+    <p>AstroSky поддерживает файлы <strong>.fits</strong>, <strong>.fit</strong> и <strong>.fts</strong>. Он обрабатывает как однорасширенные, так и многорасширенные FITS-файлы (MEF), а также кубы данных, где NAXIS=3 (например, кубы радиоспектральных линий).</p>
+
+    <h3>Как Импортировать</h3>
+    <p>Существует три способа загрузки файлов в AstroSky:</p>
+    <ul>
+      <li><strong>Кнопка Импорт Файлов</strong> — Нажмите кнопку Импорт Файлов на панели инструментов Галереи, чтобы открыть диалог выбора файлов.</li>
+      <li><strong>Перетаскивание файлов</strong> — Перетащите один или несколько FITS-файлов из Проводника прямо в область Галереи.</li>
+      <li><strong>Перетаскивание папок</strong> — Перетащите целую папку в область Галереи. AstroSky рекурсивно найдёт все FITS-файлы внутри.</li>
+    </ul>
+
+    <h3>Прогресс Импорта</h3>
+    <p>Каждый файл загружается с индикатором прогресса в реальном времени. Файлы обрабатываются параллельно с использованием нескольких ядер ЦП. Вы можете отменить все ожидающие импорты в любое время, нажав кнопку <strong>Отменить Всё</strong> на панели инструментов.</p>
+
+    <div class="callout callout-note">
+      <strong>Примечание:</strong> Большие кубы данных (сотни спектральных каналов) могут загружаться несколько секунд. AstroSky остаётся отзывчивым во время импорта — вы можете продолжать работу с уже загруженными изображениями.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ AUTO ENHANCE ═══════════ -->
+<section id="auto">
+  <div class="container">
+    <h2>3. Интеллектуальное Автоулучшение</h2>
+    <p>Кнопка <strong>Авто</strong> — это самый быстрый способ сделать любое FITS-изображение великолепным. Это ядро философии AstroSky «один клик — потрясающий вид».</p>
+
+    <h3>Что Делает Авто</h3>
+    <p>Когда вы нажимаете Авто, AstroSky:</p>
+    <ol>
+      <li>Считывает полную гистограмму значений пикселей текущего изображения.</li>
+      <li>Классифицирует форму гистограммы — <strong>унимодальная</strong> (один пик), <strong>бимодальная</strong> (два пика) или <strong>с длинным хвостом</strong> (расширенное распределение слабых сигналов).</li>
+      <li>Выбирает оптимальный <strong>алгоритм растяжения</strong> для этой формы гистограммы (например, Asinh для длинного хвоста, Линейный для бимодальной).</li>
+      <li>Выбирает наиболее подходящую <strong>цветовую карту</strong> (Viridis для общего использования, Inferno для высокого контраста, Палитра Hubble для данных эмиссионных линий).</li>
+      <li>Устанавливает значения отсечения <strong>чёрной точки</strong> и <strong>белой точки</strong> для максимизации видимых деталей.</li>
+      <li>Отрисовывает результат менее чем за 200 мс.</li>
+    </ol>
+
+    <div class="callout callout-tip">
+      <strong>Совет:</strong> Авто — отличная отправная точка. После нажатия Авто вы всё ещё можете вручную настроить растяжение, цветовую карту и чёрную/белую точки для точной настройки результата.
+    </div>
+
+    <!-- ★ Mid-Page Download CTA ★ -->
+    <div style="text-align:center; margin-top:32px; padding:28px 20px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md);">
+      <p style="font-size:1.05rem; font-weight:700; color:var(--fg); margin-bottom:8px;">Хотите попробовать Автоулучшение сами?</p>
+      <p style="font-size:14px; color:var(--fg-muted); margin-bottom:18px;">Скачайте AstroSky бесплатно — 30-дневная пробная версия, все функции разблокированы, учётная запись не нужна.</p>
+      <a href="https://apps.microsoft.com/detail/9n8qscsnlt7h?hl=ru-RU&gl=RU" class="download-btn" target="_blank" rel="noopener noreferrer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
+        Получить AstroSky в Microsoft Store
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ STRETCH & COLOR ═══════════ -->
+<section id="stretch">
+  <div class="container">
+    <h2>4. Алгоритмы Растяжения и Цветовые Карты</h2>
+
+    <h3>Алгоритмы Растяжения</h3>
+    <p>Алгоритм растяжения определяет, как исходные значения пикселей FITS отображаются на яркость дисплея. AstroSky предлагает:</p>
+    <ul>
+      <li><strong>Линейный</strong> — Прямое пропорциональное отображение. Лучше всего для изображений со сбалансированным динамическим диапазоном.</li>
+      <li><strong>Asinh</strong> — Гиперболическое арксинусное растяжение (аналогично Lupton et al. 2004). Отлично сохраняет как яркие, так и слабые структуры — по умолчанию для большинства случаев.</li>
+      <li><strong>Sqrt</strong> — Растяжение квадратного корня. Усиливает слабые структуры, сжимая яркие пики.</li>
+      <li><strong>Log</strong> — Логарифмическое растяжение. Максимальный контраст в слабых областях; хорошо для данных с экстремальным динамическим диапазоном.</li>
+      <li><strong>Power (Gamma)</strong> — Степенное отображение с настраиваемым показателем гаммы.</li>
+    </ul>
+
+    <h3>Живая Гистограмма</h3>
+    <p>Панель гистограммы показывает 256-биновую гистограмму вашего изображения в реальном времени. Два перетаскиваемых маркера указывают <strong>чёрную точку</strong> (всё ниже обрезается до чёрного) и <strong>белую точку</strong> (всё выше обрезается до белого). Перетащите любой маркер, и предпросмотр обновится за 200 мс — без ожидания.</p>
+
+    <h3>Цветовые Карты</h3>
+    <p>Выбирайте из тщательно подобранного набора перцептивно равномерных цветовых карт, удобных для дальтоников:</p>
+    <ul>
+      <li><strong>Viridis</strong> — Общего назначения, перцептивно равномерная (по умолчанию).</li>
+      <li><strong>Plasma</strong> — Высококонтрастный градиент от тёплого к холодному.</li>
+      <li><strong>Inferno</strong> — Похожа на излучение чёрного тела; отлично для данных с высоким динамическим диапазоном.</li>
+      <li><strong>Magma</strong> — Вариант в земляных тонах с сильным контрастом яркости.</li>
+      <li><strong>Палитра Hubble</strong> — Вдохновлена знаковой цветовой схемой космического телескопа Hubble.</li>
+      <li><strong>Оттенки Серого</strong> — Чистая яркость; идеально для научного анализа.</li>
+      <li><strong>Heat</strong> — Классическая тепловая карта.</li>
+    </ul>
+    <p>Каждая цветовая карта отображает образец градиента в выпадающем меню, так что вы можете предварительно просмотреть перед выбором.</p>
+  </div>
+</section>
+
+<!-- ═══════════ DUAL MODE ═══════════ -->
+<section id="modes">
+  <div class="container">
+    <h2>5. Режим Красоты против Режима Науки</h2>
+    <p>AstroSky имеет два режима интерфейса, переключаемых тумблером на верхней панели Chrome. Переключение занимает менее 100 мс и <strong>не перезагружает ваши изображения</strong>.</p>
+
+    <h3>Режим Красоты (По Умолчанию)</h3>
+    <p>Разработан для чистого, творческого опыта:</p>
+    <ul>
+      <li>Панель Параметров показывает только <strong>Авто</strong>, <strong>Цветовую Карту</strong> и <strong>Экспорт</strong>.</li>
+      <li>Никаких научных наложений — только отрендеренное изображение.</li>
+      <li>Идеально для создания обоев и изображений для обмена.</li>
+    </ul>
+
+    <h3>Режим Науки</h3>
+    <p>Расширяет полный набор инструментов анализа для астрономов:</p>
+    <ul>
+      <li><strong>Наложение Эллипса Луча</strong> — Визуализирует луч телескопа из заголовков FITS BMAJ/BMIN.</li>
+      <li><strong>Считывание Значений Пикселей</strong> — Наведите курсор на любой пиксель, чтобы увидеть его значение в строке состояния.</li>
+      <li><strong>Наложение Небесной Информации</strong> — Отображает небесные координаты на изображении.</li>
+      <li><strong>Цветовая Шкала</strong> — Показывает шкалу отображения интенсивности в цвет.</li>
+      <li><strong>PV-Диаграммы</strong> — Извлечение срезов позиция-скорость для кубов данных.</li>
+      <li><strong>Карты Каналов</strong> — Полный вид сетки карт каналов для спектральных кубов.</li>
+      <li><strong>Моментные Карты</strong> — Вычисление момента-0 (интегрированная интенсивность) и момента-1 (поле скоростей).</li>
+      <li><strong>Алгебра Изображений</strong> — Сложение, вычитание, умножение или деление двух изображений.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════ RGB SYNTHESIS ═══════════ -->
+<section id="rgb">
+  <div class="container">
+    <h2>6. Синтез Каналов RGB</h2>
+    <p>Объедините три отдельных FITS-изображения (например, разных диапазонов длин волн) в одно полноцветное составное изображение.</p>
+
+    <h3>Как Синтезировать</h3>
+    <ol class="steps">
+      <li class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Импортируйте Изображения</h3>
+          <p>Загрузите как минимум три FITS-изображения в Галерею (например, данные диапазонов R, G, B).</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Назначьте Каналы</h3>
+          <p>Наведите курсор на любую миниатюру, чтобы увидеть кнопки каналов R / G / B. Нажмите, чтобы назначить это изображение каналу. Или щёлкните правой кнопкой мыши по миниатюре и назначьте через контекстное меню.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Синтезируйте</h3>
+          <p>Когда все три канала назначены, нажмите кнопку <strong>Синтез RGB (3/3)</strong> на панели инструментов Галереи. Диалог синтеза позволяет настроить растяжение и вес для каждого канала.</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="callout callout-tip">
+      <strong>Совет:</strong> Кнопка Синтеза RGB показывает прогресс назначения каналов в реальном времени — например, (1/3), (2/3), (3/3). Она подсвечивается, когда все три канала заполнены.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SCIENCE TOOLS ═══════════ -->
+<section id="tools">
+  <div class="container">
+    <h2>7. Научные Инструменты</h2>
+    <p>AstroSky включает набор инструментов анализа для профессиональных астрономов, все доступны в Режиме Науки.</p>
+
+    <h3>Просмотрщик Заголовков FITS</h3>
+    <p>Доступен на вкладке <strong>Заголовок</strong> Панели Параметров. Показывает все записи заголовка FITS в виде таблицы с возможностью поиска по трём столбцам (Ключевое Слово / Значение / Комментарий). Нажмите на любое значение, чтобы скопировать его. Используйте переключатель расширений для навигации по заголовкам многорасширенных файлов.</p>
+
+    <h3>База Данных Небесных Объектов</h3>
+    <p>Доступна на вкладке <strong>Инфо</strong>. Когда FITS-файл содержит заголовки WCS (Мировая Система Координат), AstroSky автоматически:</p>
+    <ul>
+      <li>Считывает небесные координаты (RA/Dec в экваториальной, l/b в галактической).</li>
+      <li>Выполняет кросс-сопоставление с встроенной офлайн-базой данных из <strong>более 800 небесных объектов</strong> (каталоги Мессье, NGC, IC).</li>
+      <li>Отображает описания на простом языке для любых совпавших объектов.</li>
+      <li>Показывает мини-карту неба в проекции Айтова с отмеченным полем зрения.</li>
+    </ul>
+
+    <h3>Наложение Эллипса Луча</h3>
+    <p>Если ваши заголовки FITS содержат ключевые слова BMAJ, BMIN и BPA (большая полуось луча, малая полуось, позиционный угол), AstroSky накладывает полупрозрачный эллипс луча на холст изображения. Включение/выключение видимости на панели инструментов холста.</p>
+
+    <h3>Моментные Карты</h3>
+    <p>Для кубов данных (FITS-файлы с NAXIS=3) AstroSky может вычислять моментные карты:
+    <br/><strong>Момент 0</strong> — Интегрированная интенсивность (сумма вдоль спектральной оси).
+    <br/><strong>Момент 1</strong> — Средневзвешенное по интенсивности поле скоростей.
+    <br/>Доступ через кнопку <strong>Моментные Карты</strong> на панели инструментов Галереи.</p>
+
+    <h3>Диаграммы Позиция-Скорость (PV)</h3>
+    <p>Для кубов данных определите линию среза на холсте изображения, и AstroSky извлечёт диаграмму позиция-скорость вдоль этого среза. Доступ с панели инструментов холста в Режиме Науки.</p>
+
+    <h3>Алгебра Изображений</h3>
+    <p>Выполняйте арифметические операции между двумя изображениями: Сложение, Вычитание, Умножение, Деление. Доступ через кнопку <strong>Алгебра Изображений</strong> на панели инструментов Галереи.</p>
+  </div>
+</section>
+
+<!-- ═══════════ EXPORT ═══════════ -->
+<section id="export">
+  <div class="container">
+    <h2>8. Экспорт Изображений</h2>
+
+    <h3>Экспорт Одного Изображения</h3>
+    <ol class="steps">
+      <li class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>Откройте Диалог Экспорта</h3>
+          <p>Выбрав изображение, нажмите кнопку <strong>Экспорт Изображения</strong> внизу Панели Параметров.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>Выберите Формат</h3>
+          <p>Выберите <strong>PNG</strong> (без потерь, наилучшее качество), <strong>JPEG</strong> (меньший размер файла) или <strong>FITS</strong> (сохранение научных данных).</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>Выберите Разрешение</h3>
+          <p>Выберите предустановку: 1920x1080, 2560x1440, 3840x2160 (4K), 5120x2880 (5K) или 7680x4320 (8K). AstroSky выполняет рендеринг в целевом разрешении независимо от размера экрана.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">4</div>
+        <div>
+          <h3>Добавьте Водяной Знак (Опционально)</h3>
+          <p>При желании добавьте водяной знак с моделью телескопа, диапазоном наблюдения, временем интегрирования и подписью автора — идеально для публикации на AstroBin или CloudyNights.</p>
+        </div>
+      </li>
+    </ol>
+
+    <h3>Пакетный Экспорт</h3>
+    <p>Нажмите <strong>Экспортировать Всё</strong> на панели инструментов Галереи, чтобы экспортировать все загруженные изображения за одну операцию. Выберите отдельные изображения с помощью Ctrl+Клик, затем используйте <strong>Экспортировать Выбранные</strong> из контекстного меню.</p>
+  </div>
+</section>
+
+<!-- ═══════════ SETTINGS ═══════════ -->
+<section id="settings">
+  <div class="container">
+    <h2>9. Настройки и Язык</h2>
+
+    <h3>Открытие Настроек</h3>
+    <p>Нажмите значок шестерёнки в правом верхнем углу панели Chrome, чтобы открыть окно Настроек.</p>
+
+    <h3>Тема</h3>
+    <p>Выберите между <strong>Светлой</strong> и <strong>Тёмной</strong> темами. Тема применяется мгновенно без перезапуска.</p>
+
+    <h3>Язык</h3>
+    <p>AstroSky полностью локализован на <strong>7 языков</strong>:</p>
+    <ul>
+      <li>Английский (по умолчанию)</li>
+      <li>Японский (日本語)</li>
+      <li>Немецкий (Deutsch)</li>
+      <li>Французский (Français)</li>
+      <li>Испанский (Español)</li>
+      <li>Португальский (Português — Бразилия)</li>
+      <li>Русский (Русский)</li>
+    </ul>
+    <p>Переключайте языки из селектора языка на панели Chrome или в окне Настроек. Перезапуск не требуется.</p>
+
+    <h3>Другие Настройки</h3>
+    <p>Окно Настроек также предоставляет доступ к:</p>
+    <ul>
+      <li><strong>Условия Лицензии</strong> — Просмотр полного лицензионного соглашения на программное обеспечение.</li>
+      <li><strong>Политика Конфиденциальности</strong> — Ознакомьтесь с обязательствами AstroSky по конфиденциальности (<a href="privacy_ru.html">смотреть онлайн</a>).</li>
+      <li><strong>Уведомления о Сторонних Компонентах</strong> — Атрибуции и уведомления библиотек с открытым исходным кодом.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════ LICENSE ═══════════ -->
+<section id="license">
+  <div class="container">
+    <h2>10. Лицензия и Бесплатная Пробная Версия</h2>
+
+    <h3>Бесплатная 30-Дневная Пробная Версия</h3>
+    <p>При первом запуске AstroSky автоматически начинается <strong>бесплатная 30-дневная пробная версия</strong>. Во время пробного периода <strong>все функции полностью разблокированы</strong> — без ограничений, без водяных знаков, кредитная карта не требуется.</p>
+
+    <h3>Пожизненная Лицензия</h3>
+    <p>После пробного периода одноразовая покупка открывает пожизненный доступ. Никакой подписки — вы покупаете один раз и владеете навсегда. Покупка безопасно обрабатывается через Microsoft Store.</p>
+
+    <h3>Как Приобрести</h3>
+    <p>Вы можете приобрести в любое время — даже во время пробного периода:</p>
+    <ul>
+      <li>Нажмите кнопку <strong>Купить</strong> на Баннере Пробной Версии (виден во время пробного периода).</li>
+      <li>Или нажмите <strong>Купить</strong> на Оверлее Paywall (виден после истечения пробного периода).</li>
+    </ul>
+
+    <div class="callout callout-note">
+      <strong>Примечание:</strong> Обратный отсчёт пробного периода начинается при первом запуске, а не при установке. Если вы удалите и переустановите, Microsoft Store запомнит состояние вашего пробного периода.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ KEYBOARD SHORTCUTS ═══════════ -->
+<section id="shortcuts">
+  <div class="container">
+    <h2>11. Сочетания Клавиш</h2>
+    <table class="kbd-table">
+      <tbody>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>Z</kbd></td><td>Отменить последнее изменение параметра</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>Y</kbd></td><td>Повторить последнее отменённое изменение</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>O</kbd></td><td>Открыть диалог Импорта Файлов</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>E</kbd></td><td>Экспортировать текущее изображение</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>S</kbd></td><td>Открыть Настройки</td></tr>
+        <tr><td>Колёсико Мыши</td><td>Приблизить / отдалить на холсте изображения</td></tr>
+        <tr><td>Левый Клик + Перетаскивание</td><td>Панорамирование холста изображения</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + Клик (миниатюры)</td><td>Множественный выбор для назначения RGB или пакетного экспорта</td></tr>
+        <tr><td>Правый Клик (миниатюра)</td><td>Контекстное меню: Удалить, Экспортировать, Назначение канала</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ═══════════ FAQ ═══════════ -->
+<section id="faq">
+  <div class="container">
+    <h2>12. Часто Задаваемые Вопросы</h2>
+
+    <details class="faq-item">
+      <summary>Какие форматы FITS-файлов поддерживает AstroSky?</summary>
+      <p>AstroSky поддерживает файлы .fits, .fit и .fts — как однорасширенные, так и многорасширенные FITS (MEF). Кубы данных с NAXIS=3 полностью поддерживаются с навигацией по спектральным каналам.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Можно ли использовать AstroSky полностью офлайн?</summary>
+      <p>Да. После установки из Microsoft Store AstroSky работает на 100% офлайн. Вся загрузка FITS, обработка изображений и рендеринг выполняются локально на вашем устройстве. Подключение к интернету не требуется.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Отправляются ли мои данные куда-либо?</summary>
+      <p>Нет. AstroSky обрабатывает все данные в памяти на вашем локальном компьютере. Никакие файлы, изображения или данные никогда не загружаются в облако или третьим лицам. Телеметрия или аналитика отсутствуют.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Работает ли AstroSky на Mac или Linux?</summary>
+      <p>В настоящее время AstroSky — это приложение для Windows (Windows 10 и Windows 11). Оно построено на .NET 10 + WPF и распространяется через Microsoft Store. Версии для Mac и Linux в настоящее время недоступны.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Какой максимальный размер изображения может обрабатывать AstroSky?</summary>
+      <p>AstroSky оптимизирован для больших FITS-файлов из современных обзоров. Изображения до 16K × 16K пикселей обрабатываются эффективно. Производительность зависит от ОЗУ и ядер ЦП вашей системы — рекомендуется 8 ГБ ОЗУ для изображений 4K+.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Можно ли экспортировать изображения с разными соотношениями сторон?</summary>
+      <p>Да. В диалоге Экспорта вы можете выбрать между <strong>По Размеру Холста</strong> (сохраняет исходное соотношение сторон FITS-изображения) или <strong>Обрезать для Заполнения</strong> (заполняет выбранное разрешение обоев, обрезая края изображения).</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Работает ли Автоулучшение на всех типах FITS-данных?</summary>
+      <p>Автоулучшение разработано для данных непрерывного спектра и эмиссионных линий общего назначения (наиболее распространённые астрономические изображения). Для специализированных данных, таких как спектральные кубы или карты поляризации, рекомендуется ручная настройка после Авто.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Как обновить AstroSky?</summary>
+      <p>Обновления доставляются автоматически через Microsoft Store. Откройте Microsoft Store, перейдите в Библиотеку и нажмите Получить Обновления, чтобы проверить последнюю версию.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Где можно взять образцы FITS-файлов для тестирования?</summary>
+      <p>Несколько бесплатных публичных архивов предлагают FITS-данные: <em>ESO Science Archive</em>, <em>NRAO VLA Archive</em>, <em>NASA/IPAC Infrared Science Archive</em> и <em>Herschel Science Archive</em>. Загрузите любое калиброванное FITS-изображение и перетащите его в AstroSky.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Можно ли использовать AstroSky для профессиональных исследований?</summary>
+      <p>Да. Режим Науки AstroSky предоставляет инструменты анализа, подходящие для профессиональной радиоастрономии и проверки данных обзоров, включая наложения луча, считывание пикселей, PV-диаграммы и вычисление моментных карт. Однако для продвинутой фотометрии или спектрального анализа рекомендуются специализированные инструменты, такие как DS9 или CASA.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ═══════════ TROUBLESHOOTING ═══════════ -->
+<section id="troubleshooting">
+  <div class="container">
+    <h2>13. Устранение Неполадок</h2>
+
+    <h3>Изображение не отображается / пустой холст</h3>
+    <ul>
+      <li>Убедитесь, что FITS-файл содержит данные изображения (проверьте NAXIS ≥ 2 в заголовке).</li>
+      <li>Попробуйте нажать <strong>Авто</strong> — это сбрасывает все параметры растяжения и пересчитывает оптимальное окно отображения.</li>
+      <li>Проверьте, что ползунки чёрной/белой точки не находятся оба в крайних значениях.</li>
+    </ul>
+
+    <h3>Импорт не удаётся или файл отклоняется</h3>
+    <ul>
+      <li>Проверьте, что расширение файла .fits, .fit или .fts.</li>
+      <li>Убедитесь, что файл не повреждён — попробуйте открыть его в другом просмотрщике FITS, например DS9.</li>
+      <li>При импорте большой папки попробуйте импортировать отдельные файлы, чтобы выявить проблемные.</li>
+    </ul>
+
+    <h3>Низкая производительность</h3>
+    <ul>
+      <li>Закройте другие приложения, интенсивно использующие GPU (AstroSky использует рендеринг GPU SkiaSharp).</li>
+      <li>Для очень больших кубов данных рассмотрите извлечение отдельных каналов перед загрузкой.</li>
+      <li>Убедитесь, что драйверы графики обновлены.</li>
+    </ul>
+
+    <h3>WCS / Небесные Координаты не отображаются</h3>
+    <ul>
+      <li>FITS-файл должен содержать стандартные ключевые слова заголовка WCS (CRVAL1/2, CRPIX1/2, CDELT1/2, CTYPE1/2 и т.д.).</li>
+      <li>Если ваш файл не содержит заголовков WCS, функции Небесной Информации и Базы Данных Небесных Объектов не будут доступны для этого изображения.</li>
+    </ul>
+
+    <div class="callout callout-warn">
+      <strong>Всё ещё есть проблемы?</strong> Файлы диагностического журнала записываются в каталог приложения и очищаются при каждом запуске. Вы можете отправить эти журналы на <a href="mailto:HummingbirdLabs@outlook.com">HummingbirdLabs@outlook.com</a> для поддержки. Личные данные не включаются в файлы журнала.
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ NEXT STEPS / BOTTOM CTA ═══════════ -->
+<section style="text-align:center; background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="container" style="padding:48px 24px;">
+    <h2 style="margin-bottom:12px;">Готовы Преобразовать Ваши FITS-Данные?</h2>
+    <p style="color:var(--fg-muted); margin-bottom:24px; max-width:500px; margin-left:auto; margin-right:auto;">
+            Скачайте AstroSky сейчас и превратите ваш первый FITS-файл в потрясающее изображение менее чем за 60 секунд. Бесплатная 30-дневная пробная версия — все функции разблокированы, без кредитной карты, без учётной записи.
+    </p>
+    <a href="https://apps.microsoft.com/detail/9n8qscsnlt7h?hl=ru-RU&gl=RU" class="download-btn" target="_blank" rel="noopener noreferrer">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
+      Скачать AstroSky из Microsoft Store
+    </a>
+    <p style="font-size:13px; color:var(--fg-subtle); margin-top:20px;">
+      <a href="introduction_ru.html" style="color:var(--brand); text-decoration:none;">&#8592; Назад к Обзору Продукта</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#quickstart" style="color:var(--brand); text-decoration:none;">Вернуться к Быстрому Старту &#8593;</a>
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <nav aria-label="Навигация в подвале">
+    <a href="introduction_ru.html">Страница Продукта</a>
+    <a href="privacy_ru.html">Политика Конфиденциальности</a>
+    <a href="ThirdPartyNotices.html">Уведомления о Сторонних Компонентах</a>
+    <a href="LICENSING_GUIDE.md">Руководство по Лицензированию</a>
+  </nav>
+  <p>AstroSky — Hummingbird Labs &copy; 2026. Распространяется через Microsoft Store.</p>
+  <p style="font-size:11.5px; color:var(--fg-subtle); margin-top:6px;">Последнее обновление: 25 июня 2026 г. <a href="https://apps.microsoft.com/detail/9n8qscsnlt7h?hl=ru-RU&gl=RU" style="color:var(--brand);">Получить последнюю версию</a>.</p>
+</footer>
+
+</body>
+</html>

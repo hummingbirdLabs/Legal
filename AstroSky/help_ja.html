@@ -1,0 +1,1096 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AstroSky ヘルプ＆ユーザーガイド — FITSファイルの開き方、カラーマップの適用、天体画像の書き出し方法</title>
+  <meta name="description" content="Windows向け最高のFITS画像ビューアーAstroSkyの完全ステップバイステップユーザーガイド。FITSファイルのインポート、自動強調、ストレッチアルゴリズムとカラーマップの適用、8K壁紙品質の天体画像の書き出し方法を解説。FAQ、キーボードショートカット、トラブルシューティング付き。" />
+  <meta name="keywords" content="AstroSky ヘルプ, FITSファイル 開き方, FITS画像ビューアー ガイド, 天体画像処理 チュートリアル, FITSファイルビューアー 使い方, 天体写真ソフト ヘルプ, FITS PNG 変換 ガイド, 電波天文学 可視化 チュートリアル, ストレッチアルゴリズム ガイド" />
+  <meta name="author" content="Hummingbird Labs" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="theme-color" content="#6c8cff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0e1020" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" type="image/svg+xml" href="/astrosky/favicon.svg" />
+  <link rel="apple-touch-icon" href="/astrosky/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://hummingbirdlabs.github.io/Legal" />
+  <link rel="canonical" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AstroSky ヘルプ＆ユーザーガイド — FITSファイルの開き方と天体壁紙の作成方法" />
+  <meta property="og:description" content="天体FITSデータを美しい8K壁紙画像に変換するステップバイステップガイド。バッチインポートから書き出しまでの全機能を解説 — FAQとキーボードショートカット付き。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help" />
+  <meta property="og:site_name" content="AstroSky" />
+  <meta property="og:image" content="https://hummingbirdlabs.github.io/Legal/AstroSky/1.jpg" />
+  <meta property="og:image:width" content="1920" />
+  <meta property="og:image:height" content="1080" />
+  <meta property="og:image:alt" content="AstroSky ユーザーガイド — FITS画像可視化のステップバイステップチュートリアル" />
+
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="en" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help" />
+  <link rel="alternate" hreflang="ja" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help" />
+  <link rel="alternate" hreflang="de" href="https://hummingbirdlabs.github.io/Legal/AstroSky/de/help" />
+  <link rel="alternate" hreflang="fr" href="https://hummingbirdlabs.github.io/Legal/AstroSky/fr/help" />
+  <link rel="alternate" hreflang="es" href="https://hummingbirdlabs.github.io/Legal/AstroSky/es/help" />
+  <link rel="alternate" hreflang="pt" href="https://hummingbirdlabs.github.io/Legal/AstroSky/pt/help" />
+  <link rel="alternate" hreflang="it" href="https://hummingbirdlabs.github.io/Legal/AstroSky/it/help" />
+  <link rel="alternate" hreflang="ru" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ru/help" />
+  <link rel="alternate" hreflang="ar" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ar/help" />
+  <link rel="alternate" hreflang="hi" href="https://hummingbirdlabs.github.io/Legal/AstroSky/hi/help" />
+  <link rel="alternate" hreflang="ko" href="https://hummingbirdlabs.github.io/Legal/AstroSky/ko/help" />
+  <link rel="alternate" hreflang="zh" href="https://hummingbirdlabs.github.io/Legal/AstroSky/zh/help" />
+  <link rel="alternate" hreflang="x-default" href="https://hummingbirdlabs.github.io/Legal/AstroSky/help" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AstroSky ヘルプ — FITSビューアー ガイド＆チュートリアル" />
+  <meta name="twitter:description" content="数分でAstroSkyをマスター — 初めてのFITSインポートから8K壁紙の書き出しまで。Microsoft Storeから30日間無料トライアル。" />
+
+  <!-- Structured Data: HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help#howto",
+    "name": "AstroSkyでFITSファイルを開き天体画像を作成する方法",
+    "description": "Windows向け最高のFITS画像ビューアーAstroSkyを使って、FITS天体データをインポート、強調、書き出しするステップバイステップガイド。",
+    "datePublished": "2025-06-01",
+    "dateModified": "2026-06-25",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "AstroSkyをインストール",
+        "text": "Microsoft StoreからAstroSkyをダウンロードし、アプリケーションを起動します。"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "FITSファイルをインポート",
+        "text": "ギャラリーツールバーの「ファイルをインポート」をクリックするか、FITSファイルやフォルダ全体をアプリケーションウィンドウに直接ドラッグ＆ドロップします。"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "自動強調を適用",
+        "text": "右側のパラメータパネルにある「自動」ボタンをクリックします。AstroSkyがヒストグラムを解析し、最適なストレッチアルゴリズム、カラーマップ、白黒ポイントを自動選択します。"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "画像を微調整",
+        "text": "ストレッチアルゴリズム、白黒ポイントスライダー、カラーマップをリアルタイムヒストグラムプレビューで調整します。すべての変更は200ms以内にレンダリングされます。"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "画像を書き出し",
+        "text": "パラメータパネルの「画像を書き出し」をクリックします。PNG、JPEG、FITS形式を選択し、1080pから8Kまでの解像度プリセットを選び、必要に応じて透かしを追加してから「書き出し」をクリックします。"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help#faqpage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "WindowsでFITSファイルを開くには？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Microsoft StoreからAstroSkyをインストールし、アプリを起動して、.fits、.fit、.ftsファイルをギャラリーエリアにドラッグ＆ドロップするか、「ファイルをインポート」をクリックします。数秒でFITS画像が表示され、強調処理の準備が整います。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "AstroSkyはどのファイル形式に対応していますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AstroSkyは.fits、.fit、.ftsファイルに対応しており、複数拡張FITS（MEF）ファイルやデータキューブ（NAXIS=3）もサポートしています。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "AstroSkyはオフラインで使用できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。Microsoft Storeからインストール後、AstroSkyは100％オフラインで動作します。すべての画像処理はお使いのデバイス上でローカル実行され、インターネット接続は不要です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "FITSファイルをPNGまたはJPEGに変換するには？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FITSファイルをAstroSkyにインポートし、自動強調または手動調整を適用してから「画像を書き出し」をクリックします。PNGまたはJPEG形式と希望の解像度（最大8K）を選択します。FITSデータが標準画像ファイルとして即座にレンダリング・保存されます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "無料トライアルはありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。AstroSkyは全機能がロック解除された30日間の無料トライアルを提供しています。クレジットカードは不要です。トライアル後、1回の購入で生涯アクセス権が得られます — サブスクリプションはありません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "壁紙用に画像を書き出すには？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "画像を選択し、パラメータパネルの「画像を書き出し」をクリックして、解像度プリセット（1080p、1440p、4K、5K、8K）を選び、PNGまたはJPEG形式を選択して「書き出し」をクリックします。必要に応じて望遠鏡の詳細を含む透かしを追加することもできます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "AstroSkyはMacやLinuxで動作しますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "現在、AstroSkyはWindows専用アプリケーションです（Windows 10および11）。.NET 10 + WPFで構築され、Microsoft Storeを通じて配布されています。MacおよびLinux版は現時点では提供されていません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "AstroSkyを更新するには？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "更新はMicrosoft Storeを通じて自動的に配信されます。Microsoft Storeを開き、「ライブラリ」に移動して「更新プログラムを取得」をクリックすると、最新バージョンを確認できます。"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help#breadcrumb",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "ホーム",
+        "item": "https://hummingbirdlabs.github.io/Legal"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "AstroSky — FITS画像ビューアー",
+        "item": "https://hummingbirdlabs.github.io/Legal/AstroSky"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "ユーザーガイド＆ヘルプ",
+        "item": "https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help#softwareapp",
+    "name": "AstroSky",
+    "softwareVersion": "1.0",
+    "url": "https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help",
+    "applicationCategory": "ScienceApplication",
+    "operatingSystem": "Windows 10, Windows 11",
+    "description": "Windows用の最高のFITS画像ビューア。天文サーベイデータをインポートし、インテリジェントなストレッチアルゴリズムとカラーマップを適用し、壁紙品質の画像を数秒でエクスポート — 100%オフライン。",
+    "datePublished": "2025-06-01",
+    "dateModified": "2026-06-25",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "30日間無料トライアル — 全機能アンロック、クレジットカード不要。トライアル後、生涯アクセスのための1回限りの購入。"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Hummingbird Labs"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hummingbird Labs",
+      "url": "https://hummingbirdlabs.github.io/Legal"
+    },
+    "inLanguage": ["en", "ja", "de", "fr", "es", "pt", "it", "ru", "ar", "hi", "ko", "zh"],
+    "featureList": "FITS一括読み込み, スマート自動強調, カラーマップ, リアルタイムヒストグラム, 美麗/科学デュアルモード, RGB合成, 壁紙出力(最大8K), WCSスカイ情報, 天体データベース, FITSヘッダービューア, モーメントマップ, 画像演算, PV図, チャンネルマップ"
+  }
+  </script>
+
+  <!-- Structured Data: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help#article",
+    "headline": "AstroSky ヘルプ＆ユーザーガイド — FITSファイルを開き、カラーマップを適用し、天文画像を書き出す方法",
+    "description": "Windows用最高のFITS画像ビューアAstroSkyの完全なステップバイステップユーザーガイド。FITSファイルのインポート、オートエンハンスの使用、ストレッチアルゴリズムとカラーマップの適用、壁紙品質の天文画像のエクスポート方法を学びます。FAQ、キーボードショートカット、トラブルシューティング付き。",
+    "author": {
+      "@type": "Organization",
+      "name": "Hummingbird Labs"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hummingbird Labs",
+      "url": "https://hummingbirdlabs.github.io/Legal"
+    },
+    "url": "https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help",
+    "mainEntityOfPage": "https://hummingbirdlabs.github.io/Legal/AstroSky/ja/help",
+    "datePublished": "2025-06-01",
+    "dateModified": "2026-06-25",
+    "inLanguage": ["en", "ja", "de", "fr", "es", "pt", "it", "ru", "ar", "hi", "ko", "zh"],
+    "wordCount": "3800"
+  }
+  </script>
+
+  <style>
+    :root {
+      --brand:        #6c8cff;
+      --brand-dark:   #5560d0;
+      --brand-dim:    #e0e8ff;
+      --accent:       #00d4aa;
+      --bg:           #ffffff;
+      --surface:      #f5f7fb;
+      --border:       #e2e6f0;
+      --fg:           #1a1e2e;
+      --fg-muted:     #5a6178;
+      --fg-subtle:    #9aa0b4;
+      --radius-sm:    8px;
+      --radius-md:    16px;
+      --radius-lg:    24px;
+      --shadow-sm:    0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.05);
+      --shadow-md:    0 4px 16px rgba(0,0,0,.10), 0 2px 6px rgba(0,0,0,.06);
+      --max-w:        860px;
+      --ff-body:      "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      --ff-mono:      "Cascadia Code", "Fira Code", "Consolas", monospace;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --brand:       #8aa4ff;
+        --brand-dark:  #6b7be0;
+        --brand-dim:   #1a2040;
+        --accent:      #33e8c0;
+        --bg:          #0e1020;
+        --surface:     #161a2e;
+        --border:      #282e44;
+        --fg:          #e8eaf4;
+        --fg-muted:    #9aa0b4;
+        --fg-subtle:   #4a5068;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--ff-body);
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--fg);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(145deg, #f0f4ff 0%, #e0e8ff 50%, #e0fff4 100%);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+      padding: 64px 24px 40px;
+    }
+    @media (prefers-color-scheme: dark) {
+      header { background: linear-gradient(145deg, #10142a 0%, #161e3a 50%, #0e2a24 100%); }
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--brand-dim);
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.5vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .hero-sub {
+      font-size: 1.08rem;
+      color: var(--fg-muted);
+      max-width: 580px;
+      margin: 0 auto 32px;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 32px;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .02em;
+      background: linear-gradient(135deg, var(--brand) 0%, #5a7af0 100%);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      box-shadow: var(--shadow-md);
+      transition: all .3s ease, transform .2s ease;
+    }
+    .download-btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(108, 140, 255, 0.3);
+    }
+
+    /* ── Navigation ── */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      margin-top: 48px;
+    }
+    .toc h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--fg-muted);
+      margin-bottom: 14px;
+    }
+    .toc ol {
+      padding-left: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 24px;
+    }
+    @media (max-width: 600px) { .toc ol { grid-template-columns: 1fr; } }
+    .toc a {
+      font-size: 14.5px;
+      color: var(--brand);
+      text-decoration: none;
+      line-height: 1.8;
+    }
+    .toc a:hover { text-decoration: underline; }
+
+    /* ── Sections ── */
+    section { padding: 64px 0; }
+    section + section { border-top: 1px solid var(--border); }
+
+    h2 {
+      font-size: clamp(1.4rem, 3vw, 1.8rem);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      color: var(--fg);
+    }
+
+    p, li { color: var(--fg-muted); }
+    p { margin-bottom: 14px; }
+
+    /* ── Step Cards ── */
+    .steps { counter-reset: step; list-style: none; padding: 0; }
+
+    .step {
+      counter-increment: step;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .step:last-child { border-bottom: none; }
+
+    .step-num {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--brand-dim);
+      color: var(--brand);
+      font-weight: 800;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step h3 { margin-top: 0; font-size: 1.1rem; }
+
+    /* ── Info / Tip / Warning boxes ── */
+    .callout {
+      border-radius: var(--radius-sm);
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .callout-tip {
+      background: #e0f5ec;
+      border-left: 4px solid var(--accent);
+      color: #1a5a3a;
+    }
+    .callout-note {
+      background: var(--brand-dim);
+      border-left: 4px solid var(--brand);
+      color: #2a3a80;
+    }
+    .callout-warn {
+      background: #fef3d0;
+      border-left: 4px solid #e6a700;
+      color: #7a5800;
+    }
+    @media (prefers-color-scheme: dark) {
+      .callout-tip  { background: #082818; color: #6fdba5; }
+      .callout-note { background: #0a1040; color: #8aa4ff; }
+      .callout-warn { background: #2c1f00; color: #ffd060; }
+    }
+
+    /* ── FAQ ── */
+    details.faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      margin-bottom: 10px;
+    }
+    details.faq-item summary {
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      color: var(--fg);
+      list-style: none;
+    }
+    details.faq-item summary::-webkit-details-marker { display: none; }
+    details.faq-item summary::before {
+      content: "›";
+      display: inline-block;
+      width: 20px;
+      font-size: 18px;
+      color: var(--brand);
+      transition: transform .2s;
+    }
+    details.faq-item[open] summary::before { transform: rotate(90deg); }
+    details.faq-item p {
+      margin-top: 10px;
+      padding-left: 20px;
+      font-size: 14.5px;
+    }
+
+    /* ── Shortcuts Table ── */
+    .kbd-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14.5px;
+      margin: 16px 0;
+    }
+    .kbd-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .kbd-table td:first-child {
+      white-space: nowrap;
+      width: 40%;
+    }
+    kbd {
+      display: inline-block;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-family: var(--ff-mono);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--fg);
+      box-shadow: 0 1px 0 var(--border);
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 36px 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--fg-subtle);
+    }
+    footer a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+    footer a:hover { text-decoration: underline; }
+    footer nav { margin-bottom: 16px; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════ HEADER ═══════════ -->
+<header>
+  <div class="hero-badge">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/>
+      <line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/>
+      <line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>
+    </svg>
+    ユーザーガイド
+  </div>
+
+  <h1>AstroSky ヘルプ＆ユーザーガイド</h1>
+  <p class="hero-sub">FITSファイルの開き方、ストレッチアルゴリズムとカラーマップの適用、そしてWindowsで壁紙品質の天体画像を書き出すための完全ガイド。</p>
+
+  <!-- ★ DOWNLOAD CTA — prominent placement as required ★ -->
+  <a href="https://apps.microsoft.com/detail/9n8qscsnlt7h?hl=ja-JP&gl=JP" class="download-btn" target="_blank" rel="noopener noreferrer">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
+    Microsoft StoreからAstroSkyをダウンロード
+  </a>
+</header>
+
+<!-- ═══════════ TABLE OF CONTENTS ═══════════ -->
+<main class="container">
+  <nav class="toc" aria-label="目次">
+    <h2>このページの内容</h2>
+    <ol>
+      <li><a href="#quickstart">クイックスタート</a></li>
+      <li><a href="#import">FITSファイルのインポート</a></li>
+      <li><a href="#auto">自動スマート強調</a></li>
+      <li><a href="#stretch">ストレッチとカラーマップ</a></li>
+      <li><a href="#modes">ビューティー / サイエンスモード</a></li>
+      <li><a href="#rgb">RGBチャンネル合成</a></li>
+      <li><a href="#tools">科学ツール</a></li>
+      <li><a href="#export">画像の書き出し</a></li>
+      <li><a href="#settings">設定と言語</a></li>
+      <li><a href="#license">ライセンスとトライアル</a></li>
+      <li><a href="#shortcuts">キーボードショートカット</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#troubleshooting">トラブルシューティング</a></li>
+    </ol>
+  </nav>
+</main>
+
+<!-- ═══════════ QUICK START ═══════════ -->
+<section id="quickstart">
+  <div class="container">
+    <h2>1. クイックスタート — 60秒で最初の画像を</h2>
+    <p>1分以内に、ゼロから美しい書き出し画像まで到達できます。手順は次のとおりです：</p>
+
+    <ol class="steps">
+      <li class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>インストールと起動</h3>
+          <p>Microsoft StoreからAstroSkyをダウンロードして起動します。アカウントやサインアップは不要です。</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>FITSファイルをインポート</h3>
+          <p>ギャラリーツールバーの<strong>ファイルをインポート</strong>をクリックするか、FITSファイルやフォルダをアプリケーションウィンドウに直接ドラッグ＆ドロップします。</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>サムネイルをクリック</h3>
+          <p>ギャラリーグリッドのサムネイルをクリックします。画像が下のキャンバスに即座にレンダリングされ、右側のパラメータパネルが有効になります。</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">4</div>
+        <div>
+          <h3>自動を押す</h3>
+          <p>パラメータパネルの<strong>自動強調</strong>ボタンをクリックします。AstroSkyがヒストグラムを解析し、最適なストレッチアルゴリズム、カラーマップ、白黒ポイントを自動的に選択します。</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">5</div>
+        <div>
+          <h3>書き出し</h3>
+          <p>パラメータパネル下部の<strong>画像を書き出し</strong>をクリックします。解像度プリセット（1080p、1440p、4K、5K、8K）を選び、形式（PNGまたはJPEG）を選択して「書き出し」をクリックします。壁紙に最適な画像が保存されます。</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="callout callout-tip">
+      <strong>プロのヒント：</strong>FITSファイルのフォルダ全体を一括インポートできます。AstroSkyは並列処理で読み込み、各ファイルの進行状況をリアルタイム表示します。
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ IMPORTING ═══════════ -->
+<section id="import">
+  <div class="container">
+    <h2>2. FITSファイルのインポート</h2>
+
+    <h3>対応ファイル形式</h3>
+    <p>AstroSkyは<strong>.fits</strong>、<strong>.fit</strong>、<strong>.fts</strong>ファイルに対応しています。単一拡張FITSおよび複数拡張FITS（MEF）ファイル、さらにNAXIS=3のデータキューブ（電波スペクトル線キューブなど）も処理できます。</p>
+
+    <h3>インポート方法</h3>
+    <p>AstroSkyにファイルを読み込む方法は3つあります：</p>
+    <ul>
+      <li><strong>ファイルをインポートボタン</strong> — ギャラリーツールバーの「ファイルをインポート」ボタンをクリックしてファイル選択ダイアログを開きます。</li>
+      <li><strong>ファイルのドラッグ＆ドロップ</strong> — エクスプローラーから1つ以上のFITSファイルをギャラリーエリアに直接ドラッグします。</li>
+      <li><strong>フォルダのドラッグ＆ドロップ</strong> — フォルダ全体をギャラリーエリアにドラッグします。AstroSkyが内部のすべてのFITSファイルを再帰的に検索します。</li>
+    </ul>
+
+    <h3>インポートの進行状況</h3>
+    <p>各ファイルはリアルタイムの進行状況インジケーター付きで読み込まれます。ファイルは複数のCPUコアを使用して並列処理されます。ツールバーの<strong>すべてキャンセル</strong>ボタンをクリックすると、保留中のすべてのインポートをいつでもキャンセルできます。</p>
+
+    <div class="callout callout-note">
+      <strong>注意：</strong>大規模なデータキューブ（数百のスペクトルチャンネル）は読み込みに数秒かかることがあります。AstroSkyはインポート中も応答性を維持し、既に読み込み済みの画像で作業を続けることができます。
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ AUTO ENHANCE ═══════════ -->
+<section id="auto">
+  <div class="container">
+    <h2>3. 自動スマート強調</h2>
+    <p><strong>自動</strong>ボタンは、あらゆるFITS画像を美しく見せる最速の方法です。これがAstroSkyの「ワンクリックで驚くほど美しく」という哲学の中核です。</p>
+
+    <h3>自動処理の内容</h3>
+    <p>自動をクリックすると、AstroSkyは以下の処理を行います：</p>
+    <ol>
+      <li>現在の画像の全ピクセル値ヒストグラムを読み取ります。</li>
+      <li>ヒストグラムの形状を分類します — <strong>単峰型</strong>（単一ピーク）、<strong>双峰型</strong>（2つのピーク）、または<strong>ロングテール型</strong>（広がった淡い分布）。</li>
+      <li>そのヒストグラム形状に最適な<strong>ストレッチアルゴリズム</strong>を選択します（例：ロングテールにはAsinh、双峰型にはLinear）。</li>
+      <li>最適な<strong>カラーマップ</strong>を選択します（汎用にはViridis、高コントラストにはInferno、輝線データにはHubble Palette）。</li>
+      <li>可視ディテールを最大化するために<strong>ブラックポイント</strong>と<strong>ホワイトポイント</strong>のクリッピング値を設定します。</li>
+      <li>200ms以内に結果をレンダリングします。</li>
+    </ol>
+
+    <div class="callout callout-tip">
+      <strong>ヒント：</strong>自動は優れた出発点です。自動をクリックした後でも、ストレッチ、カラーマップ、白黒ポイントを手動で調整して結果を微調整できます。
+    </div>
+
+    <!-- ★ Mid-Page Download CTA ★ -->
+    <div style="text-align:center; margin-top:32px; padding:28px 20px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius-md);">
+      <p style="font-size:1.05rem; font-weight:700; color:var(--fg); margin-bottom:8px;">自動強調を自分で試してみませんか？</p>
+      <p style="font-size:14px; color:var(--fg-muted); margin-bottom:18px;">AstroSkyを無料でダウンロード — 30日間トライアル、全機能ロック解除、アカウント不要。</p>
+      <a href="https://apps.microsoft.com/detail/9n8qscsnlt7h?hl=ja-JP&gl=JP" class="download-btn" target="_blank" rel="noopener noreferrer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
+        Microsoft StoreでAstroSkyを入手
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ STRETCH & COLOR ═══════════ -->
+<section id="stretch">
+  <div class="container">
+    <h2>4. ストレッチアルゴリズムとカラーマップ</h2>
+
+    <h3>ストレッチアルゴリズム</h3>
+    <p>ストレッチアルゴリズムは、生のFITSピクセル値が表示輝度にどのようにマッピングされるかを決定します。AstroSkyが提供するもの：</p>
+    <ul>
+      <li><strong>Linear（線形）</strong> — 直接比例マッピング。バランスの取れたダイナミックレンジの画像に最適。</li>
+      <li><strong>Asinh（逆双曲線正弦）</strong> — 逆双曲線正弦ストレッチ（Lupton et al. 2004に類似）。明るい特徴と淡い特徴の両方を保存するのに優れており、ほとんどの用途でデフォルト。</li>
+      <li><strong>Sqrt（平方根）</strong> — 平方根ストレッチ。明るいピークを圧縮しながら淡い構造を強調。</li>
+      <li><strong>Log（対数）</strong> — 対数ストレッチ。淡い領域で最大のコントラスト。極端なダイナミックレンジのデータに適する。</li>
+      <li><strong>Power / Gamma（べき乗 / ガンマ）</strong> — 調整可能なガンマ指数によるべき乗則マッピング。</li>
+    </ul>
+
+    <h3>ライブヒストグラム</h3>
+    <p>ヒストグラムパネルには、画像の256ビンのリアルタイムヒストグラムが表示されます。2つのドラッグ可能なマーカーが<strong>ブラックポイント</strong>（それ以下は黒にクリッピング）と<strong>ホワイトポイント</strong>（それ以上は白にクリッピング）を示します。どちらかのマーカーをドラッグすると、プレビューが200msで更新されます — 待ち時間なし。</p>
+
+    <h3>カラーマップ</h3>
+    <p>知覚的に均一で色覚多様性に対応した厳選されたカラーマップから選択できます：</p>
+    <ul>
+      <li><strong>Viridis</strong> — 汎用、知覚的に均一（デフォルト）。</li>
+      <li><strong>Plasma</strong> — 高コントラストの暖色から寒色へのグラデーション。</li>
+      <li><strong>Inferno</strong> — 黒体放射に類似。高ダイナミックレンジデータに最適。</li>
+      <li><strong>Magma</strong> — 強い輝度コントラストを持つアースカラーバリアント。</li>
+      <li><strong>Hubble Palette</strong> — 象徴的なハッブル宇宙望遠鏡の配色に着想。</li>
+      <li><strong>Grayscale</strong> — 純粋な輝度。科学分析に理想的。</li>
+      <li><strong>Heat</strong> — クラシックな熱分布マップ。</li>
+    </ul>
+    <p>各カラーマップはドロップダウンメニューにグラデーションプレビュースウォッチを表示するので、選択前にプレビューできます。</p>
+  </div>
+</section>
+
+<!-- ═══════════ DUAL MODE ═══════════ -->
+<section id="modes">
+  <div class="container">
+    <h2>5. ビューティーモード vs サイエンスモード</h2>
+    <p>AstroSkyには2つのインターフェースモードがあり、上部のChromeツールバーのスイッチで切り替えます。切り替えは100ms未満で完了し、<strong>画像は再読み込みされません</strong>。</p>
+
+    <h3>ビューティーモード（デフォルト）</h3>
+    <p>クリーンでクリエイティブな体験のために設計されています：</p>
+    <ul>
+      <li>パラメータパネルには<strong>自動</strong>、<strong>カラーマップ</strong>、<strong>書き出し</strong>のみが表示されます。</li>
+      <li>科学的なオーバーレイはありません — レンダリングされた画像のみ。</li>
+      <li>壁紙や共有用画像の作成に最適。</li>
+    </ul>
+
+    <h3>サイエンスモード</h3>
+    <p>天文学者向けの完全な分析ツールキットを展開します：</p>
+    <ul>
+      <li><strong>ビーム楕円オーバーレイ</strong> — BMAJ/BMIN FITSヘッダーから望遠鏡ビームを可視化。</li>
+      <li><strong>ピクセル値読み取り</strong> — 任意のピクセルにホバーして値をステータスバーに表示。</li>
+      <li><strong>Sky Infoオーバーレイ</strong> — 画像上に天体座標を表示。</li>
+      <li><strong>カラーバー</strong> — 強度から色へのマッピングスケールを表示。</li>
+      <li><strong>PVダイアグラム</strong> — データキューブの位置-速度スライス抽出。</li>
+      <li><strong>チャンネルマップ</strong> — スペクトルキューブの全チャンネルマップグリッドビュー。</li>
+      <li><strong>モーメントマップ</strong> — モーメント0（積分強度）とモーメント1（速度場）を計算。</li>
+      <li><strong>画像代数</strong> — 2つの画像の加算、減算、乗算、除算。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════ RGB SYNTHESIS ═══════════ -->
+<section id="rgb">
+  <div class="container">
+    <h2>6. RGBチャンネル合成</h2>
+    <p>3つの別々のFITS画像（例：異なる波長帯）を1つのフルカラー合成画像に結合します。</p>
+
+    <h3>合成方法</h3>
+    <ol class="steps">
+      <li class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>画像をインポート</h3>
+          <p>少なくとも3つのFITS画像をギャラリーに読み込みます（例：Rバンド、Gバンド、Bバンドデータ）。</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>チャンネルを割り当て</h3>
+          <p>サムネイルにホバーするとR / G / Bチャンネルボタンが表示されます。クリックしてその画像をチャンネルに割り当てます。または、サムネイルを右クリックしてコンテキストメニューから割り当てることもできます。</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>合成</h3>
+          <p>3つのチャンネルすべてが割り当てられたら、ギャラリーツールバーの<strong>RGB合成 (3/3)</strong>ボタンをクリックします。合成ダイアログでチャンネルごとのストレッチと重みを調整できます。</p>
+        </div>
+      </li>
+    </ol>
+
+    <div class="callout callout-tip">
+      <strong>ヒント：</strong>RGB合成ボタンはチャンネル割り当ての進行状況をリアルタイムで表示します — 例：(1/3)、(2/3)、(3/3)。3つのチャンネルすべてが埋まるとハイライト表示されます。
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SCIENCE TOOLS ═══════════ -->
+<section id="tools">
+  <div class="container">
+    <h2>7. 科学ツール</h2>
+    <p>AstroSkyにはプロの天文学者向けの分析ツール群が含まれており、すべてサイエンスモードで利用可能です。</p>
+
+    <h3>FITSヘッダービューアー</h3>
+    <p>パラメータパネルの<strong>ヘッダー</strong>タブからアクセスできます。すべてのFITSヘッダーエントリを検索可能な3列表（キーワード / 値 / コメント）で表示します。任意の値をクリックしてコピーできます。拡張スイッチャーを使用して複数拡張ファイルのヘッダーを閲覧できます。</p>
+
+    <h3>天体オブジェクトデータベース</h3>
+    <p><strong>情報</strong>タブからアクセスできます。FITSファイルにWCS（World Coordinate System）ヘッダーが含まれている場合、AstroSkyは自動的に：</p>
+    <ul>
+      <li>天体座標（赤道座標系のRA/Dec、銀河座標系のl/b）を読み取ります。</li>
+      <li>内蔵のオフラインデータベース<strong>800以上の天体オブジェクト</strong>（メシエ、NGC、ICカタログ）とクロスマッチングします。</li>
+      <li>マッチしたオブジェクトの平易な説明を表示します。</li>
+      <li>視野がマークされたAitoff投影のスカイミニマップを表示します。</li>
+    </ul>
+
+    <h3>ビーム楕円オーバーレイ</h3>
+    <p>FITSヘッダーにBMAJ、BMIN、BPAキーワード（ビーム長軸、短軸、位置角）が含まれている場合、AstroSkyは画像キャンバス上に半透明のビーム楕円をオーバーレイします。キャンバスツールバーから表示/非表示を切り替えられます。</p>
+
+    <h3>モーメントマップ</h3>
+    <p>データキューブ（NAXIS=3 FITSファイル）に対して、AstroSkyはモーメントマップを計算できます：
+    <br/><strong>モーメント0</strong> — 積分強度（スペクトル軸に沿った合計）。
+    <br/><strong>モーメント1</strong> — 強度加重平均速度場。
+    <br/>ギャラリーツールバーの<strong>モーメントマップ</strong>ボタンからアクセスします。</p>
+
+    <h3>位置-速度（PV）ダイアグラム</h3>
+    <p>データキューブに対して、画像キャンバス上でスライス線を定義すると、AstroSkyがその線に沿った位置-速度ダイアグラムを抽出します。サイエンスモードのキャンバスツールバーからアクセスします。</p>
+
+    <h3>画像代数</h3>
+    <p>2つの画像間で算術演算を実行します：加算、減算、乗算、除算。ギャラリーツールバーの<strong>画像代数</strong>ボタンからアクセスします。</p>
+  </div>
+</section>
+
+<!-- ═══════════ EXPORT ═══════════ -->
+<section id="export">
+  <div class="container">
+    <h2>8. 画像の書き出し</h2>
+
+    <h3>単一画像の書き出し</h3>
+    <ol class="steps">
+      <li class="step">
+        <div class="step-num">1</div>
+        <div>
+          <h3>書き出しダイアログを開く</h3>
+          <p>画像を選択した状態で、パラメータパネル下部の<strong>画像を書き出し</strong>ボタンをクリックします。</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">2</div>
+        <div>
+          <h3>形式を選択</h3>
+          <p><strong>PNG</strong>（可逆圧縮、最高品質）、<strong>JPEG</strong>（ファイルサイズが小さい）、または<strong>FITS</strong>（科学データの保存）を選択します。</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">3</div>
+        <div>
+          <h3>解像度を選択</h3>
+          <p>プリセットを選択：1920x1080、2560x1440、3840x2160（4K）、5120x2880（5K）、または7680x4320（8K）。AstroSkyは画面サイズに関係なくターゲット解像度でレンダリングします。</p>
+        </div>
+      </li>
+      <li class="step">
+        <div class="step-num">4</div>
+        <div>
+          <h3>透かしを追加（オプション）</h3>
+          <p>望遠鏡モデル、観測帯域、積分時間、作成者署名を含む透かしを埋め込むことができます — AstroBinやCloudyNightsでの共有に最適です。</p>
+        </div>
+      </li>
+    </ol>
+
+    <h3>バッチ書き出し</h3>
+    <p>ギャラリーツールバーの<strong>すべて書き出し</strong>をクリックすると、読み込まれたすべての画像を一度に書き出せます。Ctrl+クリックで個別の画像を選択し、コンテキストメニューから<strong>選択を書き出し</strong>を使用します。</p>
+  </div>
+</section>
+
+<!-- ═══════════ SETTINGS ═══════════ -->
+<section id="settings">
+  <div class="container">
+    <h2>9. 設定と言語</h2>
+
+    <h3>設定を開く</h3>
+    <p>右上のChromeツールバーにある歯車アイコンをクリックして設定ウィンドウを開きます。</p>
+
+    <h3>テーマ</h3>
+    <p><strong>ライト</strong>テーマと<strong>ダーク</strong>テーマから選択できます。テーマは再起動せずに即座に適用されます。</p>
+
+    <h3>言語</h3>
+    <p>AstroSkyは<strong>7言語</strong>に完全ローカライズされています：</p>
+    <ul>
+      <li>English（英語 — デフォルト）</li>
+      <li>日本語</li>
+      <li>Deutsch（ドイツ語）</li>
+      <li>Français（フランス語）</li>
+      <li>Español（スペイン語）</li>
+      <li>Português（ポルトガル語 — ブラジル）</li>
+      <li>Русский（ロシア語）</li>
+    </ul>
+    <p>Chromeツールバーの言語セレクターまたは設定ウィンドウから言語を切り替えられます。再起動は不要です。</p>
+
+    <h3>その他の設定</h3>
+    <p>設定ウィンドウでは以下の項目にもアクセスできます：</p>
+    <ul>
+      <li><strong>ライセンス条項</strong> — 完全なソフトウェアライセンス契約を表示。</li>
+      <li><strong>プライバシーポリシー</strong> — AstroSkyのプライバシーコミットメントを読む（<a href="privacy_ja.html">オンラインで表示</a>）。</li>
+      <li><strong>サードパーティ通知</strong> — オープンソースライブラリの帰属と通知。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════ LICENSE ═══════════ -->
+<section id="license">
+  <div class="container">
+    <h2>10. ライセンスと無料トライアル</h2>
+
+    <h3>30日間無料トライアル</h3>
+    <p>AstroSkyを初めて起動すると、<strong>30日間の無料トライアル</strong>が自動的に開始されます。トライアル期間中は<strong>すべての機能が完全にロック解除</strong>されます — 制限なし、透かしなし、クレジットカード不要。</p>
+
+    <h3>永久ライセンス</h3>
+    <p>トライアル期間後、1回の購入で永久アクセスがロック解除されます。サブスクリプションはありません — 一度購入すれば永久に所有できます。購入はMicrosoft Storeを通じて安全に処理されます。</p>
+
+    <h3>購入方法</h3>
+    <p>トライアル中でもいつでも購入できます：</p>
+    <ul>
+      <li>トライアルバナー（トライアル中に表示）の<strong>購入</strong>ボタンをクリックします。</li>
+      <li>または、ペイウォールオーバーレイ（トライアル期限切れ後に表示）の<strong>購入</strong>をクリックします。</li>
+    </ul>
+
+    <div class="callout callout-note">
+      <strong>注意：</strong>トライアルのカウントダウンはインストール時ではなく初回起動時に開始されます。アンインストールして再インストールしても、Microsoft Storeがトライアル状態を記憶しています。
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ KEYBOARD SHORTCUTS ═══════════ -->
+<section id="shortcuts">
+  <div class="container">
+    <h2>11. キーボードショートカット</h2>
+    <table class="kbd-table">
+      <tbody>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>Z</kbd></td><td>最後のパラメータ変更を元に戻す</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>Y</kbd></td><td>最後に元に戻したパラメータ変更をやり直す</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>O</kbd></td><td>ファイルインポートダイアログを開く</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>E</kbd></td><td>現在の画像を書き出し</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + <kbd>S</kbd></td><td>設定を開く</td></tr>
+        <tr><td>マウスホイール</td><td>画像キャンバスの拡大/縮小</td></tr>
+        <tr><td>左クリック + ドラッグ</td><td>画像キャンバスのパン</td></tr>
+        <tr><td><kbd>Ctrl</kbd> + クリック（サムネイル）</td><td>RGB割り当てまたはバッチ書き出し用に画像を複数選択</td></tr>
+        <tr><td>右クリック（サムネイル）</td><td>コンテキストメニュー：削除、書き出し、チャンネル割り当て</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ═══════════ FAQ ═══════════ -->
+<section id="faq">
+  <div class="container">
+    <h2>12. よくある質問</h2>
+
+    <details class="faq-item">
+      <summary>AstroSkyはどのFITSファイル形式に対応していますか？</summary>
+      <p>AstroSkyは.fits、.fit、.ftsファイルに対応しており、単一拡張FITSと複数拡張FITS（MEF）の両方をサポートします。NAXIS=3のデータキューブはスペクトルチャンネルナビゲーション付きで完全サポートされます。</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>AstroSkyは完全にオフラインで使用できますか？</summary>
+      <p>はい。Microsoft Storeからインストール後、AstroSkyは100％オフラインで動作します。すべてのFITS読み込み、画像処理、レンダリングはお使いのデバイス上でローカル実行されます。インターネット接続は不要です。</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>データはどこかに送信されますか？</summary>
+      <p>いいえ。AstroSkyはすべてのデータをローカルマシンのメモリ上で処理します。ファイル、画像、その他のデータがクラウドや第三者にアップロードされることは一切ありません。テレメトリや分析機能もありません。</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>AstroSkyはMacやLinuxで動作しますか？</summary>
+      <p>現在、AstroSkyはWindowsアプリケーションです（Windows 10およびWindows 11）。.NET 10 + WPFで構築され、Microsoft Storeを通じて配布されています。MacおよびLinux版は現時点では提供されていません。</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>AstroSkyが処理できる最大画像サイズは？</summary>
+      <p>AstroSkyは最新のサーベイからの大規模FITSファイル向けに最適化されています。16K × 16Kピクセルまでの画像を効率的に処理します。パフォーマンスはシステムのRAMとCPUコア数に依存します — 4K以上の画像には8GB RAMを推奨します。</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>異なるアスペクト比で画像を書き出せますか？</summary>
+      <p>はい。書き出しダイアログで、<strong>キャンバスに合わせる</strong>（元のFITS画像のアスペクト比を保持）または<strong>切り抜いて埋める</strong>（画像の端を切り抜いて選択した壁紙解像度に合わせる）から選択できます。</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>自動強調はすべてのタイプのFITSデータで動作しますか？</summary>
+      <p>自動強調は汎用的な連続光および輝線データ（最も一般的な天文学画像）向けに設計されています。スペクトルキューブや偏光マップなどの特殊なデータでは、自動処理後に手動調整することをお勧めします。</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>AstroSkyを更新するには？</summary>
+      <p>更新はMicrosoft Storeを通じて自動的に配信されます。Microsoft Storeを開き、「ライブラリ」に移動して「更新プログラムを取得」をクリックすると、最新バージョンを確認できます。</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>試用できるサンプルFITSファイルはどこで入手できますか？</summary>
+      <p>複数の無料公開アーカイブがFITSデータを提供しています：<em>ESO Science Archive</em>、<em>NRAO VLA Archive</em>、<em>NASA/IPAC Infrared Science Archive</em>、<em>Herschel Science Archive</em>。キャリブレーション済みのFITS画像をダウンロードしてAstroSkyにドロップしてください。</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>AstroSkyはプロの研究に使用できますか？</summary>
+      <p>はい。AstroSkyのサイエンスモードは、ビームオーバーレイ、ピクセル読み取り、PVダイアグラム、モーメントマップ計算など、プロの電波天文学およびサーベイデータ検査に適した分析ツールを提供します。ただし、高度な測光や分光分析にはDS9やCASAなどの専用ツールをお勧めします。</p>
+    </details>
+  </div>
+</section>
+
+<!-- ═══════════ TROUBLESHOOTING ═══════════ -->
+<section id="troubleshooting">
+  <div class="container">
+    <h2>13. トラブルシューティング</h2>
+
+    <h3>画像がレンダリングされない / キャンバスが空白</h3>
+    <ul>
+      <li>FITSファイルに画像データが含まれていることを確認してください（ヘッダーでNAXIS ≥ 2をチェック）。</li>
+      <li><strong>自動</strong>をクリックしてみてください — すべてのストレッチパラメータをリセットし、最適な表示ウィンドウを再計算します。</li>
+      <li>ブラックポイントとホワイトポイントのスライダーが両方とも極端な値になっていないか確認してください。</li>
+    </ul>
+
+    <h3>インポートに失敗する / ファイルが拒否される</h3>
+    <ul>
+      <li>ファイル拡張子が.fits、.fit、または.ftsであることを確認してください。</li>
+      <li>ファイルが破損していないか確認してください — DS9などの別のFITSビューアーで開いてみてください。</li>
+      <li>大きなフォルダをインポートする場合は、問題のあるファイルを特定するために個別のファイルをインポートしてみてください。</li>
+    </ul>
+
+    <h3>パフォーマンスが遅い</h3>
+    <ul>
+      <li>他のGPU負荷の高いアプリケーションを閉じてください（AstroSkyはSkiaSharp GPUレンダリングを使用します）。</li>
+      <li>非常に大きなデータキューブの場合は、読み込む前に個別のチャンネルを抽出することを検討してください。</li>
+      <li>グラフィックスドライバが最新であることを確認してください。</li>
+    </ul>
+
+    <h3>WCS / Sky Coordinatesが表示されない</h3>
+    <ul>
+      <li>FITSファイルに標準のWCSヘッダーキーワード（CRVAL1/2、CRPIX1/2、CDELT1/2、CTYPE1/2など）が含まれている必要があります。</li>
+      <li>ファイルにWCSヘッダーがない場合、Sky Infoおよび天体データベース機能はその画像では利用できません。</li>
+    </ul>
+
+    <div class="callout callout-warn">
+      <strong>問題が解決しませんか？</strong>診断ログファイルはアプリケーションディレクトリに書き込まれ、起動ごとにクリアされます。これらのログを <a href="mailto:HummingbirdLabs@outlook.com">HummingbirdLabs@outlook.com</a> まで送信してサポートを受けることができます。ログファイルには個人データは含まれません。
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ NEXT STEPS / BOTTOM CTA ═══════════ -->
+<section style="text-align:center; background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="container" style="padding:48px 24px;">
+    <h2 style="margin-bottom:12px;">FITSデータを変換する準備はできましたか？</h2>
+    <p style="color:var(--fg-muted); margin-bottom:24px; max-width:500px; margin-left:auto; margin-right:auto;">
+      AstroSkyを今すぐダウンロードして、最初のFITSファイルを60秒以内に美しい画像に変えましょう。30日間無料トライアル — 全機能ロック解除、クレジットカード不要、アカウント不要。
+    </p>
+    <a href="https://apps.microsoft.com/detail/9n8qscsnlt7h?hl=ja-JP&gl=JP" class="download-btn" target="_blank" rel="noopener noreferrer">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
+      Microsoft StoreからAstroSkyをダウンロード
+    </a>
+    <p style="font-size:13px; color:var(--fg-subtle); margin-top:20px;">
+      <a href="introduction_ja.html" style="color:var(--brand); text-decoration:none;">&#8592; 製品概要に戻る</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="#quickstart" style="color:var(--brand); text-decoration:none;">クイックスタートに戻る &#8593;</a>
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <nav aria-label="フッターナビゲーション">
+    <a href="introduction_ja.html">製品ページ</a>
+    <a href="privacy_ja.html">プライバシーポリシー</a>
+    <a href="ThirdPartyNotices.html">サードパーティ通知</a>
+    <a href="LICENSING_GUIDE.md">ライセンスガイド</a>
+  </nav>
+  <p>AstroSky — Hummingbird Labs &copy; 2026. Microsoft Store配布.</p>
+  <p style="font-size:11.5px; color:var(--fg-subtle); margin-top:6px;">最終更新日: 2026年6月25日. <a href="https://apps.microsoft.com/detail/9n8qscsnlt7h?hl=ja-JP&gl=JP" style="color:var(--brand);">最新バージョンを入手</a>.</p>
+</footer>
+
+</body>
+</html>
