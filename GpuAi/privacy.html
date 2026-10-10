@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – GpuAi</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 820px; margin: 0 auto; padding: 40px 24px; color: #1a1a1a; line-height: 1.7; }
+    h1 { font-size: 2rem; margin-bottom: 4px; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 36px; }
+    h2 { font-size: 1.2rem; margin-top: 36px; border-bottom: 1px solid #e5e5e5; padding-bottom: 6px; }
+    a { color: #0066cc; }
+    .highlight { background: #f0f7ff; border-left: 4px solid #0066cc; padding: 12px 16px; border-radius: 4px; margin: 24px 0; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #1a1a1a; color: #e0e0e0; }
+      h2 { border-bottom-color: #444; }
+      .highlight { background: #0a2040; border-left-color: #42a5f5; color: #bbdefb; }
+      .meta { color: #aaa; }
+      a { color: #80bfff; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Application: <strong>GpuAi</strong> &nbsp;·&nbsp; Effective date: October 10, 2026 &nbsp;·&nbsp; Controller: HummingbirdLabs</p>
+
+<div class="highlight">
+  <strong>Short summary:</strong> GpuAi is a fully offline GPU toolkit. It inspects your graphics hardware, assesses game and AI readiness, runs local self-tests, and shows an in-game overlay — all of it on your device. The application declares no internet-access capability and performs no network communication of its own. The hardware information it reads, your settings, and your exported reports never leave your device and are never transmitted to us. We do not have access to your device data or any personal data.
+</div>
+
+<h2>1. Data Controller</h2>
+<p>The data controller responsible for the processing of personal data in connection with this application is:</p>
+<p><strong>HummingbirdLabs</strong><br/>
+Country: China<br/>
+Contact: <a href="mailto:HummingbirdLabs@outlook.com">HummingbirdLabs@outlook.com</a></p>
+<p class="meta" style="margin-top:8px; font-size:0.85rem;">Note: As GpuAi does not collect or process any personal data from users, the appointment of an EU Representative under GDPR Art. 27 is not required.</p>
+
+<h2>2. Data We Collect</h2>
+<p>We do not collect, process, store, or transmit any personal data. GpuAi is a fully offline desktop application distributed through the Microsoft Store, and its application package declares <strong>no internet-access capability</strong> (<code>internetClient</code> is not requested). The only network-related operations are license and entitlement checks performed by Windows itself through the system Store APIs (see Section 5); the application contains no other networking code.</p>
+<p>Specifically, we do not collect:</p>
+<ul>
+  <li>Personal details such as name, email address, or any contact information</li>
+  <li>Device identifiers or advertising IDs</li>
+  <li>Location data</li>
+  <li>Usage statistics, analytics, or telemetry</li>
+  <li>Crash reports or diagnostic information</li>
+  <li>Cookies or tracking identifiers</li>
+  <li>Browsing history, files, or account credentials</li>
+</ul>
+
+<h2>3. Hardware and Device Information Read Locally</h2>
+<p>To provide its inspection, readiness assessment, self-test, and overlay features, GpuAi reads technical information about your computer <strong>exclusively on your local device</strong>, including:</p>
+<ul>
+  <li>Graphics adapter identification: GPU model, vendor, VRAM size, and display driver version (driver version is read from local Windows device registry entries)</li>
+  <li>Real-time GPU telemetry from the libraries installed with your graphics driver: values such as utilization, temperature, fan speed, power draw, clock speeds, and memory usage</li>
+  <li>The total amount of physical system memory (RAM) installed, read through a read-only Windows system API</li>
+  <li>The results of a brief local rendering self-test performed by the graphics driver</li>
+</ul>
+<p>GPU telemetry is obtained through the vendor-provided runtime components that ship with your graphics driver (NVIDIA NVML, AMD ADLX, and Intel IGCL). These components are installed by the driver, not by GpuAi; GpuAi calls them locally on your machine to display readings. None of the information above is logged to disk by default, assembled into a profile, sent over the network, or shared with any third party. It is processed in memory for the sole purpose of showing results inside the application and in the optional in-game overlay.</p>
+
+<h2>4. Local Data Storage</h2>
+<p>All data the application writes stays in a single local folder on your device: <strong>%LocalAppData%\GpuAi\</strong>. It contains only:</p>
+<ul>
+  <li><strong>settings.json</strong> – small application preferences you choose, such as theme and language</li>
+  <li><strong>license.json</strong> – a local entitlement document used only by the development/simulation back end in unpackaged development builds; in the installed Store version, license state is managed by Windows itself</li>
+</ul>
+<p><strong>Exported reports:</strong> When you choose to export an inspection report, a PNG image is written only to the location you select in the save dialog. GpuAi does not keep, upload, or back up your reports.</p>
+<p><strong>The in-game overlay:</strong> The optional overlay simply displays live local sensor readings in a small window. It does not capture, record, or transmit your screen, gameplay, or input. All locally stored data remains under your control and can be deleted at any time by removing the folder above through your operating system.</p>
+
+<h2>5. Microsoft Store and In-App Purchases</h2>
+<p>GpuAi is distributed through the Microsoft Store and offers optional premium features as in-app purchases. All purchase transactions and license management are handled by Microsoft. When you download the application or make a purchase, Microsoft may collect data in accordance with its own <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">Privacy Statement</a>. We do not receive your payment details, billing address, or any other personal information from Microsoft. The application only queries an anonymous license/entitlement state from the system Store APIs to determine which features are unlocked; this check is carried out by Windows, the result is not associated with your identity by us, and no information about you or your device is transmitted to us.</p>
+
+<h2>6. Diagnostic Logs (Off by Default, Local Only)</h2>
+<p>GpuAi writes <strong>no log files to disk during normal use</strong>; diagnostic output is limited to the attached debugger in development environments. A file-based diagnostic log is created only if you explicitly enable it by setting the <code>GPUI_DIAG_FILE</code> environment variable to a file path, in which case technical events (such as detection steps and error messages) are written to that path on your own device. Such a log is never uploaded or transmitted by the application and can be deleted by you at any time.</p>
+
+<h2>7. Children's Privacy</h2>
+<p>GpuAi does not knowingly collect personal information from children under the age of 13 (or the applicable minimum age in your jurisdiction). As we collect no data from any user, this policy applies equally to all users regardless of age.</p>
+
+<h2>8. Your Rights Under GDPR (EEA and UK Residents)</h2>
+<p>If you are located in the European Economic Area or the United Kingdom, you have the following rights under the General Data Protection Regulation (GDPR) or UK GDPR:</p>
+<ul>
+  <li><strong>Right of access</strong> – You may request a copy of any personal data we hold about you.</li>
+  <li><strong>Right to rectification</strong> – You may request correction of inaccurate personal data.</li>
+  <li><strong>Right to erasure</strong> – You may request deletion of your personal data.</li>
+  <li><strong>Right to restriction</strong> – You may request that we restrict processing of your personal data.</li>
+  <li><strong>Right to data portability</strong> – You may request a machine-readable copy of your personal data.</li>
+  <li><strong>Right to object</strong> – You may object to the processing of your personal data.</li>
+</ul>
+<p>Because we do not collect or process any personal data, there is no personal data for us to provide, correct, delete, or transfer. Should our data practices change, we will update this policy accordingly.</p>
+<p>To exercise any of your rights, please contact us at <a href="mailto:HummingbirdLabs@outlook.com">HummingbirdLabs@outlook.com</a>.</p>
+
+<h2>9. Your Rights Under CCPA (California Residents)</h2>
+<p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information we collect, the right to delete personal information, and the right to opt-out of the sale of personal information. We do not sell personal information and we do not collect personal information from users of GpuAi. There is nothing to disclose or delete.</p>
+
+<h2>10. International Data Transfers</h2>
+<p>We do not transfer personal data internationally, as we do not collect or hold any personal data.</p>
+
+<h2>11. Data Retention</h2>
+<p>We do not retain personal data. Hardware readings are processed transiently in memory and are not stored. Your preferences remain solely in the local settings file on your device, exported reports remain solely in the location you choose, and no diagnostic log is written unless you explicitly opt in. All local application data can be deleted by you at any time through your operating system; uninstalling the application removes its local data folder.</p>
+
+<h2>12. Changes to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by updating the effective date at the top of this page and, where required by applicable law, by providing in-app notice or requesting your explicit consent. We encourage you to review this policy periodically.</p>
+
+<h2>13. Contact Us</h2>
+<p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:<br/>
+<a href="mailto:HummingbirdLabs@outlook.com">HummingbirdLabs@outlook.com</a></p>
+
+</body>
+</html>
